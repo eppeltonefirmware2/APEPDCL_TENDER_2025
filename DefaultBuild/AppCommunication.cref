@@ -1,0 +1,2462 @@
+****rlApplication\Source\AppCommunication.c
+v2 
+:1763837879
+#1
+F "__DI" N I!1 T!2 ?18-2 358-1 
+T "void" KBV I!2 0x0 
+F "__EI" N I!3 T!2 ?19-2 
+F "__halt" N I!4 T!2 ?20-2 
+F "__stop" N I!5 T!2 ?21-2 
+F "__brk" N I!6 T!2 ?22-2 
+F "__nop" N I!7 T!2 ?23-2 
+F "__rolb" N I!8 T!9 ?25-2 P!10 P!11 
+T "unsigned char" KBU I!9 0x1 
+V "" N I!10 O!8 T!9 .1 0x1 
+V "" N I!11 O!8 T!9 .1 0x1 
+F "__rorb" N I!12 T!9 ?26-2 P!13 P!14 
+V "" N I!13 O!12 T!9 .1 0x1 
+V "" N I!14 O!12 T!9 .1 0x1 
+F "__rolw" N I!15 T!16 ?27-2 P!17 P!18 
+T "unsigned int" KBU I!16 0x2 
+V "" N I!17 O!15 T!16 .2 0x2 
+V "" N I!18 O!15 T!9 .1 0x1 
+F "__rorw" N I!19 T!16 ?28-2 P!20 P!21 
+V "" N I!20 O!19 T!16 .2 0x2 
+V "" N I!21 O!19 T!9 .1 0x1 
+F "__mulu" N I!22 T!16 ?30-2 P!23 P!24 
+V "" N I!23 O!22 T!9 .1 0x1 
+V "" N I!24 O!22 T!9 .1 0x1 
+F "__mului" N I!25 T!26 ?32-2 P!27 P!28 
+T "unsigned long" KBU I!26 0x4 
+V "" N I!27 O!25 T!16 .2 0x2 
+V "" N I!28 O!25 T!16 .2 0x2 
+F "__mulsi" N I!29 T!30 ?33-2 P!31 P!33 
+T "long" KBS I!30 0x4 
+V "" N I!31 O!29 T!32 .2 0x2 
+T "int" KBS I!32 0x2 
+V "" N I!33 O!29 T!32 .2 0x2 
+F "_COM_mulul" F I!34 T!35 ?42-2 P!36 P!37 
+T "unsigned long long" KBU I!35 0x8 
+V "" N I!36 O!34 T!26 .2 0x4 
+V "" N I!37 O!34 T!26 .2 0x4 
+F "_COM_mulsl" F I!38 T!39 ?43-2 P!40 P!41 
+T "long long" KBS I!39 0x8 
+V "" N I!40 O!38 T!30 .2 0x4 
+V "" N I!41 O!38 T!30 .2 0x4 
+F "_COM_divui" F I!42 T!16 ?48-2 P!43 P!44 
+V "" N I!43 O!42 T!16 .2 0x2 
+V "" N I!44 O!42 T!9 .1 0x1 
+F "_COM_divul" F I!45 T!26 ?49-2 P!46 P!47 
+V "" N I!46 O!45 T!26 .2 0x4 
+V "" N I!47 O!45 T!16 .2 0x2 
+F "_COM_remui" F I!48 T!9 ?53-2 P!49 P!50 
+V "" N I!49 O!48 T!16 .2 0x2 
+V "" N I!50 O!48 T!9 .1 0x1 
+F "_COM_remul" F I!51 T!16 ?54-2 P!52 P!53 
+V "" N I!52 O!51 T!26 .2 0x4 
+V "" N I!53 O!51 T!16 .2 0x2 
+F "_COM_macui" F I!54 T!26 ?58-2 P!55 P!56 P!57 
+V "" N I!55 O!54 T!16 .2 0x2 
+V "" N I!56 O!54 T!16 .2 0x2 
+V "" N I!57 O!54 T!26 .2 0x4 
+F "_COM_macsi" F I!58 T!30 ?59-2 P!59 P!60 P!61 
+V "" N I!59 O!58 T!32 .2 0x2 
+V "" N I!60 O!58 T!32 .2 0x2 
+V "" N I!61 O!58 T!30 .2 0x4 
+F "__get_psw" N I!62 T!9 ?63-2 
+F "__set_psw" N I!63 T!2 ?64-2 P!64 
+V "" N I!64 O!63 T!9 .1 0x1 
+F "__set1" N I!65 T!2 ?66-2 P!66 P!68 
+V "" N I!66 O!65 T!67 .2 0x2 
+T "" KP I!67 T!9 0x2 
+V "" N I!68 O!65 T!9 .1 0x1 
+F "__clr1" N I!69 T!2 ?67-2 P!70 P!71 
+V "" N I!70 O!69 T!67 .2 0x2 
+V "" N I!71 O!69 T!9 .1 0x1 
+F "__not1" N I!72 T!2 ?68-2 P!73 P!74 
+V "" N I!73 O!72 T!67 .2 0x2 
+V "" N I!74 O!72 T!9 .1 0x1 
+T "" KS I!75 !39-4 0x1 VM!76 VM!77 VM!78 VM!79 VM!80 VM!81 VM!82 VM!83 
+V "no0" - I!76 O!75 T!9 !40-4 .1 0x1 BO0 BIS1 
+V "no1" - I!77 O!75 T!9 !41-4 .1 0x1 BO1 BIS1 
+V "no2" - I!78 O!75 T!9 !42-4 .1 0x1 BO2 BIS1 
+V "no3" - I!79 O!75 T!9 !43-4 .1 0x1 BO3 BIS1 
+V "no4" - I!80 O!75 T!9 !44-4 .1 0x1 BO4 BIS1 
+V "no5" - I!81 O!75 T!9 !45-4 .1 0x1 BO5 BIS1 
+V "no6" - I!82 O!75 T!9 !46-4 .1 0x1 BO6 BIS1 
+V "no7" - I!83 O!75 T!9 !47-4 #598-1 .1 0x1 BO7 BIS1 
+T "__bitf_T" KT I!84 T!75 !48-4 0x1 
+T "" KS I!85 !51-4 0x2 VM!86 VM!87 VM!88 VM!89 VM!90 VM!91 VM!92 VM!93 VM!94 VM!95 VM!96 VM!97 VM!98 VM!99 VM!100 VM!101 
+V "no0" - I!86 O!85 T!9 !52-4 .1 0x1 BO0 BIS1 
+V "no1" - I!87 O!85 T!9 !53-4 .1 0x1 BO1 BIS1 
+V "no2" - I!88 O!85 T!9 !54-4 .1 0x1 BO2 BIS1 
+V "no3" - I!89 O!85 T!9 !55-4 .1 0x1 BO3 BIS1 
+V "no4" - I!90 O!85 T!9 !56-4 .1 0x1 BO4 BIS1 
+V "no5" - I!91 O!85 T!9 !57-4 .1 0x1 BO5 BIS1 
+V "no6" - I!92 O!85 T!9 !58-4 .1 0x1 BO6 BIS1 
+V "no7" - I!93 O!85 T!9 !59-4 .1 0x1 BO7 BIS1 
+V "no8" - I!94 O!85 T!9 !60-4 .1 0x1 BO8 BIS1 
+V "no9" - I!95 O!85 T!9 !61-4 .1 0x1 BO9 BIS1 
+V "no10" - I!96 O!85 T!9 !62-4 .1 0x1 BO10 BIS1 
+V "no11" - I!97 O!85 T!9 !63-4 .1 0x1 BO11 BIS1 
+V "no12" - I!98 O!85 T!9 !64-4 .1 0x1 BO12 BIS1 
+V "no13" - I!99 O!85 T!9 !65-4 .1 0x1 BO13 BIS1 
+V "no14" - I!100 O!85 T!9 !66-4 .1 0x1 BO14 BIS1 
+V "no15" - I!101 O!85 T!9 !67-4 .1 0x1 BO15 BIS1 
+T "__bitf_T2" KT I!102 T!85 !68-4 0x2 
+T "int8_t" KT I!103 T!104 !26-6 0x1 
+T "signed char" KBS I!104 0x1 
+T "uint8_t" KT I!105 T!9 !27-6 0x1 
+T "int16_t" KT I!106 T!107 !28-6 0x2 
+T "short" KBS I!107 0x2 
+T "uint16_t" KT I!108 T!109 !29-6 0x2 
+T "unsigned short" KBU I!109 0x2 
+T "int32_t" KT I!110 T!30 !30-6 0x4 
+T "uint32_t" KT I!111 T!26 !31-6 0x4 
+T "int64_t" KT I!112 T!39 !32-6 0x8 
+T "uint64_t" KT I!113 T!35 !33-6 0x8 
+T "" KU I!114 !38-6 0x1 VM!115 VM!116 
+V "RxCount" - I!115 O!114 T!105 !39-6 #88-1 86-1 .1 0x1 BO0 BIS8 
+V "TxCount" - I!116 O!114 T!105 !40-6 .1 0x1 BO0 BIS8 
+T "UartBuf" KT I!117 T!114 !42-6 0x1 
+T "double64_t" KT I!118 T!119 !44-6 0x4 
+T "float" KBF I!119 0x4 
+T "float32_t" KT I!120 T!119 !45-6 0x4 
+F "init_I2c" F I!121 T!2 ?149-5 
+F "write_eeprom" F I!122 T!105 ?150-5 188-1 266-1 270-1 307-1 331-1 335-1 352-1 554-1 591-1 686-1 P!123 P!125 P!126 
+V "" N I!123 O!122 T!124 .2 0x2 
+T "" MOD"C" KP I!124 T!105 0x2 
+V "" N I!125 O!122 T!108 .2 0x2 
+V "" N I!126 O!122 T!108 .2 0x2 
+F "read_eeprom" F I!127 T!105 ?151-5 479-1 555-1 615-1 616-1 645-1 P!128 P!130 P!131 
+V "" N I!128 O!127 T!129 .2 0x2 
+T "" KP I!129 T!105 0x2 
+V "" N I!130 O!127 T!108 .2 0x2 
+V "" N I!131 O!127 T!108 .2 0x2 
+F "memTest" F I!132 T!105 ?152-5 376-1 543-1 
+V "dUartBuf" GN I!133 T!117 ?7-7 #88-1 86-1 .1 0x1 
+F "init_Uart0" F I!134 T!2 ?8-7 
+F "Uart0_Start" F I!135 T!2 ?9-7 
+F "Uart0_Stop" F I!136 T!2 ?10-7 
+F "Meter_Response" F I!137 T!2 ?11-7 P!138 P!139 
+V "" N I!138 O!137 T!124 .2 0x2 
+V "" N I!139 O!137 T!108 .2 0x2 
+F "Meter2_Response" F I!140 T!2 ?12-7 527-1 P!141 P!142 
+V "" N I!141 O!140 T!124 .2 0x2 
+V "" N I!142 O!140 T!108 .2 0x2 
+F "init_Uart2" F I!143 T!2 ?13-7 
+F "Uart2_Start" F I!144 T!2 ?14-7 
+F "Uart2_Stop" F I!145 T!2 ?15-7 
+V "ramCHECK1" GN I!146 T!105 ?16-10 .1 0x1 
+V "activePulsePower" GN I!147 T!111 ?17-10 .2 0x4 
+V "apparentPulsePower" GN I!148 T!111 ?17-10 .2 0x4 
+V "activePulsePowerSumNM" GN I!149 T!111 ?18-10 .2 0x4 
+V "activePowerNM" GN I!150 T!111 ?18-10 .2 0x4 
+V "apperentPulsePowerSumNM" GN I!151 T!111 ?19-10 .2 0x4 
+V "apperentPowerNM" GN I!152 T!111 ?19-10 .2 0x4 
+V "lsAvgVolt" GN I!153 T!111 ?20-10 .2 0x4 
+V "mcu_flag" GVN I!154 T!111 ?21-10 #83-1 #103-1 83-1 103-1 565-1 567-1 .2 0x4 
+V "prekWhCounter" GN I!155 T!111 ?22-10 .2 0x4 
+V "prekVAhCounter" GN I!156 T!111 ?22-10 .2 0x4 
+V "prekWh" GN I!157 T!111 ?22-10 .2 0x4 
+V "prevTimeCounter" GN I!158 T!111 ?22-10 .2 0x4 
+V "prekWhinterval" GN I!159 T!111 ?22-10 .2 0x4 
+V "nmInfo" GN I!160 T!161 ?23-10 .2 0xc 
+T "" KA3 I!161 T!111 0xc 
+V "ramCHECK2" GN I!162 T!105 ?27-10 .1 0x1 
+V "TamperTime_counter" GN I!163 T!164 ?28-10 .2 0x12 
+T "" KA9 I!164 T!108 0x12 
+V "pushModeTime" GN I!165 T!108 ?29-10 .2 0x2 
+V "refresh_time" GN I!166 T!108 ?29-10 #381-1 .2 0x2 
+V "display_flag" GN I!167 T!108 ?30-10 .2 0x2 
+V "ls_nm_start_loc" GN I!168 T!108 ?30-10 .2 0x2 
+V "nm_ls_start_index" GN I!169 T!108 ?30-10 .2 0x2 
+V "nm_ls_end_index" GN I!170 T!108 ?30-10 .2 0x2 
+V "CurrentTamperStatusFlag" GN I!171 T!108 ?30-10 .2 0x2 
+V "nm_false_current_detect_count" GN I!172 T!108 ?31-10 .2 0x2 
+V "mag_toggle_count_duration" GVN I!173 T!108 ?32-10 .2 0x2 
+V "mag_pulse_width" GVN I!174 T!108 ?32-10 .2 0x2 
+V "is_dc_magnet_exist_duration" GVN I!175 T!108 ?32-10 .2 0x2 
+V "peakVoltage" GVN I!176 T!108 ?32-10 .2 0x2 
+V "no_of_pulses_in_nm_Active" GVN I!177 T!108 ?33-10 .2 0x2 
+V "no_of_pulses_in_nm_App" GVN I!178 T!108 ?33-10 .2 0x2 
+V "test_kwh_counter" GN I!179 T!108 ?34-10 .2 0x2 
+V "daykWMD" GN I!180 T!108 ?36-10 .2 0x2 
+V "day_MD_save" GN I!181 T!108 ?36-10 .2 0x2 
+V "daykWMD_dt" GN I!182 T!111 ?37-10 .2 0x4 
+V "ramCHECK3" GN I!183 T!105 ?41-10 .1 0x1 
+V "resetflag_auto" GN I!184 T!105 ?41-10 .1 0x1 
+V "RxTxBuffer" GN I!185 T!186 ?42-10 #94-1 #95-1 #96-1 #97-1 #98-1 #99-1 #268-1 #269-1 #272-1 #273-1 #274-1 #279-1 #280-1 #281-1 #282-1 #283-1 #284-1 #285-1 #286-1 #302-1 #306-1 #312-1 #313-1 #314-1 #315-1 #316-1 #317-1 #318-1 #319-1 #320-1 #333-1 #334-1 #336-1 #345-1 #369-1 #370-1 #371-1 #372-1 #373-1 #374-1 #392-1 #393-1 #394-1 #395-1 #396-1 #397-1 #398-1 #400-1 #432-1 #433-1 #434-1 #435-1 #436-1 #437-1 #438-1 #439-1 #440-1 #458-1 #459-1 #460-1 #461-1 #462-1 #463-1 #476-1 #477-1 #491-1 #492-1 #493-1 #509-1 #510-1 #511-1 #512-1 #513-1 #515-1 #589-1 #656-1 #681-1 #685-1 116-1 116-1 116-1 116-1 116-1 116-1 116-1 116-1 116-1 122-1 124-1 132-1 132-1 132-1 132-1 132-1 132-1 132-1 132-1 132-1 132-1 132-1 137-1 137-1 137-1 137-1 137-1 137-1 137-1 137-1 137-1 137-1 137-1 142-1 142-1 142-1 142-1 142-1 142-1 142-1 142-1 142-1 142-1 142-1 148-1 148-1 148-1 148-1 148-1 148-1 148-1 148-1 148-1 153-1 154-1 157-1 158-1 161-1 162-1 168-1 168-1 168-1 168-1 168-1 168-1 168-1 168-1 168-1 172-1 173-1 176-1 177-1 180-1 181-1 196-1 196-1 196-1 196-1 196-1 196-1 196-1 228-1 228-1 228-1 228-1 228-1 228-1 228-1 259-1 259-1 259-1 259-1 259-1 259-1 259-1 259-1 259-1 259-1 259-1 259-1 266-1 267-1 270-1 272-1 293-1 293-1 293-1 293-1 293-1 293-1 293-1 293-1 293-1 296-1 297-1 304-1 305-1 307-1 310-1 310-1 310-1 310-1 310-1 310-1 310-1 310-1 327-1 327-1 327-1 327-1 327-1 327-1 327-1 327-1 327-1 327-1 327-1 327-1 331-1 332-1 335-1 336-1 343-1 343-1 343-1 343-1 343-1 343-1 343-1 343-1 343-1 343-1 343-1 343-1 345-1 349-1 349-1 349-1 349-1 349-1 349-1 349-1 349-1 349-1 355-1 355-1 355-1 355-1 355-1 355-1 355-1 355-1 355-1 362-1 362-1 362-1 362-1 362-1 362-1 362-1 362-1 362-1 388-1 388-1 388-1 388-1 388-1 388-1 388-1 388-1 388-1 388-1 388-1 390-1 390-1 392-1 400-1 400-1 404-1 404-1 404-1 404-1 404-1 404-1 404-1 404-1 404-1 404-1 404-1 406-1 413-1 413-1 413-1 413-1 413-1 413-1 413-1 413-1 413-1 413-1 421-1 421-1 421-1 421-1 421-1 421-1 421-1 421-1 421-1 421-1 421-1 421-1 423-1 425-1 428-1 444-1 444-1 444-1 444-1 444-1 444-1 444-1 444-1 444-1 446-1 449-1 449-1 449-1 449-1 449-1 449-1 449-1 449-1 449-1 449-1 451-1 454-1 454-1 454-1 454-1 454-1 454-1 454-1 454-1 454-1 454-1 457-1 466-1 466-1 466-1 466-1 466-1 466-1 466-1 466-1 466-1 466-1 466-1 466-1 466-1 471-1 471-1 471-1 471-1 471-1 471-1 471-1 471-1 473-1 475-1 479-1 512-1 513-1 515-1 527-1 527-1 554-1 555-1 558-1 591-1 615-1 617-1 625-1 662-1 663-1 664-1 665-1 666-1 686-1 .1 0x12c 
+T "" KA300 I!186 T!105 0x12c 
+V "md_period" GN I!187 T!105 ?46-10 .1 0x1 
+V "ls_period" GN I!188 T!105 ?46-10 .1 0x1 
+V "pf_by_sample" GN I!189 T!105 ?46-10 .1 0x1 
+V "new_md_period" GN I!190 T!105 ?46-10 .1 0x1 
+V "switch_to_normal_mode" GN I!191 T!105 ?47-10 .1 0x1 
+V "powerStableCounter" GN I!192 T!105 ?47-10 .1 0x1 
+V "mag_hold_time" GVN I!193 T!105 ?48-10 .1 0x1 
+V "mag_toggle_count" GVN I!194 T!105 ?48-10 .1 0x1 
+V "cum_mag_toggle_count" GVN I!195 T!105 ?48-10 .1 0x1 
+V "power_fail_state" GVN I!196 T!105 ?48-10 .1 0x1 
+V "permanent_mag_wait_time" GVN I!197 T!105 ?48-10 .1 0x1 
+V "received_uart" GVN I!198 T!105 ?48-10 518-1 .1 0x1 
+V "is_vfail_with_load" GVN I!199 T!105 ?49-10 .1 0x1 
+V "ramCHECK4" GN I!200 T!105 ?51-10 .1 0x1 
+V "ModeID" GN I!201 T!105 ?52-10 409-1 416-1 417-1 .1 0x1 
+V "button_hold_time" GN I!202 T!105 ?52-10 .1 0x1 
+V "currentZoneID" GN I!203 T!105 ?52-10 .1 0x1 
+V "currentSeasonID" GN I!204 T!105 ?52-10 .1 0x1 
+V "displayParamPtr" GN I!205 T!124 ?53-10 .2 0x2 
+V "ramCHECK5" GN I!206 T!105 ?54-10 .1 0x1 
+V "harChU" GN I!207 T!105 ?55-10 .1 0x1 
+V "harChI" GN I!208 T!105 ?55-10 .1 0x1 
+V "har_wait_time" GN I!209 T!105 ?55-10 .1 0x1 
+V "gblserialnumberLCD" GN I!210 T!211 ?57-10 .1 0x8 
+T "" KA8 I!211 T!105 0x8 
+V "kWh_History" GN I!212 T!213 ?58-10 .2 0x18 
+T "" KA6 I!213 T!111 0x18 
+V "kW_MD_History" GN I!214 T!215 ?58-10 .2 0x18 
+T "" KA6 I!215 T!111 0x18 
+T "" KS I!216 !64-10 0x24 VM!217 VM!218 VM!219 VM!220 VM!221 VM!222 VM!223 VM!224 VM!225 VM!226 VM!227 
+V "Voltage" - I!217 O!216 T!108 !66-10 #541-1 #573-1 .2 0x2 BO0 BIS16 
+V "PowerFactor" - I!218 O!216 T!105 !67-10 .1 0x1 BO16 BIS8 
+V "LeadLag" - I!219 O!216 T!105 !68-10 .1 0x1 BO24 BIS8 
+V "PhCurrent" - I!220 O!216 T!111 !69-10 205-1 237-1 .2 0x4 BO32 BIS32 
+V "NeuCurrent" - I!221 O!216 T!111 !70-10 205-1 237-1 .2 0x4 BO64 BIS32 
+V "PhPower" - I!222 O!216 T!111 !71-10 .2 0x4 BO96 BIS32 
+V "NeuPower" - I!223 O!216 T!111 !72-10 .2 0x4 BO128 BIS32 
+V "AppPower" - I!224 O!216 T!111 !73-10 .2 0x4 BO160 BIS32 
+V "Frequency" - I!225 O!216 T!111 !74-10 .2 0x4 BO192 BIS32 
+V "EffectiveI" - I!226 O!216 T!111 !75-10 203-1 235-1 .2 0x4 BO224 BIS32 
+V "EffectiveP" - I!227 O!216 T!111 !76-10 .2 0x4 BO256 BIS32 
+V "Ins" GN I!228 T!216 ?78-10 #541-1 #573-1 203-1 205-1 205-1 235-1 237-1 237-1 .2 0x24 
+T "MD" KS I!229 !80-10 0xc VM!230 VM!231 VM!232 VM!233 
+V "kW" - I!230 O!229 T!108 !82-10 640-1 .2 0x2 BO0 BIS16 
+V "kVA" - I!231 O!229 T!108 !83-10 .2 0x2 BO16 BIS16 
+V "kW_Date" - I!232 O!229 T!111 !84-10 .2 0x4 BO32 BIS32 
+V "kVA_Date" - I!233 O!229 T!111 !85-10 .2 0x4 BO64 BIS32 
+T "billMD" KS I!234 !89-10 0x14 VM!235 VM!236 VM!237 
+V "CumkWMD" - I!235 O!234 T!111 !91-10 .2 0x4 BO0 BIS32 
+V "CumkVAMD" - I!236 O!234 T!111 !92-10 .2 0x4 BO32 BIS32 
+V "Current" - I!237 O!234 T!229 !94-10 640-1 .2 0xc BO64 BIS96 
+T "TOD" KS I!238 !99-10 0x14 VM!239 VM!240 VM!241 
+V "TODMD" - I!239 O!238 T!229 !101-10 .2 0xc BO0 BIS96 
+V "kWh" - I!240 O!238 T!111 !102-10 .2 0x4 BO96 BIS32 
+V "kVAh" - I!241 O!238 T!111 !103-10 .2 0x4 BO128 BIS32 
+T "TOD_8" KS I!242 !106-10 0xa0 VM!243 
+V "TOD" - I!243 O!242 T!244 !108-10 .2 0xa0 BO0 BIS1280 
+T "" KA8 I!244 T!238 0xa0 
+T "" KS I!245 !112-10 0xfa VM!246 VM!247 VM!248 VM!249 VM!250 VM!251 VM!252 VM!253 VM!254 VM!255 VM!256 VM!257 VM!258 VM!259 VM!260 VM!261 VM!262 VM!263 VM!264 VM!265 VM!266 VM!267 VM!268 VM!269 VM!270 VM!271 VM!272 VM!273 
+V "CumkWh" - I!246 O!245 T!111 !113-10 635-1 .2 0x4 BO0 BIS32 
+V "CumkVAh" - I!247 O!245 T!111 !114-10 .2 0x4 BO32 BIS32 
+V "BillMD" - I!248 O!245 T!234 !115-10 640-1 .2 0x14 BO64 BIS160 
+V "TODEnergy" - I!249 O!245 T!242 !116-10 .2 0xa0 BO224 BIS1280 
+V "MonthPowerOnDuration" - I!250 O!245 T!111 !117-10 .2 0x4 BO1504 BIS32 
+V "CumPowerOnDuration" - I!251 O!245 T!111 !118-10 .2 0x4 BO1536 BIS32 
+V "DayCount" - I!252 O!245 T!108 !119-10 .2 0x2 BO1568 BIS16 
+V "DailyDayCount" - I!253 O!245 T!108 !120-10 .2 0x2 BO1584 BIS16 
+V "PFailCount" - I!254 O!245 T!108 !121-10 .2 0x2 BO1600 BIS16 
+V "MDResetCount" - I!255 O!245 T!105 !122-10 .1 0x1 BO1616 BIS8 
+V "IntCount" - I!256 O!245 T!105 !123-10 .1 0x1 BO1624 BIS8 
+V "ExpCumkWh" - I!257 O!245 T!111 !124-10 .2 0x4 BO1632 BIS32 
+V "ExpCumkVAh" - I!258 O!245 T!111 !125-10 .2 0x4 BO1664 BIS32 
+V "NonSolarCumkWh" - I!259 O!245 T!111 !126-10 .2 0x4 BO1696 BIS32 
+V "timeCounter" - I!260 O!245 T!111 !127-10 #601-1 #602-1 298-1 602-1 602-1 631-1 675-1 .2 0x4 BO1728 BIS32 
+V "lsAvgV" - I!261 O!245 T!111 !128-10 .2 0x4 BO1760 BIS32 
+V "lsAvgC" - I!262 O!245 T!111 !129-10 .2 0x4 BO1792 BIS32 
+V "kWhCounter" - I!263 O!245 T!108 !130-10 .2 0x2 BO1824 BIS16 
+V "kVAhCounter" - I!264 O!245 T!108 !131-10 .2 0x2 BO1840 BIS16 
+V "kWhCounterMD" - I!265 O!245 T!108 !132-10 .2 0x2 BO1856 BIS16 
+V "kVAhCounterMD" - I!266 O!245 T!108 !133-10 .2 0x2 BO1872 BIS16 
+V "ZkWhCounter" - I!267 O!245 T!108 !134-10 635-1 .2 0x2 BO1888 BIS16 
+V "ZkVAhCounter" - I!268 O!245 T!108 !135-10 .2 0x2 BO1904 BIS16 
+V "ExpZkWhCounter" - I!269 O!245 T!108 !136-10 .2 0x2 BO1920 BIS16 
+V "ExpZkVAhCounter" - I!270 O!245 T!108 !137-10 .2 0x2 BO1936 BIS16 
+V "ExpkWhCounter" - I!271 O!245 T!108 !138-10 .2 0x2 BO1952 BIS16 
+V "PowerOn30" - I!272 O!245 T!108 !139-10 .2 0x2 BO1968 BIS16 
+V "crc2" - I!273 O!245 T!108 !140-10 .2 0x2 BO1984 BIS16 
+V "InsSave" GN I!274 T!245 ?142-10 #601-1 #602-1 298-1 602-1 602-1 631-1 635-1 635-1 640-1 675-1 .2 0xfa 
+T "" KU I!275 !146-10 0x4 VM!276 VM!280 VM!281 
+V "long_data" - I!276 O!275 T!111 !147-10 .2 0x4 BO0 BIS32 
+T "" KS I!277 !149-10 0x4 VM!278 VM!279 
+V "lsb" - I!278 O!277 T!108 !150-10 .2 0x2 BO0 BIS16 
+V "msb" - I!279 O!277 T!108 !151-10 .2 0x2 BO16 BIS16 
+V "Short" - I!280 O!275 T!277 !152-10 .2 0x4 BO0 BIS32 
+V "byte" - I!281 O!275 T!282 !153-10 .1 0x4 BO0 BIS32 
+T "" KA4 I!282 T!105 0x4 
+V "Data" GN I!283 T!275 ?154-10 .2 0x4 
+T "" KS I!284 !158-10 0x3c VM!285 VM!287 VM!289 VM!290 VM!291 VM!292 VM!293 VM!295 VM!297 VM!298 
+V "TamperCount" - I!285 O!284 T!286 !159-10 .2 0x12 BO0 BIS144 
+T "" KA9 I!286 T!108 0x12 
+V "eventcounts" - I!287 O!284 T!288 !160-10 .1 0x9 BO144 BIS72 
+T "" KA9 I!288 T!105 0x9 
+V "bill_tamper_status" - I!289 O!284 T!105 !161-10 .1 0x1 BO216 BIS8 
+V "Tamper_Once" - I!290 O!284 T!105 !162-10 .1 0x1 BO224 BIS8 
+V "sw_log_count" - I!291 O!284 T!108 !163-10 .2 0x2 BO240 BIS16 
+V "TamperStatusFlag" - I!292 O!284 T!108 !164-10 .2 0x2 BO256 BIS16 
+V "lastEventAddr" - I!293 O!284 T!294 !165-10 .2 0x12 BO272 BIS144 
+T "" KA9 I!294 T!108 0x12 
+V "lastOccRes" - I!295 O!284 T!296 !166-10 .2 0x4 BO416 BIS32 
+T "" KA2 I!296 T!108 0x4 
+V "MonthTamperStatus" - I!297 O!284 T!108 !167-10 .2 0x2 BO448 BIS16 
+V "crc" - I!298 O!284 T!108 !168-10 .2 0x2 BO464 BIS16 
+V "TamperRecord" GN I!299 T!284 ?170-10 .2 0x3c 
+T "" KS I!300 !191-10 0x8 VM!301 VM!302 VM!303 VM!304 VM!305 VM!306 VM!307 VM!308 
+V "sec" - I!301 O!300 T!105 !192-10 #155-1 .1 0x1 BO0 BIS8 
+V "min" - I!302 O!300 T!105 !193-10 #159-1 .1 0x1 BO8 BIS8 
+V "hour" - I!303 O!300 T!105 !194-10 #163-1 .1 0x1 BO16 BIS8 
+V "day" - I!304 O!300 T!105 !195-10 #174-1 .1 0x1 BO24 BIS8 
+V "week" - I!305 O!300 T!105 !196-10 .1 0x1 BO32 BIS8 
+V "month" - I!306 O!300 T!105 !197-10 #178-1 188-1 300-1 677-1 679-1 .1 0x1 BO40 BIS8 
+V "year" - I!307 O!300 T!105 !198-10 #182-1 683-1 .1 0x1 BO48 BIS8 
+V "reserve" - I!308 O!300 T!105 !199-10 .1 0x1 BO56 BIS8 
+T "Apprtc" KT I!309 T!300 !200-10 0x8 
+T "" KS I!310 !205-10 0x8 VM!311 VM!312 
+V "CalanderDateTime" - I!311 O!310 T!111 !206-10 .2 0x4 BO0 BIS32 
+V "BillDateTime" - I!312 O!310 T!111 !207-10 .2 0x4 BO32 BIS32 
+V "ScheduleActionDateTime" GN I!313 T!310 ?209-10 .2 0x8 
+T "" KS I!314 !211-10 0x10 VM!315 VM!316 VM!317 VM!318 VM!319 VM!320 VM!321 VM!322 
+V "year" - I!315 O!314 T!105 !212-10 .1 0x1 BO0 BIS8 
+V "month" - I!316 O!314 T!105 !213-10 .1 0x1 BO8 BIS8 
+V "day" - I!317 O!314 T!105 !214-10 .1 0x1 BO16 BIS8 
+V "kWhUsage" - I!318 O!314 T!111 !215-10 .2 0x4 BO32 BIS32 
+V "kW" - I!319 O!314 T!111 !216-10 .2 0x4 BO64 BIS32 
+V "hours" - I!320 O!314 T!105 !217-10 .1 0x1 BO96 BIS8 
+V "minutes" - I!321 O!314 T!105 !218-10 .1 0x1 BO104 BIS8 
+V "seconds" - I!322 O!314 T!105 !219-10 .1 0x1 BO112 BIS8 
+T "DayData" KT I!323 T!314 !220-10 0x10 
+T "" KS I!324 !301-9 0x8 VM!325 VM!326 VM!327 VM!328 VM!329 VM!330 VM!331 
+V "sec" - I!325 O!324 T!105 !302-9 .1 0x1 BO0 BIS8 
+V "min" - I!326 O!324 T!105 !303-9 .1 0x1 BO8 BIS8 
+V "hour" - I!327 O!324 T!105 !304-9 .1 0x1 BO16 BIS8 
+V "day" - I!328 O!324 T!105 !305-9 .1 0x1 BO24 BIS8 
+V "week" - I!329 O!324 T!105 !306-9 .1 0x1 BO32 BIS8 
+V "month" - I!330 O!324 T!105 !307-9 .1 0x1 BO40 BIS8 
+V "year" - I!331 O!324 T!108 !308-9 .2 0x2 BO48 BIS16 
+T "rtc_counter_value_t" KT I!332 T!324 !309-9 0x8 
+T "" KS I!333 !312-9 0x8 VM!334 VM!335 VM!336 VM!337 VM!338 VM!339 VM!340 
+V "alarmws" - I!334 O!333 T!105 !313-9 .1 0x1 BO0 BIS8 
+V "alarmwm" - I!335 O!333 T!105 !314-9 .1 0x1 BO8 BIS8 
+V "alarmwh" - I!336 O!333 T!105 !315-9 .1 0x1 BO16 BIS8 
+V "alarmww" - I!337 O!333 T!105 !316-9 .1 0x1 BO24 BIS8 
+V "alarmwd" - I!338 O!333 T!105 !317-9 .1 0x1 BO32 BIS8 
+V "alarmwmt" - I!339 O!333 T!105 !318-9 .1 0x1 BO40 BIS8 
+V "alarmwy" - I!340 O!333 T!108 !319-9 .2 0x2 BO48 BIS16 
+T "rtc_alarm_value_t" KT I!341 T!333 !320-9 0x8 
+T "" KS I!342 !323-9 0x5 VM!343 VM!344 VM!345 VM!346 VM!347 
+V "capturesec" - I!343 O!342 T!105 !324-9 .1 0x1 BO0 BIS8 
+V "capturemin" - I!344 O!342 T!105 !325-9 .1 0x1 BO8 BIS8 
+V "capturehour" - I!345 O!342 T!105 !326-9 .1 0x1 BO16 BIS8 
+V "captureday" - I!346 O!342 T!105 !327-9 .1 0x1 BO24 BIS8 
+V "capturemonth" - I!347 O!342 T!105 !328-9 .1 0x1 BO32 BIS8 
+T "rtc_capture_value_t" KT I!348 T!342 !329-9 0x5 
+T "" KE I!349 T!350 0x1 EM96:"SEC1_256" EM112:"SEC1_128" EM128:"SEC1_64" EM144:"SEC1_32" EM160:"SEC1_16" EM176:"SEC1_8" EM192:"SEC1_4" EM208:"SEC1_2" EM224:"SEC1" EM240:"SEC2S" 
+T "char" KBCU I!350 0x1 
+T "rtc_int_period_t" KT I!351 T!349 !343-9 0x1 
+T "" KE I!352 T!350 0x1 EM0:"HOUR12" EM1:"HOUR24" 
+T "rtc_hour_system_t" KT I!353 T!352 !349-9 0x1 
+F "init_Rtc" F I!354 T!105 ?355-9 139-1 P!355 
+V "" N I!355 O!354 T!105 .1 0x1 
+F "getRtcCounter" F I!356 T!111 ?356-9 P!357 
+V "" N I!357 O!356 T!105 .1 0x1 
+F "Rtc_SetCounterValue" F I!358 T!2 ?357-9 165-1 193-1 P!359 P!361 
+V "" N I!359 O!358 T!360 .2 0x2 
+T "" MOD"C" KP I!360 T!309 0x2 
+V "" N I!361 O!358 T!105 .1 0x1 
+F "start_RTC_Second_Interrupt" F I!362 T!2 ?358-9 
+F "stop_RTC_Second_Interrupt" F I!363 T!2 ?359-9 
+F "setRTCOut" F I!364 T!2 ?360-9 P!365 
+V "" N I!365 O!364 T!105 .1 0x1 
+F "reEnable32KCrystal" F I!366 T!2 ?361-9 
+F "validateRCR2" F I!367 T!2 ?362-9 
+F "validateRCR1" F I!368 T!2 ?363-9 
+F "DisableWDTInterrupt" F I!369 T!2 ?46-13 
+F "WDT_Restart" F I!370 T!2 ?47-13 502-1 553-1 564-1 585-1 P!371 
+V "" N I!371 O!370 T!105 .1 0x1 
+F "R_PORT_Create" F I!372 T!2 ?600-14 
+F "R_PORT_StopCreate" F I!373 T!2 ?601-14 
+F "init_Ports" F I!374 T!2 ?602-14 
+F "freePinshandler" F I!375 T!2 ?603-14 
+F "init_Timer12bit" F I!376 T!2 ?6-15 P!377 
+V "" N I!377 O!376 T!105 .1 0x1 
+F "ClearPulseAccumulation" F I!378 T!2 ?7-15 
+F "setPulse" F I!379 T!2 ?8-15 375-1 P!380 
+V "" N I!380 O!379 T!105 .1 0x1 
+F "Communication" F I!381 T!2 #81-1 !82,104-1-1 ?5-16 P!2306 
+F "Write_Command" F I!383 T!2 #109-1 !110,504-1-1 ?6-16 89-1 P!2308 
+F "getSerialCrc" F I!385 T!105 #610-1 !611,620-1-1 ?7-16 
+F "getSPOTBill" F I!386 T!2 #622-1 !623,657-1-1 ?8-16 468-1 
+F "setMfgMonth" F I!387 T!2 #672-1 !673,688-1-1 ?9-16 604-1 P!2330 P!2331 
+T "rlCalib" KS I!390 !5-17 0x14 VM!391 VM!392 VM!393 VM!394 VM!395 VM!396 VM!397 VM!398 VM!399 VM!400 
+V "Pp" - I!391 O!390 T!108 !7-17 .2 0x2 BO0 BIS16 
+V "Pn" - I!392 O!390 T!108 !8-17 .2 0x2 BO16 BIS16 
+V "U" - I!393 O!390 T!108 !9-17 .2 0x2 BO32 BIS16 
+V "I1" - I!394 O!390 T!108 !10-17 .2 0x2 BO48 BIS16 
+V "I2" - I!395 O!390 T!108 !11-17 .2 0x2 BO64 BIS16 
+V "DelayI1" - I!396 O!390 T!108 !12-17 .2 0x2 BO80 BIS16 
+V "DelayI2" - I!397 O!390 T!108 !13-17 .2 0x2 BO96 BIS16 
+V "I1OffSet" - I!398 O!390 T!108 !14-17 .2 0x2 BO112 BIS16 
+V "I2OffSet" - I!399 O!390 T!108 !15-17 .2 0x2 BO128 BIS16 
+V "crc" - I!400 O!390 T!108 !16-17 .2 0x2 BO144 BIS16 
+V "rlCalib" GN I!401 T!390 ?20-17 .2 0x14 
+F "doCalibration" F I!402 T!2 ?22-17 209-1 218-1 241-1 250-1 P!403 P!404 
+V "" N I!403 O!402 T!105 .1 0x1 
+V "" N I!404 O!402 T!111 .2 0x4 
+F "getRLCalib" F I!405 T!2 ?23-17 
+F "lcd_init" F I!406 T!2 ?18-18 
+F "Display" F I!407 T!2 ?19-18 382-1 546-1 561-1 574-1 578-1 P!408 
+V "" N I!408 O!407 T!105 .1 0x1 
+F "PushButton" F I!409 T!2 ?20-18 
+F "setParaBuff" F I!410 T!2 ?21-18 409-1 417-1 P!411 
+V "" N I!411 O!410 T!105 .1 0x1 
+F "setNextParaSeq" F I!412 T!2 ?22-18 
+F "CheckParaTimeOut" F I!413 T!2 ?23-18 
+F "setParamIndex" F I!414 T!2 ?24-18 367-1 379-1 540-1 545-1 560-1 577-1 P!415 P!416 
+V "" N I!415 O!414 T!105 .1 0x1 
+V "" N I!416 O!414 T!105 .1 0x1 
+F "Clear_Lcd" F I!417 T!2 ?25-18 
+F "MessageTimeOut" F I!418 T!2 ?26-18 
+F "getParaCount" F I!419 T!105 ?27-18 
+F "getParamTime" F I!420 T!105 ?28-18 
+F "getMeterSerial" F I!421 T!105 ?29-18 272-1 628-1 P!422 P!423 
+V "" N I!422 O!421 T!129 .2 0x2 
+V "" N I!423 O!421 T!105 .1 0x1 
+F "getMeterSerial_hex" F I!424 T!105 ?30-18 P!425 
+V "" N I!425 O!424 T!129 .2 0x2 
+F "getMeterKitID" F I!426 T!105 ?31-18 336-1 345-1 P!427 P!428 
+V "" N I!427 O!426 T!129 .2 0x2 
+V "" N I!428 O!426 T!105 .1 0x1 
+F "moveback" F I!429 T!2 ?33-18 
+F "copyDPfromFlash2Ram" F I!430 T!2 ?34-18 P!431 
+V "" N I!431 O!430 T!105 .1 0x1 
+F "getConfiguredDP" F I!432 T!2 ?35-18 416-1 P!433 
+V "" N I!433 O!432 T!105 .1 0x1 
+F "configDisplayPara" F I!434 T!105 ?36-18 406-1 P!435 
+V "" N I!435 O!434 T!124 .2 0x2 
+F "readConfiguredDP2Send" F I!436 T!105 ?37-18 400-1 P!437 P!438 
+V "" N I!437 O!436 T!129 .2 0x2 
+V "" N I!438 O!436 T!105 .1 0x1 
+F "ResetConfigDP" F I!439 T!2 ?38-18 415-1 
+F "validatelcdRAMBuff" F I!440 T!2 ?39-18 
+F "Load_Survey" F I!441 T!2 ?6-20 
+F "GetLsLoadLoc" F I!442 T!108 ?7-20 P!443 
+V "" N I!443 O!442 T!105 .1 0x1 
+F "GetDailyLoc" F I!444 T!108 ?8-20 P!445 
+V "" N I!445 O!444 T!108 .2 0x2 
+F "doLs" F I!446 T!2 ?9-20 
+F "getLsEntries" F I!447 T!108 ?10-20 
+F "ClearLsData" F I!448 T!2 ?11-20 
+F "getByRange" F I!449 T!2 ?12-20 P!450 P!451 P!452 P!453 P!455 
+V "" N I!450 O!449 T!105 .1 0x1 
+V "" N I!451 O!449 T!111 .2 0x4 
+V "" N I!452 O!449 T!111 .2 0x4 
+V "" N I!453 O!449 T!454 .2 0x2 
+T "" KP I!454 T!111 0x2 
+V "" N I!455 O!449 T!454 .2 0x2 
+F "logDaily00hhEnergy" F I!456 T!2 ?13-20 
+F "ConvertTimeCounterToTime" F I!457 T!111 ?10-21 298-1 675-1 P!458 P!459 P!460 
+V "" N I!458 O!457 T!111 .2 0x4 
+V "" N I!459 O!457 T!105 .1 0x1 
+V "" N I!460 O!457 T!461 .2 0x2 
+T "" KP I!461 T!309 0x2 
+F "ConvertTimeToTimeCounter" F I!462 T!111 ?11-21 P!463 
+V "" N I!463 O!462 T!461 .2 0x2 
+F "Crc_Cal" F I!464 T!108 ?12-21 267-1 332-1 617-1 P!465 P!466 
+V "" N I!465 O!464 T!124 .2 0x2 
+V "" N I!466 O!464 T!105 .1 0x1 
+F "Crc_Cal_Advanced" F I!467 T!108 ?13-21 P!468 P!469 P!470 
+V "" N I!468 O!467 T!124 .2 0x2 
+V "" N I!469 O!467 T!105 .1 0x1 
+V "" N I!470 O!467 T!108 .2 0x2 
+F "makeByte" F I!471 T!2 ?14-21 P!472 P!473 P!474 
+V "" N I!472 O!471 T!111 .2 0x4 
+V "" N I!473 O!471 T!105 .1 0x1 
+V "" N I!474 O!471 T!105 .1 0x1 
+F "getByteValue" F I!475 T!111 ?15-21 647-1 649-1 654-1 P!476 P!477 P!478 
+V "" N I!476 O!475 T!124 .2 0x2 
+V "" N I!477 O!475 T!105 .1 0x1 
+V "" N I!478 O!475 T!105 .1 0x1 
+F "SaveEEPROM" F I!479 T!2 ?16-21 603-1 P!480 P!481 
+V "" N I!480 O!479 T!105 .1 0x1 
+V "" N I!481 O!479 T!105 .1 0x1 
+F "powerfailLogging" F I!482 T!2 ?17-21 
+F "isRAMOK" F I!483 T!2 ?18-21 
+F "updateMDInterval" F I!484 T!108 ?19-21 P!485 P!486 
+V "" N I!485 O!484 T!105 .1 0x1 
+V "" N I!486 O!484 T!108 .2 0x2 
+F "isPowerfailLog" F I!487 T!105 ?20-21 P!488 
+V "" N I!488 O!487 T!105 .1 0x1 
+F "getSetPfailData" F I!489 T!105 ?21-21 P!490 
+V "" N I!490 O!489 T!105 .1 0x1 
+F "fillComBufferZero" F I!491 T!2 ?22-21 549-1 
+F "getSelftDgFeature" F I!492 T!105 ?23-21 
+F "Dec_Ascii" F I!493 T!2 ?24-21 635-1 640-1 649-1 654-1 P!494 P!495 P!496 P!497 
+V "" N I!494 O!493 T!111 .2 0x4 
+V "" N I!495 O!493 T!105 .1 0x1 
+V "" N I!496 O!493 T!129 .2 0x2 
+V "" N I!497 O!493 T!105 .1 0x1 
+F "getCustomDateTimeASCIIFormat" F I!498 T!105 ?25-21 631-1 647-1 P!499 P!500 P!501 
+V "" N I!499 O!498 T!111 .2 0x4 
+V "" N I!500 O!498 T!129 .2 0x2 
+V "" N I!501 O!498 T!105 .1 0x1 
+F "islimitOverflow" F I!502 T!2 ?7-22 
+F "savekWh" F I!503 T!2 ?16-23 P!504 
+V "" N I!504 O!503 T!111 .2 0x4 
+F "readIntervalkWh" F I!505 T!111 ?17-23 
+F "savekWh_NMExit" F I!506 T!2 ?18-23 
+F "getInterval" F I!507 T!105 ?19-23 
+F "Check_Tamper" F I!508 T!105 ?6-24 
+F "Tamperlog" F I!509 T!2 ?7-24 
+F "getTotalTamperCount" F I!510 T!108 ?8-24 
+F "getEventLog" F I!511 T!2 ?9-24 P!512 P!513 P!514 
+V "" N I!512 O!511 T!129 .2 0x2 
+V "" N I!513 O!511 T!105 .1 0x1 
+V "" N I!514 O!511 T!105 .1 0x1 
+F "getCurrentLogCount" F I!515 T!105 ?10-24 P!516 
+V "" N I!516 O!515 T!105 .1 0x1 
+F "logSWTamper" F I!517 T!2 ?11-24 185-1 P!518 
+V "" N I!518 O!517 T!105 .1 0x1 
+F "getPfailLog" F I!519 T!2 ?12-24 P!520 P!521 
+V "" N I!520 O!519 T!129 .2 0x2 
+V "" N I!521 O!519 T!105 .1 0x1 
+F "getSWLog" F I!522 T!2 ?13-24 P!523 P!524 
+V "" N I!523 O!522 T!129 .2 0x2 
+V "" N I!524 O!522 T!105 .1 0x1 
+F "getEventMaxEntries" F I!525 T!105 ?14-24 P!526 
+V "" N I!526 O!525 T!105 .1 0x1 
+F "ClearCopen" F I!527 T!2 ?15-24 144-1 
+F "getlastEventID" F I!528 T!105 ?16-24 P!529 
+V "" N I!529 O!528 T!105 .1 0x1 
+F "getEarthStatus" F I!530 T!108 ?17-24 P!531 
+V "" N I!531 O!530 T!105 .1 0x1 
+F "GetTamperForwardLoc" F I!532 T!108 ?18-24 P!533 P!534 
+V "" N I!533 O!532 T!105 .1 0x1 
+V "" N I!534 O!532 T!105 .1 0x1 
+F "getCustomTODZonedata" F I!535 T!105 ?80-25 P!536 P!537 
+V "" N I!536 O!535 T!129 .2 0x2 
+V "" N I!537 O!535 T!105 .1 0x1 
+F "getCustomHistorydata" F I!538 T!105 ?81-25 P!539 P!540 
+V "" N I!539 O!538 T!129 .2 0x2 
+V "" N I!540 O!538 T!105 .1 0x1 
+F "getCustomTODZoneHistorydata" F I!541 T!105 ?82-25 P!542 P!543 P!544 
+V "" N I!542 O!541 T!129 .2 0x2 
+V "" N I!543 O!541 T!105 .1 0x1 
+V "" N I!544 O!541 T!105 .1 0x1 
+F "getCustomTamperData" F I!545 T!105 ?83-25 P!546 P!547 P!548 
+V "" N I!546 O!545 T!129 .2 0x2 
+V "" N I!547 O!545 T!105 .1 0x1 
+V "" N I!548 O!545 T!105 .1 0x1 
+F "getCustomTamperData_occures" F I!549 T!105 ?84-25 P!550 P!551 P!552 
+V "" N I!550 O!549 T!129 .2 0x2 
+V "" N I!551 O!549 T!105 .1 0x1 
+V "" N I!552 O!549 T!105 .1 0x1 
+F "getCustomTamperData_only20mag" F I!553 T!105 ?85-25 P!554 P!555 P!556 
+V "" N I!554 O!553 T!129 .2 0x2 
+V "" N I!555 O!553 T!105 .1 0x1 
+V "" N I!556 O!553 T!105 .1 0x1 
+F "getFormatData" F I!557 T!105 ?86-25 P!558 
+V "" N I!558 O!557 T!129 .2 0x2 
+F "getTamperCustomdata" F I!559 T!105 ?87-25 P!560 P!561 
+V "" N I!560 O!559 T!105 .1 0x1 
+V "" N I!561 O!559 T!129 .2 0x2 
+F "setKNO" F I!562 T!2 ?88-25 446-1 P!563 
+V "" N I!563 O!562 T!124 .2 0x2 
+F "getKNO" F I!564 T!2 ?89-25 P!565 
+V "" N I!565 O!564 T!129 .2 0x2 
+F "setBillingDate" F I!566 T!2 ?90-25 425-1 P!567 
+V "" N I!567 O!566 T!124 .2 0x2 
+F "getBillingDate" F I!568 T!108 ?91-25 430-1 
+F "CustomerProtocol" F I!569 T!2 ?92-25 
+F "CustomerProtocol_tamper" F I!570 T!2 ?93-25 
+F "ConvertPAN" F I!571 T!105 ?94-25 P!572 
+V "" N I!572 O!571 T!124 .2 0x2 
+F "makePANByte" F I!573 T!108 ?95-25 P!574 
+V "" N I!574 O!573 T!105 .1 0x1 
+F "getCustomTODTiming" F I!575 T!2 ?96-25 457-1 P!576 
+V "" N I!576 O!575 T!129 .2 0x2 
+F "setCustomTODTiming" F I!577 T!105 ?97-25 451-1 P!578 
+V "" N I!578 O!577 T!124 .2 0x2 
+F "getCustomSWLog" F I!579 T!105 ?98-25 P!580 
+V "" N I!580 O!579 T!129 .2 0x2 
+F "CheckBillingOver" F I!581 T!2 ?5-26 P!582 P!583 
+V "" N I!582 O!581 T!105 .1 0x1 
+V "" N I!583 O!581 T!111 .2 0x4 
+F "GetBillLoc" F I!584 T!108 ?6-26 645-1 P!585 
+V "" N I!585 O!584 T!105 .1 0x1 
+F "GetLastBillLoc" F I!586 T!108 ?7-26 P!587 
+V "" N I!587 O!586 T!105 .1 0x1 
+F "ClearMD" F I!588 T!2 ?8-26 
+F "doBilling" F I!589 T!2 ?9-26 
+F "getLastBillnumber" F I!590 T!105 ?10-26 
+F "getAvgPf" F I!591 T!105 ?11-26 
+F "initPowerOnDuration" F I!592 T!2 ?12-26 
+F "getNextBillingDate" F I!593 T!111 ?13-26 
+F "GetPastMD" F I!594 T!111 ?14-26 P!595 P!596 
+V "" N I!595 O!594 T!105 .1 0x1 
+V "" N I!596 O!594 T!105 .1 0x1 
+F "getAutoBillDay" F I!597 T!105 ?15-26 
+F "getlatestkWh_History" F I!598 T!2 ?16-26 
+F "getProdStatusBits" F I!599 T!105 ?25-27 
+F "setProdStatus" F I!600 T!2 ?26-27 134-1 189-1 210-1 219-1 242-1 251-1 605-1 P!601 
+V "" N I!601 O!600 T!105 .1 0x1 
+F "getACCESSProd" F I!602 T!105 ?27-27 120-1 207-1 216-1 239-1 248-1 263-1 P!603 
+V "" N I!603 O!602 T!105 .1 0x1 
+F "getProdStatusDec" F I!604 T!111 ?28-27 
+F "ClearProdStatusBits" F I!605 T!2 ?29-27 P!606 
+V "" N I!606 O!605 T!105 .1 0x1 
+T "Integer8" KT I!607 T!104 !28-29 0x1 
+T "Unsigned8" KT I!608 T!9 !29-29 0x1 
+T "Integer16" KT I!609 T!107 !31-29 0x2 
+T "Unsigned16" KT I!610 T!109 !32-29 0x2 
+T "Integer32" KT I!611 T!30 !34-29 0x4 
+T "Unsigned32" KT I!612 T!26 !35-29 0x4 
+T "Float32" KT I!613 T!119 !44-29 0x4 
+F "InitSerial" F I!614 T!2 ?39-33 P!615 
+V "" N I!615 O!614 T!608 .1 0x1 
+F "SerialTxEnd" F I!616 T!2 ?41-33 P!617 
+V "" N I!617 O!616 T!608 .1 0x1 
+F "SerialRxEnd" F I!618 T!2 ?42-33 P!619 P!620 
+V "" N I!619 O!618 T!608 .1 0x1 
+V "" N I!620 O!618 T!608 .1 0x1 
+F "SerialTxBlock" F I!621 T!2 ?44-33 P!622 P!623 P!625 
+V "" N I!622 O!621 T!608 .1 0x1 
+V "" N I!623 O!621 T!624 .2 0x2 
+T "" KP I!624 T!608 0x2 
+V "" N I!625 O!621 T!609 .2 0x2 
+F "SerialConfig" F I!626 T!2 ?46-33 P!627 P!628 P!629 
+V "" N I!627 O!626 T!608 .1 0x1 
+V "" N I!628 O!626 T!608 .1 0x1 
+V "" N I!629 O!626 T!608 .1 0x1 
+T "" KS I!630 !32-32 0xc VM!631 VM!632 VM!633 
+V "Response" - I!631 O!630 T!612 !33-32 .2 0x4 BO0 BIS32 
+V "Inactivity" - I!632 O!630 T!612 !34-32 .2 0x4 BO32 BIS32 
+V "Interframe" - I!633 O!630 T!612 !35-32 .2 0x4 BO64 BIS32 
+T "st_TimeoutCount" KT I!634 T!630 !36-32 0xc 
+T "" KS I!635 !38-32 0x1 VM!636 VM!637 VM!638 
+V "bResponse" - I!636 O!635 T!608 !39-32 .1 0x1 BO0 BIS1 
+V "bInactivity" - I!637 O!635 T!608 !40-32 .1 0x1 BO1 BIS1 
+V "bInterframe" - I!638 O!635 T!608 !41-32 .1 0x1 BO2 BIS1 
+T "st_TimeoutEnable" KT I!639 T!635 !42-32 0x1 
+T "" KS I!640 !45-32 0xc VM!641 VM!642 VM!643 VM!644 VM!645 VM!646 
+V "RxStartPosition" - I!641 O!640 T!624 !46-32 .2 0x2 BO0 BIS16 
+V "RxCurrentPosition" - I!642 O!640 T!624 !47-32 .2 0x2 BO16 BIS16 
+V "RxEndPosition" - I!643 O!640 T!624 !48-32 .2 0x2 BO32 BIS16 
+V "TxStartPosition" - I!644 O!640 T!624 !50-32 .2 0x2 BO48 BIS16 
+V "TxCurrentPosition" - I!645 O!640 T!624 !51-32 .2 0x2 BO64 BIS16 
+V "TxEndPosition" - I!646 O!640 T!624 !52-32 .2 0x2 BO80 BIS16 
+T "st_DATALINK_Buffer" KT I!647 T!640 !54-32 0xc 
+T "" KU I!648 !56-32 0x2 VM!654 VM!655 
+T "" KS I!649 !57-32 0x2 VM!650 VM!651 VM!652 VM!653 
+V "HDLC_LengthUpper" - I!650 O!649 T!608 !58-32 .1 0x1 BO0 BIS3 
+V "HDLC_SegBit" - I!651 O!649 T!608 !59-32 .1 0x1 BO3 BIS1 
+V "HDLC_FrameType" - I!652 O!649 T!608 !60-32 .1 0x1 BO4 BIS4 
+V "HDLC_LengthLower" - I!653 O!649 T!608 !61-32 .1 0x1 BO8 BIS8 
+V "bits" - I!654 O!648 T!649 !62-32 .1 0x2 BO0 BIS16 
+V "Byte" - I!655 O!648 T!656 !63-32 .1 0x2 BO0 BIS16 
+T "" KA2 I!656 T!608 0x2 
+T "st_HDLC_Format" KT I!657 T!648 !64-32 0x2 
+T "" KS I!658 !66-32 0x5 VM!659 VM!661 
+V "HDLC_addr" - I!659 O!658 T!660 !67-32 .1 0x4 BO0 BIS32 
+T "" KA4 I!660 T!608 0x4 
+V "ByteMode" - I!661 O!658 T!608 !68-32 .1 0x1 BO32 BIS8 
+T "st_DestinationMAC" KT I!662 T!658 !69-32 0x5 
+T "" KU I!663 !71-32 0x1 VM!669 VM!670 
+T "" KS I!664 !72-32 0x1 VM!665 VM!666 VM!667 VM!668 
+V "dummy" - I!665 O!664 T!608 !73-32 .1 0x1 BO0 BIS1 
+V "nS" - I!666 O!664 T!608 !74-32 .1 0x1 BO1 BIS3 
+V "P" - I!667 O!664 T!608 !75-32 .1 0x1 BO4 BIS1 
+V "nR" - I!668 O!664 T!608 !76-32 .1 0x1 BO5 BIS3 
+V "bits" - I!669 O!663 T!664 !77-32 .1 0x1 BO0 BIS8 
+V "Byte" - I!670 O!663 T!608 !78-32 .1 0x1 BO0 BIS8 
+T "st_HDLC_Ctrl" KT I!671 T!663 !79-32 0x1 
+T "" KS I!672 !81-32 0x2 VM!673 VM!674 
+V "Ctrl" - I!673 O!672 T!671 !82-32 .1 0x1 BO0 BIS8 
+V "Type" - I!674 O!672 T!607 !83-32 .1 0x1 BO8 BIS8 
+T "st_HDLC_CtrlType" KT I!675 T!672 !84-32 0x2 
+T "" KS I!676 !87-32 0x16 VM!677 VM!678 VM!679 VM!680 VM!681 VM!682 VM!683 VM!684 VM!685 VM!686 
+V "HDLC_FlagStart" - I!677 O!676 T!624 !88-32 .2 0x2 BO0 BIS16 
+V "HDLC_Format" - I!678 O!676 T!657 !89-32 .1 0x2 BO16 BIS16 
+V "DestinationMAC" - I!679 O!676 T!662 !90-32 .1 0x5 BO32 BIS40 
+V "SourceMAC" - I!680 O!676 T!608 !91-32 .1 0x1 BO72 BIS8 
+V "HDLC_Ctrl" - I!681 O!676 T!675 !92-32 .1 0x2 BO80 BIS16 
+V "HDLC_HCS" - I!682 O!676 T!610 !93-32 .2 0x2 BO96 BIS16 
+V "HDLC_Information" - I!683 O!676 T!624 !94-32 .2 0x2 BO112 BIS16 
+V "HDLC_FCS" - I!684 O!676 T!610 !95-32 .2 0x2 BO128 BIS16 
+V "dummy" - I!685 O!676 T!610 !96-32 .2 0x2 BO144 BIS16 
+V "HDLC_FlagClose" - I!686 O!676 T!624 !97-32 .2 0x2 BO160 BIS16 
+T "st_HDLC_FrameType3" KT I!687 T!676 !98-32 0x16 
+T "" KS I!688 !101-32 0xe VM!689 VM!690 VM!692 VM!694 VM!695 VM!696 VM!697 
+V "HDLC_Start" - I!689 O!688 T!624 !102-32 .2 0x2 BO0 BIS16 
+V "HDLC_Format" - I!690 O!688 T!691 !103-32 .2 0x2 BO16 BIS16 
+T "" KP I!691 T!657 0x2 
+V "HDLC_Ctrl" - I!692 O!688 T!693 !104-32 .2 0x2 BO32 BIS16 
+T "" KP I!693 T!671 0x2 
+V "HDLC_HCS" - I!694 O!688 T!624 !105-32 .2 0x2 BO48 BIS16 
+V "HDLC_Information" - I!695 O!688 T!624 !106-32 .2 0x2 BO64 BIS16 
+V "HDLC_FCS" - I!696 O!688 T!624 !107-32 .2 0x2 BO80 BIS16 
+V "HDLC_End" - I!697 O!688 T!624 !108-32 .2 0x2 BO96 BIS16 
+T "st_HDLC_FrameOutput" KT I!698 T!688 !109-32 0xe 
+T "" KS I!699 !111-32 0x12 VM!700 VM!701 VM!702 VM!703 VM!704 VM!705 VM!706 VM!707 VM!708 
+V "LogicalName" - I!700 O!699 T!624 !112-32 .2 0x2 BO0 BIS16 
+V "Max_lenTran" - I!701 O!699 T!610 !113-32 .2 0x2 BO16 BIS16 
+V "Max_lenRecv" - I!702 O!699 T!610 !114-32 .2 0x2 BO32 BIS16 
+V "Inter_timeout" - I!703 O!699 T!610 !115-32 .2 0x2 BO48 BIS16 
+V "Inactivity_timeout" - I!704 O!699 T!610 !116-32 .2 0x2 BO64 BIS16 
+V "DeviceAddress" - I!705 O!699 T!610 !117-32 .2 0x2 BO80 BIS16 
+V "CommSpeed" - I!706 O!699 T!610 !118-32 .2 0x2 BO96 BIS16 
+V "Win_szTran" - I!707 O!699 T!610 !119-32 .2 0x2 BO112 BIS16 
+V "Win_szRecv" - I!708 O!699 T!610 !120-32 .2 0x2 BO128 BIS16 
+T "st_DATALINK_PAR" KT I!709 T!699 !121-32 0x12 
+T "" KU I!710 !123-32 0x1 VM!717 VM!718 
+T "" KS I!711 !124-32 0x1 VM!712 VM!713 VM!714 VM!715 VM!716 
+V "dummy" - I!712 O!711 T!608 !125-32 .1 0x1 BO0 BIS4 
+V "z" - I!713 O!711 T!608 !126-32 .1 0x1 BO4 BIS1 
+V "y" - I!714 O!711 T!608 !127-32 .1 0x1 BO5 BIS1 
+V "x" - I!715 O!711 T!608 !128-32 .1 0x1 BO6 BIS1 
+V "w" - I!716 O!711 T!608 !129-32 .1 0x1 BO7 BIS1 
+V "bits" - I!717 O!710 T!711 !130-32 .1 0x1 BO0 BIS8 
+V "Byte" - I!718 O!710 T!608 !131-32 .1 0x1 BO0 BIS8 
+T "st_HDLC_Reject_wxyz" KT I!719 T!710 !132-32 0x1 
+T "" KS I!720 !135-32 0x6 VM!721 VM!722 VM!723 VM!724 
+V "Data_Length" - I!721 O!720 T!610 !136-32 .2 0x2 BO0 BIS16 
+V "I_FrameNo" - I!722 O!720 T!608 !137-32 .1 0x1 BO16 BIS8 
+V "I_FrameType" - I!723 O!720 T!608 !138-32 .1 0x1 BO24 BIS8 
+V "Data_Ptr" - I!724 O!720 T!624 !139-32 .2 0x2 BO32 BIS16 
+T "st_HDLC_Data" KT I!725 T!720 !140-32 0x6 
+T "" KE I!726 T!350 0x1 EM0:"PHY_PROC_NONE" EM1:"PHY_PROC_REQ" 
+T "et_PHY_PROC" KT I!727 T!726 !145-32 0x1 
+T "" KE I!728 T!350 0x1 EM0:"PHY_STATE_BEGIN" EM1:"PHY_STATE_RECIEVING" EM2:"PHY_STATE_TRANSMITING" EM3:"PHY_STATE_READY" 
+T "et_PHY_STATE" KT I!729 T!728 !152-32 0x1 
+T "" KE I!730 T!350 0x1 EM0:"NORMAL_MESSAGE" EM1:"REQUEST_MESSAGE" EM2:"HDLC_MODE_ENTERED" EM3:"ERROR_MESSAGE" EM4:"NAK_MESSAGE" EM5:"ACK_MESSAGE" 
+T "et_PHY_MSG_TYPE" KT I!731 T!730 !162-32 0x1 
+T "" KS I!732 !165-32 0x6 VM!733 VM!734 VM!735 VM!736 VM!737 
+V "mode_E" - I!733 O!732 T!608 !166-32 .1 0x1 BO0 BIS8 
+V "phy_process" - I!734 O!732 T!727 !167-32 .1 0x1 BO8 BIS8 
+V "phy_state" - I!735 O!732 T!729 !168-32 .1 0x1 BO16 BIS8 
+V "message_type" - I!736 O!732 T!731 !169-32 .1 0x1 BO24 BIS8 
+V "Data_Ptr" - I!737 O!732 T!624 !170-32 .2 0x2 BO32 BIS16 
+T "st_PHY_PAR" KT I!738 T!732 !171-32 0x6 
+T "" KS I!739 !174-32 0x82 VM!740 VM!741 VM!742 VM!743 VM!744 VM!745 VM!746 VM!747 VM!748 VM!749 VM!750 VM!751 VM!752 VM!753 VM!754 VM!755 VM!756 VM!757 VM!758 VM!759 VM!760 VM!761 VM!762 VM!763 VM!764 VM!765 VM!766 VM!767 
+V "PhyLink_parameter" - I!740 O!739 T!738 !176-32 .2 0x6 BO0 BIS48 
+V "PhyLink_Status" - I!741 O!739 T!608 !177-32 .1 0x1 BO48 BIS8 
+V "channel_id" - I!742 O!739 T!608 !178-32 .1 0x1 BO56 BIS8 
+V "ByteCount" - I!743 O!739 T!610 !180-32 .2 0x2 BO64 BIS16 
+V "SerialTx_Buffer_Str" - I!744 O!739 T!624 !182-32 .2 0x2 BO80 BIS16 
+V "SerialTx_Buffer_End" - I!745 O!739 T!624 !183-32 .2 0x2 BO96 BIS16 
+V "SerialRx_Buffer_Str" - I!746 O!739 T!624 !186-32 .2 0x2 BO112 BIS16 
+V "SerialRx_Buffer_End" - I!747 O!739 T!624 !187-32 .2 0x2 BO128 BIS16 
+V "SerialTx_Size" - I!748 O!739 T!610 !189-32 .2 0x2 BO144 BIS16 
+V "SerialRx_Size" - I!749 O!739 T!610 !190-32 .2 0x2 BO160 BIS16 
+V "Timeout_Level" - I!750 O!739 T!634 !192-32 .2 0xc BO176 BIS96 
+V "Timeout_ms" - I!751 O!739 T!634 !193-32 .2 0xc BO272 BIS96 
+V "HDLC_Data" - I!752 O!739 T!725 !197-32 .2 0x6 BO368 BIS48 
+V "HDLC_Frame" - I!753 O!739 T!687 !198-32 .2 0x16 BO416 BIS176 
+V "DATALINK_Buffer" - I!754 O!739 T!647 !199-32 .2 0xc BO592 BIS96 
+V "HDLC_FrameInput" - I!755 O!739 T!698 !200-32 .2 0xe BO688 BIS112 
+V "DATALINK_parameter" - I!756 O!739 T!709 !201-32 .2 0x12 BO800 BIS144 
+V "EventFlag" - I!757 O!739 T!610 !204-32 .2 0x2 BO944 BIS16 
+V "Timeout_Enable" - I!758 O!739 T!639 !206-32 .1 0x1 BO960 BIS8 
+V "DATALINK_State" - I!759 O!739 T!608 !207-32 .1 0x1 BO968 BIS8 
+V "FrameType" - I!760 O!739 T!607 !209-32 .1 0x1 BO976 BIS8 
+V "Server_State" - I!761 O!739 T!608 !211-32 .1 0x1 BO984 BIS8 
+V "Prev_nR" - I!762 O!739 T!608 !212-32 .1 0x1 BO992 BIS8 
+V "Prev_nS" - I!763 O!739 T!608 !213-32 .1 0x1 BO1000 BIS8 
+V "nR" - I!764 O!739 T!608 !214-32 .1 0x1 BO1008 BIS8 
+V "nS" - I!765 O!739 T!608 !215-32 .1 0x1 BO1016 BIS8 
+V "Client_Status" - I!766 O!739 T!608 !216-32 .1 0x1 BO1024 BIS8 
+V "dummy" - I!767 O!739 T!608 !217-32 .1 0x1 BO1032 BIS8 
+T "st_channel_info" KT I!768 T!739 !218-32 0x82 
+T "" KS I!769 !221-32 0xa VM!770 VM!772 VM!774 
+V "Class_ID" - I!770 O!769 T!771 !222-32 .1 0x2 BO0 BIS16 
+T "" KA2 I!771 T!608 0x2 
+V "Instance_ID" - I!772 O!769 T!773 !223-32 .1 0x6 BO16 BIS48 
+T "" KA6 I!773 T!608 0x6 
+V "Attr_ID" - I!774 O!769 T!609 !224-32 .2 0x2 BO64 BIS16 
+T "st_Cosem_Attr_Desc" KT I!775 T!769 !225-32 0xa 
+T "" KS I!776 !228-32 0xa VM!777 VM!779 VM!781 
+V "Class_ID" - I!777 O!776 T!778 !229-32 .1 0x2 BO0 BIS16 
+T "" KA2 I!778 T!608 0x2 
+V "Instance_ID" - I!779 O!776 T!780 !230-32 .1 0x6 BO16 BIS48 
+T "" KA6 I!780 T!608 0x6 
+V "Method_ID" - I!781 O!776 T!609 !231-32 .2 0x2 BO64 BIS16 
+T "st_Cosem_Method_Desc" KT I!782 T!776 !232-32 0xa 
+T "fn_OBIS" KT I!783 T!784 !234-32 0x4 
+T "" KP I!784 T!785 0x4 
+T "" KF I!785 T!608 0x0 P!786 P!788 P!789 
+V "" N I!786 O!785 T!787 .2 0x2 
+T "" KP I!787 T!775 0x2 
+V "" N I!788 O!785 T!624 .2 0x2 
+V "" N I!789 O!785 T!610 .2 0x2 
+T "fn_SerialTx" KT I!790 T!791 !240-32 0x4 
+T "" KP I!791 T!792 0x4 
+T "" KF I!792 T!2 0x0 P!793 P!794 P!795 
+V "" N I!793 O!792 T!608 .1 0x1 
+V "" N I!794 O!792 T!624 .2 0x2 
+V "" N I!795 O!792 T!609 .2 0x2 
+T "fn_SerialConfig" KT I!796 T!797 !241-32 0x4 
+T "" KP I!797 T!798 0x4 
+T "" KF I!798 T!2 0x0 P!799 P!800 P!801 
+V "" N I!799 O!798 T!608 .1 0x1 
+V "" N I!800 O!798 T!608 .1 0x1 
+V "" N I!801 O!798 T!608 .1 0x1 
+T "fn_SerialInit" KT I!802 T!803 !242-32 0x4 
+T "" KP I!803 T!804 0x4 
+T "" KF I!804 T!2 0x0 P!805 
+V "" N I!805 O!804 T!608 .1 0x1 
+T "" KS I!806 !246-32 0x26 VM!807 VM!809 VM!810 VM!811 VM!812 VM!813 VM!814 VM!815 VM!816 VM!817 VM!818 VM!819 VM!820 VM!821 VM!822 VM!823 VM!824 VM!825 VM!826 
+V "Channel_info" - I!807 O!806 T!808 !247-32 .2 0x2 BO0 BIS16 
+T "" KP I!808 T!768 0x2 
+V "SerialInit_FuncPtr" - I!809 O!806 T!802 !248-32 .2 0x4 BO16 BIS32 
+V "SerialConfig_FuncPtr" - I!810 O!806 T!796 !249-32 .2 0x4 BO48 BIS32 
+V "SerialTx_FuncPtr" - I!811 O!806 T!790 !250-32 .2 0x4 BO80 BIS32 
+V "Server_Buffer" - I!812 O!806 T!624 !251-32 .2 0x2 BO112 BIS16 
+V "ServerPhysicalAddress" - I!813 O!806 T!624 !252-32 .2 0x2 BO128 BIS16 
+V "DeviceAddress" - I!814 O!806 T!624 !253-32 .2 0x2 BO144 BIS16 
+V "ManufacturerID" - I!815 O!806 T!624 !254-32 .2 0x2 BO160 BIS16 
+V "ID" - I!816 O!806 T!624 !255-32 .2 0x2 BO176 BIS16 
+V "Server_BufferSize" - I!817 O!806 T!610 !256-32 .2 0x2 BO192 BIS16 
+V "Response_Timeout" - I!818 O!806 T!610 !257-32 .2 0x2 BO208 BIS16 
+V "Inactivity_Timeout" - I!819 O!806 T!610 !258-32 .2 0x2 BO224 BIS16 
+V "Interframe_Timeout" - I!820 O!806 T!610 !259-32 .2 0x2 BO240 BIS16 
+V "Channel_maxcount" - I!821 O!806 T!608 !260-32 .1 0x1 BO256 BIS8 
+V "AdressByteMode" - I!822 O!806 T!608 !261-32 .1 0x1 BO264 BIS8 
+V "IEC_BaudRate" - I!823 O!806 T!608 !262-32 .1 0x1 BO272 BIS8 
+V "HDLC_BaudRate" - I!824 O!806 T!608 !263-32 .1 0x1 BO280 BIS8 
+V "Windows_size" - I!825 O!806 T!608 !264-32 .1 0x1 BO288 BIS8 
+V "dummy" - I!826 O!806 T!608 !265-32 .1 0x1 BO296 BIS8 
+T "st_ServerConfig" KT I!827 T!806 !266-32 0x26 
+T "" KE I!828 T!350 0x1 EM0:"DATALINK_STATE_BEGIN" EM1:"DATALINK_STATE_RECIEVING" EM2:"DATALINK_STATE_TRANSMITING" EM3:"DATALINK_STATE_READY" 
+T "et_Datalink_State" KT I!829 T!828 !273-32 0x1 
+T "" KE I!830 T!350 0x1 EM0:"PHYADD_1BYTE_NOT_SUPPORTED" EM1:"PHYADD_1BYTE_SUPPORTED" 
+T "et_PhysicalAddressMode" KT I!831 T!830 !278-32 0x1 
+T "" KE I!832 T!350 0x1 EM0:"DATA_ACCESS_RESULT_SUCCESS" EM1:"HARDWARE_FAULT" EM2:"TEMP_FAIL" EM3:"RD_WRT_DENIED" EM4:"OBJ_UNDEFINE" EM9:"OBJ_CLS_INCONSISTENT" EM11:"OBJ_UNAVAILABLE" EM12:"TYPE_UNMATCH" EM13:"SCOPE_ACCESS_VIOLATED" EM14:"DATA_BLK_UNAVAILABLE" EM15:"LONG_GET_ABORT" EM16:"NO_LONG_GET" EM17:"LONG_SET_ABORT" EM18:"NO_LONG_SET" EM250:"DATA_ACCESS_RESULT_OTHER" EM251:"DATA_ACCESS_RESULT_PARTIAL" 
+T "et_DATA_ACCESS_RESULT" KT I!833 T!832 !298-32 0x1 
+T "" KE I!834 T!350 0x1 EM0:"ACTION_RESULT_SUCCESS" EM1:"ACTION_RESULT_HARDWARE_FAULT" EM2:"ACTION_RESULT_TEMP_FAIL" EM3:"ACTION_RESULT_RD_WRT_DENIED" EM4:"ACTION_RESULT_OBJ_UNDEFINE" EM9:"ACTION_RESULT_OBJ_CLS_INCONSISTENT" EM11:"ACTION_RESULT_OBJ_UNAVAILABLE" EM12:"ACTION_RESULT_TYPE_UNMATCH" EM13:"ACTION_RESULT_SCOPE_ACCESS_VIOLATED" EM14:"ACTION_RESULT_DATA_BLK_UNAVAILABLE" EM15:"ACTION_RESULT_LONG_ACTION_ABORT" EM16:"ACTION_RESULT_NO_LONG_ACTION" EM250:"ACTION_RESULT_OTHER" 
+T "et_ACTION_RESULT" KT I!835 T!834 !315-32 0x1 
+T "" KE I!836 T!350 0x1 EM48:"BAUD_RATE_300" EM49:"BAUD_RATE_600" EM50:"BAUD_RATE_1200" EM51:"BAUD_RATE_2400" EM52:"BAUD_RATE_4800" EM53:"BAUD_RATE_9600" EM54:"BAUD_RATE_19200" EM255:"BAUD_RATE_NOT_SPECIFIED" 
+T "et_BAUD_RATE" KT I!837 T!836 !327-32 0x1 
+T "" KE I!838 T!350 0x1 EM0:"IEC_PROTOCOL" EM1:"HDLC_PROTOCOL" EM255:"PROTOCOL_NOT_SPECIFIED" 
+T "et_PHY_PROTOCOL" KT I!839 T!838 !333-32 0x1 
+V "OBIS_DataLength" GN I!840 T!610 ?418-32 .2 0x2 
+V "UserServerConfig" GON I!841 T!827 ?419-32 .2 0x26 
+F "DLMSInit" F I!842 T!607 ?423-32 P!843 
+V "" N I!843 O!842 T!827 .2 0x26 
+F "DLMSMessageProcess" F I!844 T!2 ?424-32 
+F "DLMSIntervalProcessing" F I!845 T!2 ?425-32 
+F "DataLinkConnectionReset" F I!846 T!2 ?427-32 ?470-32 
+F "COSEMOpenGetConnectedAssociation" F I!847 T!608 ?428-32 
+F "COSEMOpenGetConnectingAssociationStatus" F I!848 T!608 ?429-32 
+F "COSEMOpenGetHLSCtoS" F I!849 T!624 ?430-32 
+F "COSEMObjectLayerInit" F I!850 T!2 ?432-32 P!851 P!852 P!853 
+V "" N I!851 O!850 T!624 .2 0x2 
+V "" N I!852 O!850 T!610 .2 0x2 
+V "" N I!853 O!850 T!783 .2 0x4 
+F "DLMS_Initialize" F I!854 T!2 ?438-32 
+F "DLMS_PollingProcessing" F I!855 T!2 ?439-32 
+F "BERLengthEncode" F I!856 T!608 ?442-32 P!857 P!858 
+V "" N I!857 O!856 T!624 .2 0x2 
+V "" N I!858 O!856 T!610 .2 0x2 
+F "BERLengthDecode" F I!859 T!608 ?443-32 P!860 P!861 
+V "" N I!860 O!859 T!624 .2 0x2 
+V "" N I!861 O!859 T!862 .2 0x2 
+T "" KP I!862 T!610 0x2 
+F "CONNMGR_ChannelCount" F I!863 T!608 ?446-32 
+F "CONNMGR_MaxChannelNumber" F I!864 T!608 ?447-32 
+F "CONNMGR_GetCurrentChannelID" F I!865 T!608 ?448-32 
+F "CONNMGR_RegisterPriorityChannel" F I!866 T!2 ?450-32 P!867 
+V "" N I!867 O!866 T!608 .1 0x1 
+F "CONNMGR_AddChannel" F I!868 T!608 ?452-32 P!869 P!870 P!871 P!872 P!873 
+V "" N I!869 O!868 T!608 .1 0x1 
+V "" N I!870 O!868 T!624 .2 0x2 
+V "" N I!871 O!868 T!610 .2 0x2 
+V "" N I!872 O!868 T!624 .2 0x2 
+V "" N I!873 O!868 T!610 .2 0x2 
+F "CONNMGR_ModifyEventFlag" F I!874 T!2 ?460-32 P!875 P!876 P!877 
+V "" N I!875 O!874 T!608 .1 0x1 
+V "" N I!876 O!874 T!610 .2 0x2 
+V "" N I!877 O!874 T!610 .2 0x2 
+F "CONNMGR_ModifyAllEventFlag" F I!878 T!2 ?461-32 P!879 P!880 
+V "" N I!879 O!878 T!610 .2 0x2 
+V "" N I!880 O!878 T!610 .2 0x2 
+F "CONNMGR_GetEventFlag" F I!881 T!610 ?462-32 P!882 
+V "" N I!882 O!881 T!608 .1 0x1 
+F "PhysicalTimeoutCount" F I!883 T!2 ?465-32 
+F "PhysicalReceiveCallback" F I!884 T!2 ?466-32 P!885 P!886 
+V "" N I!885 O!884 T!608 .1 0x1 
+V "" N I!886 O!884 T!608 .1 0x1 
+F "PhysicalSendEndCallback" F I!887 T!2 ?467-32 P!888 
+V "" N I!888 O!887 T!608 .1 0x1 
+F "COSEM_Getinfo" F I!889 T!624 ?471-32 P!890 P!891 P!892 
+V "" N I!890 O!889 T!610 .2 0x2 
+V "" N I!891 O!889 T!610 .2 0x2 
+V "" N I!892 O!889 T!610 .2 0x2 
+F "COSEM_Setinfo" F I!893 T!2 ?472-32 P!894 P!895 P!896 P!897 
+V "" N I!894 O!893 T!610 .2 0x2 
+V "" N I!895 O!893 T!610 .2 0x2 
+V "" N I!896 O!893 T!610 .2 0x2 
+V "" N I!897 O!893 T!608 .1 0x1 
+T "tag_attr_type_t" KE I!898 T!350 !104-31 0x1 EM0:"ATTR_TYPE_NULL_DATA" EM3:"ATTR_TYPE_BOOLEAN" EM4:"ATTR_TYPE_BIT_STRING" EM5:"ATTR_TYPE_DOUBLE_LONG" EM6:"ATTR_TYPE_DOUBLE_LONG_UNSIGNED" EM9:"ATTR_TYPE_OCTET_STRING" EM10:"ATTR_TYPE_VISIBLE_STRING" EM12:"ATTR_TYPE_UTF8_STRING" EM13:"ATTR_TYPE_BCD" EM15:"ATTR_TYPE_INTEGER" EM16:"ATTR_TYPE_LONG" EM17:"ATTR_TYPE_UNSIGNED" EM18:"ATTR_TYPE_LONG_UNSIGNED" EM20:"ATTR_TYPE_LONG64" EM21:"ATTR_TYPE_LONG64_UNSIGNED" EM22:"ATTR_TYPE_ENUM" EM23:"ATTR_TYPE_FLOAT32" EM24:"ATTR_TYPE_FLOAT64" EM25:"ATTR_TYPE_DATE_TIME" EM26:"ATTR_TYPE_DATE" EM27:"ATTR_TYPE_TIME" EM1:"ATTR_TYPE_ARRAY" EM2:"ATTR_TYPE_STRUCTURE" EM19:"ATTR_TYPE_COMPACT_ARRAY" 
+T "attr_type_t" KT I!899 T!898 !133-31 0x1 
+T "tag_date_t" KS I!900 !136-31 0x5 VM!901 VM!902 VM!903 VM!904 VM!905 
+V "year_high" - I!901 O!900 T!608 !138-31 .1 0x1 BO0 BIS8 
+V "year_low" - I!902 O!900 T!608 !139-31 .1 0x1 BO8 BIS8 
+V "month" - I!903 O!900 T!608 !140-31 .1 0x1 BO16 BIS8 
+V "day_of_month" - I!904 O!900 T!608 !141-31 .1 0x1 BO24 BIS8 
+V "day_of_week" - I!905 O!900 T!608 !142-31 .1 0x1 BO32 BIS8 
+T "date_t" KT I!906 T!900 !143-31 0x5 
+T "tag_time_t" KS I!907 !146-31 0x4 VM!908 VM!909 VM!910 VM!911 
+V "hour" - I!908 O!907 T!608 !148-31 .1 0x1 BO0 BIS8 
+V "minute" - I!909 O!907 T!608 !149-31 .1 0x1 BO8 BIS8 
+V "second" - I!910 O!907 T!608 !150-31 .1 0x1 BO16 BIS8 
+V "hundredths" - I!911 O!907 T!608 !151-31 .1 0x1 BO24 BIS8 
+T "time_t" KT I!912 T!907 !152-31 0x4 
+T "tag_clock_status_t" KS I!913 !155-31 0x1 VM!914 VM!915 VM!916 VM!917 VM!918 VM!919 VM!920 VM!921 
+V "invalid_value" - I!914 O!913 T!608 !157-31 .1 0x1 BO0 BIS1 
+V "doubtful_value" - I!915 O!913 T!608 !159-31 .1 0x1 BO1 BIS1 
+V "different_clock_base" - I!916 O!913 T!608 !161-31 .1 0x1 BO2 BIS1 
+V "invalid_clock_status" - I!917 O!913 T!608 !165-31 .1 0x1 BO3 BIS1 
+V "reserved0" - I!918 O!913 T!608 !167-31 .1 0x1 BO4 BIS1 
+V "reserved1" - I!919 O!913 T!608 !168-31 .1 0x1 BO5 BIS1 
+V "reserved2" - I!920 O!913 T!608 !169-31 .1 0x1 BO6 BIS1 
+V "daylight_saving_active" - I!921 O!913 T!608 !170-31 .1 0x1 BO7 BIS1 
+T "clock_status_t" KT I!922 T!913 !174-31 0x1 
+T "tag_clock_base_t" KE I!923 T!350 !177-31 0x1 EM0:"CLOCK_BASE_NOT_DEFINED" EM1:"CLOCK_BASE_INTERNAL_CRYSTAL" EM2:"CLOCK_BASE_MAINS_FREQUENCY_50_HZ" EM3:"CLOCK_BASE_MAINS_FREQUENCY_60_HZ" EM4:"CLOCK_BASE_GPS" EM5:"CLOCK_BASE_RADIO_CONTROLLED" 
+T "clock_base_t" KT I!924 T!923 !185-31 0x1 
+T "tag_date_time_t" KS I!925 !188-31 0xc VM!926 VM!927 VM!928 VM!929 VM!930 VM!931 VM!932 VM!933 VM!934 VM!935 VM!936 VM!937 
+V "year_high" - I!926 O!925 T!608 !190-31 .1 0x1 BO0 BIS8 
+V "year_low" - I!927 O!925 T!608 !191-31 .1 0x1 BO8 BIS8 
+V "month" - I!928 O!925 T!608 !192-31 .1 0x1 BO16 BIS8 
+V "day_of_month" - I!929 O!925 T!608 !193-31 .1 0x1 BO24 BIS8 
+V "day_of_week" - I!930 O!925 T!608 !194-31 .1 0x1 BO32 BIS8 
+V "hour" - I!931 O!925 T!608 !195-31 .1 0x1 BO40 BIS8 
+V "minute" - I!932 O!925 T!608 !196-31 .1 0x1 BO48 BIS8 
+V "second" - I!933 O!925 T!608 !197-31 .1 0x1 BO56 BIS8 
+V "hundredths" - I!934 O!925 T!608 !198-31 .1 0x1 BO64 BIS8 
+V "deviation_high" - I!935 O!925 T!608 !199-31 .1 0x1 BO72 BIS8 
+V "deviation_low" - I!936 O!925 T!608 !200-31 .1 0x1 BO80 BIS8 
+V "clock_status" - I!937 O!925 T!608 !201-31 .1 0x1 BO88 BIS8 
+T "date_time_t" KT I!938 T!925 !202-31 0xc 
+T "tag_physical_unit_t" KE I!939 T!350 !205-31 0x1 EM1:"PHY_UNIT_YEAR" EM2:"PHY_UNIT_MONTH" EM3:"PHY_UNIT_WEEK" EM4:"PHY_UNIT_DAY" EM5:"PHY_UNIT_HOUR" EM6:"PHY_UNIT_MIN" EM7:"PHY_UNIT_SECOND" EM8:"PHY_UNIT_DEGREE" EM9:"PHY_UNIT_DEGREE_CELSIUS" EM10:"PHY_UNIT_CURRENCY" EM11:"PHY_UNIT_METRE" EM12:"PHY_UNIT_METRE_PER_SEC" EM13:"PHY_UNIT_CUBIC_METRE_V" EM14:"PHY_UNIT_CUBIC_METRE_C" EM15:"PHY_UNIT_CUBIC_METRE_PER_HOUR_V" EM16:"PHY_UNIT_CUBIC_METRE_PER_HOUR_C" EM17:"PHY_UNIT_CUBIC_METRE_PER_DAY_V" EM18:"PHY_UNIT_CUBIC_METRE_PER_DAY_C" EM19:"PHY_UNIT_LITRE" EM20:"PHY_UNIT_KILOGRAM" EM21:"PHY_UNIT_NEWTON" EM22:"PHY_UNIT_NEWTON_METER" EM23:"PHY_UNIT_PASCAL" EM24:"PHY_UNIT_BAR" EM25:"PHY_UNIT_JOULE" EM26:"PHY_UNIT_JOULE_PER_HOUR" EM27:"PHY_UNIT_WATT" EM28:"PHY_UNIT_VOLT_AMPERE" EM29:"PHY_UNIT_VAR" EM30:"PHY_UNIT_WATT_HOUR" EM31:"PHY_UNIT_VOLT_AMPERE_HOUR" EM32:"PHY_UNIT_VAR_HOUR" EM33:"PHY_UNIT_AMPERE" EM34:"PHY_UNIT_COULOMB" EM35:"PHY_UNIT_VOLT" EM36:"PHY_UNIT_VOLT_PER_METRE" EM37:"PHY_UNIT_FARAD" EM38:"PHY_UNIT_OHM" EM39:"PHY_UNIT_OHM_METRE" EM40:"PHY_UNIT_WEBER" EM41:"PHY_UNIT_TESLA" EM42:"PHY_UNIT_AMPERE_PER_METRE" EM43:"PHY_UNIT_HENRY" EM44:"PHY_UNIT_HERTZ" EM45:"PHY_UNIT_PULSE_PER_WATT_HOUR" EM46:"PHY_UNIT_PULSE_PER_VAR_HOUR" EM47:"PHY_UNIT_PULSE_PER_VA_HOUR" EM48:"PHY_UNIT_VOLT_SQUARED_HOURS" EM49:"PHY_UNIT_AMPERE_SQUARED_HOURS" EM50:"PHY_UNIT_KILOGRAM_PER_SECOND" EM51:"PHY_UNIT_SIEMENS" EM52:"PHY_UNIT_KELVIN" EM53:"PHY_UNIT_PULSE_PER_VOLT_SQUARED_HOUR" EM54:"PHY_UNIT_PULSE_PER_AMPERE_SQUARED_HOUR" EM55:"PHY_UNIT_PULSE_PER_VOLUME" EM56:"PHY_UNIT_PERCENTAGE" EM57:"PHY_UNIT_AMPERE_HOUR" EM60:"PHY_UNIT_WATT_HOUR_PER_VOLUME" EM61:"PHY_UNIT_JOULE_PER_VOLUME" EM62:"PHY_UNIT_MOLE_PERCENT" EM63:"PHY_UNIT_G_PER_VOLUME" EM64:"PHY_UNIT_PASCAL_SECOND" EM65:"PHY_UNIT_JOULE_PER_KILOGRAM" EM70:"PHY_UNIT_DECIBELS_METRE" EM253:"PHY_UNIT_RESERVED" EM254:"PHY_UNIT_OTHER_UNIT" EM255:"PHY_UNIT_NONE" 
+T "physical_unit_t" KT I!940 T!939 !274-31 0x1 
+T "tag_choice_t" KS I!941 !277-31 0x2 VM!942 VM!943 
+V "type" - I!942 O!941 T!899 !279-31 .1 0x1 BO0 BIS8 
+V "size" - I!943 O!941 T!607 !280-31 .1 0x1 BO8 BIS8 
+T "choice_t" KT I!944 T!941 !281-31 0x2 
+T "tag_attr_access_method_t" KE I!945 T!350 !284-31 0x1 EM0:"ACCESS_MTD_MEM" EM1:"ACCESS_MTD_USERFUNC" 
+T "attr_access_method_t" KT I!946 T!945 !289-31 0x1 
+T "tag_attr_access_t" KS I!947 !292-31 0x6 VM!948 VM!949 VM!950 
+V "method" - I!948 O!947 T!946 !294-31 .1 0x1 BO0 BIS8 
+V "addr" - I!949 O!947 T!610 !295-31 .2 0x2 BO16 BIS16 
+V "size" - I!950 O!947 T!610 !296-31 .2 0x2 BO32 BIS16 
+T "attr_access_t" KT I!951 T!947 !297-31 0x6 
+T "tag_dyn_value_t" KS I!952 !300-31 0xa VM!953 VM!954 VM!956 
+V "choice" - I!953 O!952 T!944 !302-31 .1 0x2 BO0 BIS16 
+V "buffer" - I!954 O!952 T!955 !303-31 .2 0x2 BO16 BIS16 
+T "" KP I!955 T!2 0x2 
+V "access" - I!956 O!952 T!951 !304-31 .2 0x6 BO32 BIS48 
+T "dyn_value_t" KT I!957 T!952 !305-31 0xa 
+T "dyn_status_t" KT I!958 T!952 !305-31 0xa 
+T "dyn_date_time_t" KT I!959 T!952 !305-31 0xa 
+T "tag_value_t" KS I!960 !308-31 0x4 VM!961 VM!962 
+V "choice" - I!961 O!960 T!944 !310-31 .1 0x2 BO0 BIS16 
+V "buffer" - I!962 O!960 T!955 !311-31 .2 0x2 BO16 BIS16 
+T "value_t" KT I!963 T!960 !312-31 0x4 
+T "status_t" KT I!964 T!960 !312-31 0x4 
+T "tag_scaler_unit_t" KS I!965 !315-31 0x2 VM!966 VM!967 
+V "scaler" - I!966 O!965 T!607 !317-31 .1 0x1 BO0 BIS8 
+V "unit" - I!967 O!965 T!940 !318-31 .1 0x1 BO8 BIS8 
+T "scaler_unit_t" KT I!968 T!965 !319-31 0x2 
+T "fp_buff_scan_func_t" KT I!969 T!970 !322-31 0x4 
+T "" KP I!970 T!971 0x4 
+T "" KF I!971 T!2 0x0 P!972 P!973 P!975 P!976 P!977 P!978 P!979 P!980 
+V "" N I!972 O!971 T!955 .2 0x2 
+V "" N I!973 O!971 T!974 .2 0x2 
+T "" KP I!974 T!951 0x2 
+V "" N I!975 O!971 T!608 .1 0x1 
+V "" N I!976 O!971 T!610 .2 0x2 
+V "" N I!977 O!971 T!624 .2 0x2 
+V "" N I!978 O!971 T!862 .2 0x2 
+V "" N I!979 O!971 T!862 .2 0x2 
+V "" N I!980 O!971 T!955 .2 0x2 
+T "fp_buff_filter_func_t" KT I!981 T!982 !334-31 0x4 
+T "" KP I!982 T!983 0x4 
+T "" KF I!983 T!2 0x0 P!984 P!985 P!986 P!987 P!988 P!989 P!990 P!991 P!992 
+V "" N I!984 O!983 T!955 .2 0x2 
+V "" N I!985 O!983 T!974 .2 0x2 
+V "" N I!986 O!983 T!610 .2 0x2 
+V "" N I!987 O!983 T!955 .2 0x2 
+V "" N I!988 O!983 T!610 .2 0x2 
+V "" N I!989 O!983 T!610 .2 0x2 
+V "" N I!990 O!983 T!862 .2 0x2 
+V "" N I!991 O!983 T!624 .2 0x2 
+V "" N I!992 O!983 T!862 .2 0x2 
+T "fp_buff_generic_func_t" KT I!993 T!994 !347-31 0x4 
+T "" KP I!994 T!995 0x4 
+T "" KF I!995 T!2 0x0 
+T "tag_buffer_t" KS I!996 !350-31 0x18 VM!997 VM!998 VM!999 VM!1000 VM!1001 VM!1002 VM!1003 VM!1004 VM!1005 VM!1006 
+V "p_buffer" - I!997 O!996 T!955 !352-31 .2 0x2 BO0 BIS16 
+V "p_access" - I!998 O!996 T!974 !353-31 .2 0x2 BO16 BIS16 
+V "p_current_buf_index" - I!999 O!996 T!862 !354-31 .2 0x2 BO32 BIS16 
+V "async_entries_per_block" - I!1000 O!996 T!610 !355-31 .2 0x2 BO48 BIS16 
+V "one_entry_len" - I!1001 O!996 T!610 !356-31 .2 0x2 BO64 BIS16 
+V "async_remain_entries" - I!1002 O!996 T!610 !357-31 .2 0x2 BO80 BIS16 
+V "from_entry" - I!1003 O!996 T!612 !358-31 .2 0x4 BO96 BIS32 
+V "to_entry" - I!1004 O!996 T!612 !359-31 .2 0x4 BO128 BIS32 
+V "from_value" - I!1005 O!996 T!610 !360-31 .2 0x2 BO160 BIS16 
+V "to_value" - I!1006 O!996 T!610 !361-31 .2 0x2 BO176 BIS16 
+T "buffer_t" KT I!1007 T!996 !362-31 0x18 
+T "tag_sort_method_t" KE I!1008 T!350 !365-31 0x1 EM1:"SORT_METHOD_FIFO" EM2:"SORT_METHOD_LIFO" EM3:"SORT_METHOD_LARGEST" EM4:"SORT_METHOD_SMALLEST" EM5:"SORT_METHOD_NEAREST_TO_ZERO" EM6:"SORT_METHOD_FAREST_FROM_ZERO" 
+T "sort_method_t" KT I!1009 T!1008 !373-31 0x1 
+T "tag_asslist_entry_t" KS I!1010 !376-31 0x6 VM!1011 VM!1012 
+V "sap" - I!1011 O!1010 T!610 !378-31 .2 0x2 BO0 BIS16 
+V "logical_device_name" - I!1012 O!1010 T!963 !379-31 .2 0x4 BO16 BIS32 
+T "asslist_entry_t" KT I!1013 T!1010 !380-31 0x6 
+T "tag_security_policy_t" KE I!1014 T!350 !383-31 0x1 EM0:"SECURITY_NONE" EM1:"SECURITY_AUTHENTICATED" EM2:"SECURITY_ENCRYPTED" EM3:"SECURITY_AUTHENTICATED_ENCRYPTED" 
+T "security_policy_t" KT I!1015 T!1014 !389-31 0x1 
+T "tag_security_suit_t" KE I!1016 T!350 !392-31 0x1 EM0:"SECURITY_AES_SUIT" 
+T "security_suit_t" KT I!1017 T!1016 !395-31 0x1 
+T "tag_service_t" KE I!1018 T!350 !398-31 0x1 EM1:"SERVICE_WRITE_ATTRIBUTE" EM2:"SERVICE_EXECUTE_METHOD" 
+T "service_t" KT I!1019 T!1018 !402-31 0x1 
+T "tag_script_action_spec_t" KS I!1020 !405-31 0x10 VM!1021 VM!1022 VM!1023 VM!1025 VM!1026 
+V "service_id" - I!1021 O!1020 T!1019 !407-31 .1 0x1 BO0 BIS8 
+V "class_id" - I!1022 O!1020 T!610 !408-31 .2 0x2 BO16 BIS16 
+V "logical_name" - I!1023 O!1020 T!1024 !409-31 .1 0x6 BO32 BIS48 
+T "" KA6 I!1024 T!608 0x6 
+V "index" - I!1025 O!1020 T!607 !410-31 .1 0x1 BO80 BIS8 
+V "parameter" - I!1026 O!1020 T!963 !411-31 .2 0x4 BO96 BIS32 
+T "script_action_spec_t" KT I!1027 T!1020 !412-31 0x10 
+T "tag_script_t" KS I!1028 !415-31 0x6 VM!1029 VM!1030 VM!1032 
+V "script_id" - I!1029 O!1028 T!610 !417-31 .2 0x2 BO0 BIS16 
+V "p_actions" - I!1030 O!1028 T!1031 !418-31 .2 0x2 BO16 BIS16 
+T "" KP I!1031 T!1027 0x2 
+V "nr_actions" - I!1032 O!1028 T!608 !419-31 .1 0x1 BO32 BIS8 
+T "script_t" KT I!1033 T!1028 !420-31 0x6 
+T "tag_schedule_table_entry_t" KS I!1034 !423-31 0x16 VM!1035 VM!1036 VM!1037 VM!1039 VM!1040 VM!1042 VM!1043 VM!1044 VM!1045 VM!1047 
+V "index" - I!1035 O!1034 T!610 !425-31 .2 0x2 BO0 BIS16 
+V "p_enable" - I!1036 O!1034 T!624 !426-31 .2 0x2 BO16 BIS16 
+V "script_logical_name" - I!1037 O!1034 T!1038 !427-31 .1 0x6 BO32 BIS48 
+T "" KA6 I!1038 T!608 0x6 
+V "script_selector" - I!1039 O!1034 T!610 !428-31 .2 0x2 BO80 BIS16 
+V "p_switch_time" - I!1040 O!1034 T!1041 !429-31 .2 0x2 BO96 BIS16 
+T "" KP I!1041 T!912 0x2 
+V "validity_window" - I!1042 O!1034 T!610 !430-31 .2 0x2 BO112 BIS16 
+V "exec_weekdays" - I!1043 O!1034 T!608 !431-31 .1 0x1 BO128 BIS8 
+V "exec_specdays" - I!1044 O!1034 T!608 !432-31 .1 0x1 BO136 BIS8 
+V "p_begin_date" - I!1045 O!1034 T!1046 !433-31 .2 0x2 BO144 BIS16 
+T "" KP I!1046 T!906 0x2 
+V "p_end_date" - I!1047 O!1034 T!1046 !434-31 .2 0x2 BO160 BIS16 
+T "schedule_table_entry_t" KT I!1048 T!1034 !435-31 0x16 
+T "tag_spec_day_entry_t" KS I!1049 !438-31 0x6 VM!1050 VM!1051 VM!1052 
+V "index" - I!1050 O!1049 T!610 !440-31 .2 0x2 BO0 BIS16 
+V "p_specialday_date" - I!1051 O!1049 T!1046 !441-31 .2 0x2 BO16 BIS16 
+V "day_id" - I!1052 O!1049 T!608 !442-31 .1 0x1 BO32 BIS8 
+T "spec_day_entry_t" KT I!1053 T!1049 !443-31 0x6 
+T "tag_season_profile_t" KS I!1054 !446-31 0xa VM!1055 VM!1056 VM!1057 VM!1059 VM!1060 
+V "p_season_profile_name" - I!1055 O!1054 T!624 !448-31 .2 0x2 BO0 BIS16 
+V "season_profile_name_len" - I!1056 O!1054 T!610 !449-31 .2 0x2 BO16 BIS16 
+V "p_season_start" - I!1057 O!1054 T!1058 !450-31 .2 0x2 BO32 BIS16 
+T "" KP I!1058 T!938 0x2 
+V "p_week_profile_name" - I!1059 O!1054 T!624 !451-31 .2 0x2 BO48 BIS16 
+V "week_profile_name_len" - I!1060 O!1054 T!610 !452-31 .2 0x2 BO64 BIS16 
+T "season_profile_t" KT I!1061 T!1054 !453-31 0xa 
+T "tag_week_profile_t" KS I!1062 !456-31 0xa VM!1063 VM!1064 VM!1065 VM!1066 VM!1067 VM!1068 VM!1069 VM!1070 VM!1071 
+V "p_week_profile_name" - I!1063 O!1062 T!624 !458-31 .2 0x2 BO0 BIS16 
+V "week_profile_name_len" - I!1064 O!1062 T!608 !459-31 .1 0x1 BO16 BIS8 
+V "Monday" - I!1065 O!1062 T!608 !460-31 .1 0x1 BO24 BIS8 
+V "Tuesday" - I!1066 O!1062 T!608 !461-31 .1 0x1 BO32 BIS8 
+V "Wednesday" - I!1067 O!1062 T!608 !462-31 .1 0x1 BO40 BIS8 
+V "Thursday" - I!1068 O!1062 T!608 !463-31 .1 0x1 BO48 BIS8 
+V "Friday" - I!1069 O!1062 T!608 !464-31 .1 0x1 BO56 BIS8 
+V "Saturday" - I!1070 O!1062 T!608 !465-31 .1 0x1 BO64 BIS8 
+V "Sunday" - I!1071 O!1062 T!608 !466-31 .1 0x1 BO72 BIS8 
+T "week_profile_t" KT I!1072 T!1062 !467-31 0xa 
+T "tag_day_profile_action_t" KS I!1073 !470-31 0xa VM!1074 VM!1075 VM!1077 
+V "p_start_time" - I!1074 O!1073 T!1041 !472-31 .2 0x2 BO0 BIS16 
+V "script_logical_name" - I!1075 O!1073 T!1076 !473-31 .1 0x6 BO16 BIS48 
+T "" KA6 I!1076 T!608 0x6 
+V "script_selector" - I!1077 O!1073 T!610 !474-31 .2 0x2 BO64 BIS16 
+T "day_profile_action_t" KT I!1078 T!1073 !475-31 0xa 
+T "tag_day_profile_t" KS I!1079 !478-31 0x6 VM!1080 VM!1081 VM!1083 
+V "day_id" - I!1080 O!1079 T!608 !480-31 .1 0x1 BO0 BIS8 
+V "day_schedule" - I!1081 O!1079 T!1082 !481-31 .2 0x2 BO16 BIS16 
+T "" KP I!1082 T!1078 0x2 
+V "nr_day_schedule" - I!1083 O!1079 T!608 !482-31 .1 0x1 BO32 BIS8 
+T "day_profile_t" KT I!1084 T!1079 !483-31 0x6 
+T "tag_value_definition_t" KS I!1085 !486-31 0xa VM!1086 VM!1087 VM!1089 
+V "class_id" - I!1086 O!1085 T!610 !488-31 .2 0x2 BO0 BIS16 
+V "logical_name" - I!1087 O!1085 T!1088 !489-31 .1 0x6 BO16 BIS48 
+T "" KA6 I!1088 T!608 0x6 
+V "index" - I!1089 O!1085 T!609 !490-31 .2 0x2 BO64 BIS16 
+T "value_definition_t" KT I!1090 T!1085 !491-31 0xa 
+T "tag_action_item_t" KS I!1091 !494-31 0x8 VM!1092 VM!1094 
+V "script_logical_name" - I!1092 O!1091 T!1093 !496-31 .1 0x6 BO0 BIS48 
+T "" KA6 I!1093 T!608 0x6 
+V "script_selector" - I!1094 O!1091 T!610 !497-31 .2 0x2 BO48 BIS16 
+T "action_item_t" KT I!1095 T!1091 !498-31 0x8 
+T "tag_action_set_t" KS I!1096 !501-31 0x4 VM!1097 VM!1099 
+V "action_up" - I!1097 O!1096 T!1098 !503-31 .2 0x2 BO0 BIS16 
+T "" KP I!1098 T!1095 0x2 
+V "action_down" - I!1099 O!1096 T!1098 !504-31 .2 0x2 BO16 BIS16 
+T "action_set_t" KT I!1100 T!1096 !505-31 0x4 
+T "tag_single_action_t" KE I!1101 T!350 !508-31 0x1 EM1:"SINGLE_ACTION_1_TIME_WILDCARD" EM2:"SINGLE_ACTION_N_SAMETIME" EM3:"SINGLE_ACTION_N_SAMETIME_WILDCARDS" EM4:"SINGLE_ACTION_N_TIME" EM5:"SINGLE_ACTION_N_TIME_WILDCARDS" 
+T "single_action_t" KT I!1102 T!1101 !515-31 0x1 
+T "tag_execution_time_date_t" KS I!1103 !518-31 0x4 VM!1104 VM!1105 
+V "p_time" - I!1104 O!1103 T!1041 !520-31 .2 0x2 BO0 BIS16 
+V "p_date" - I!1105 O!1103 T!1046 !521-31 .2 0x2 BO16 BIS16 
+T "execution_time_date_t" KT I!1106 T!1103 !522-31 0x4 
+T "tag_protocal_mode_t" KE I!1107 T!350 !525-31 0x1 EM0:"PROTOCAL_IEC" EM1:"PROTOCAL_DLMSUA" EM2:"PROTOCAL_NOT_SPECIFIED" 
+T "protocal_mode_t" KT I!1108 T!1107 !530-31 0x1 
+T "tag_baud_rate_t" KE I!1109 T!350 !533-31 0x1 EM0:"BAUD_300" EM1:"BAUD_600" EM2:"BAUD_1200" EM3:"BAUD_2400" EM4:"BAUD_4800" EM5:"BAUD_9600" EM6:"BAUD_19200" EM7:"BAUD_38400" EM8:"BAUD_57600" EM9:"BAUD_115200" 
+T "baud_rate_t" KT I!1110 T!1109 !545-31 0x1 
+T "tag_response_time_t" KE I!1111 T!350 !548-31 0x1 EM0:"TIME_20_MS" EM1:"TIME_200_MS" 
+T "response_time_t" KT I!1112 T!1111 !552-31 0x1 
+T "tag_obj_def_t" KS I!1113 !555-31 0x8 VM!1114 VM!1115 
+V "class_id" - I!1114 O!1113 T!610 !557-31 .2 0x2 BO0 BIS16 
+V "logical_name" - I!1115 O!1113 T!1116 !558-31 .1 0x6 BO16 BIS48 
+T "" KA6 I!1116 T!608 0x6 
+T "obj_def_t" KT I!1117 T!1113 !559-31 0x8 
+T "tag_register_act_mask_t" KS I!1118 !562-31 0x8 VM!1119 VM!1120 VM!1121 
+V "mask_name" - I!1119 O!1118 T!963 !564-31 .2 0x4 BO0 BIS32 
+V "p_index_list" - I!1120 O!1118 T!624 !565-31 .2 0x2 BO32 BIS16 
+V "nr_index_list" - I!1121 O!1118 T!608 !566-31 .1 0x1 BO48 BIS8 
+T "register_act_mask_t" KT I!1122 T!1118 !567-31 0x8 
+T "tag_table_cell_def_t" KS I!1123 !570-31 0xc VM!1124 VM!1125 VM!1127 VM!1128 VM!1129 
+V "class_id" - I!1124 O!1123 T!610 !572-31 .2 0x2 BO0 BIS16 
+V "logical_name" - I!1125 O!1123 T!1126 !573-31 .1 0x6 BO16 BIS48 
+T "" KA6 I!1126 T!608 0x6 
+V "p_group_E" - I!1127 O!1123 T!624 !574-31 .2 0x2 BO64 BIS16 
+V "nr_group_E" - I!1128 O!1123 T!608 !575-31 .1 0x1 BO80 BIS8 
+V "attribute_index" - I!1129 O!1123 T!607 !576-31 .1 0x1 BO88 BIS8 
+T "table_cell_def_t" KT I!1130 T!1123 !577-31 0xc 
+T "tag_mapping_table_t" KS I!1131 !580-31 0x6 VM!1132 VM!1133 VM!1134 
+V "ref_table_id" - I!1132 O!1131 T!608 !582-31 .1 0x1 BO0 BIS8 
+V "p_entry_list" - I!1133 O!1131 T!862 !583-31 .2 0x2 BO16 BIS16 
+V "nr_entry_list" - I!1134 O!1131 T!608 !584-31 .1 0x1 BO32 BIS8 
+T "mapping_table_t" KT I!1135 T!1131 !585-31 0x6 
+T "tag_img_to_activate_info_t" KS I!1136 !588-31 0x1e VM!1137 VM!1138 VM!1139 
+V "image_size" - I!1137 O!1136 T!957 !590-31 .2 0xa BO0 BIS80 
+V "image_id" - I!1138 O!1136 T!957 !591-31 .2 0xa BO80 BIS80 
+V "image_signature" - I!1139 O!1136 T!957 !592-31 .2 0xa BO160 BIS80 
+T "img_to_activate_info_t" KT I!1140 T!1136 !593-31 0x1e 
+T "tag_img_transfer_status_t" KE I!1141 T!350 !596-31 0x1 EM0:"IMG_TRANS_NOT_INIT" EM1:"IMG_TRANS_INIT" EM2:"IMG_VERIFY_INIT" EM3:"IMG_VERIFY_SUCCESS" EM4:"IMG_VERIFY_FAIL" EM5:"IMG_ACTIVATE_INIT" EM6:"IMG_ACTIVATE_SUCCESS" EM7:"IMG_ACTIVATE_FAIL" 
+T "img_transfer_status_t" KT I!1142 T!1141 !606-31 0x1 
+T "tag_control_state_t" KE I!1143 T!350 !609-31 0x1 EM0:"CONTROL_DISCONNECT" EM1:"CONTROL_CONNECT" EM2:"CONTROL_RECONNECT_READY" 
+T "control_state_t" KT I!1144 T!1143 !614-31 0x1 
+T "tag_control_mode_t" KE I!1145 T!350 !617-31 0x1 EM0:"CONTROL_MODE_NONE" EM1:"CONTROL_MODE_BCFG_DE" EM2:"CONTROL_MODE_BCFG_AE" EM3:"CONTROL_MODE_BCG_DE" EM4:"CONTROL_MODE_BCG_AE" EM5:"CONTROL_MODE_BCFG_DEH" EM6:"CONTROL_MODE_BCG_DEH" 
+T "control_mode_t" KT I!1146 T!1145 !626-31 0x1 
+T "tag_value_def_t" KS I!1147 !629-31 0xa VM!1148 VM!1149 VM!1151 
+V "class_id" - I!1148 O!1147 T!610 !631-31 .2 0x2 BO0 BIS16 
+V "logical_name" - I!1149 O!1147 T!1150 !632-31 .1 0x6 BO16 BIS48 
+T "" KA6 I!1150 T!608 0x6 
+V "attribute_index" - I!1151 O!1147 T!607 !633-31 .1 0x1 BO64 BIS8 
+T "value_def_t" KT I!1152 T!1147 !634-31 0xa 
+T "tag_eme_profile_t" KS I!1153 !637-31 0x8 VM!1154 VM!1155 VM!1156 
+V "eme_profile_id" - I!1154 O!1153 T!610 !639-31 .2 0x2 BO0 BIS16 
+V "p_eme_act_time" - I!1155 O!1153 T!1058 !640-31 .2 0x2 BO16 BIS16 
+V "eme_duration" - I!1156 O!1153 T!612 !641-31 .2 0x4 BO32 BIS32 
+T "eme_profile_t" KT I!1157 T!1153 !642-31 0x8 
+T "tag_iec_working_mode_t" KE I!1158 T!350 !645-31 0x1 EM0:"IEC_INACTIVE" EM1:"IEC_ACTIVE_ALWAYS" 
+T "iec_working_mode_t" KT I!1159 T!1158 !651-31 0x1 
+T "tag_fatal_error_t" KE I!1160 T!350 !654-31 0x1 EM0:"ERROR_NONE" EM1:"ERROR_T_EP_1F" EM2:"ERROR_T_EP_2F" EM3:"ERROR_T_EP_4F" EM4:"ERROR_T_EP_5F" EM5:"ERROR_ET_1F" EM6:"ERROR_ET_2F" EM7:"ERROR_E_EP_3F" EM8:"ERROR_E_EP_4F" EM9:"ERROR_E_EP_5F" EM10:"ERROR_E_EL_2F" 
+T "fatal_error_t" KT I!1161 T!1160 !667-31 0x1 
+T "tag_init_string_element_t" KS I!1162 !670-31 0xa VM!1163 VM!1164 VM!1165 VM!1166 VM!1167 
+V "p_request" - I!1163 O!1162 T!624 !672-31 .2 0x2 BO0 BIS16 
+V "nr_request" - I!1164 O!1162 T!608 !673-31 .1 0x1 BO16 BIS8 
+V "p_response" - I!1165 O!1162 T!624 !674-31 .2 0x2 BO32 BIS16 
+V "nr_response" - I!1166 O!1162 T!608 !675-31 .1 0x1 BO48 BIS8 
+V "p_delay_after_response" - I!1167 O!1162 T!862 !676-31 .2 0x2 BO64 BIS16 
+T "init_string_element_t" KT I!1168 T!1162 !677-31 0xa 
+T "tag_working_mode_t" KE I!1169 T!350 !680-31 0x1 EM0:"WORK_MODE_DEDICATED" EM1:"WORK_MODE_SHARE_CALLS" EM2:"WORK_MODE_SHARE_SUCCESS_CALLS" EM3:"WORK_MODE_NO_CONNECT" 
+T "working_mode_t" KT I!1170 T!1169 !687-31 0x1 
+T "tag_window_element_t" KS I!1171 !690-31 0x4 VM!1172 VM!1173 
+V "p_start_time" - I!1172 O!1171 T!1058 !692-31 .2 0x2 BO0 BIS16 
+V "p_end_time" - I!1173 O!1171 T!1058 !693-31 .2 0x2 BO16 BIS16 
+T "window_element_t" KT I!1174 T!1171 !694-31 0x4 
+T "tag_windows_status_t" KE I!1175 T!350 !697-31 0x1 EM0:"WINDOWS_INACTIVE" EM1:"WINDOWS_ACTIVE" EM2:"WINDOWS_LOCKED" 
+T "windows_status_t" KT I!1176 T!1175 !702-31 0x1 
+T "tag_nr_rings_t" KS I!1177 !705-31 0x2 VM!1178 VM!1179 
+V "nr_rings_in_window" - I!1178 O!1177 T!608 !707-31 .1 0x1 BO0 BIS8 
+V "nr_rings_out_of_window" - I!1179 O!1177 T!608 !708-31 .1 0x1 BO8 BIS8 
+T "nr_rings_t" KT I!1180 T!1177 !709-31 0x2 
+T "tag_call_type_t" KE I!1181 T!350 !712-31 0x1 EM0:"CALL_NORMAL" EM1:"CALL_WAKEUP" 
+T "call_type_t" KT I!1182 T!1181 !716-31 0x1 
+T "tag_allowed_callers_element_t" KS I!1183 !719-31 0x4 VM!1184 VM!1185 VM!1186 
+V "p_caller_id" - I!1184 O!1183 T!624 !721-31 .2 0x2 BO0 BIS16 
+V "caller_id_len" - I!1185 O!1183 T!608 !722-31 .1 0x1 BO16 BIS8 
+V "call_type" - I!1186 O!1183 T!1182 !723-31 .1 0x1 BO24 BIS8 
+T "allowed_callers_element_t" KT I!1187 T!1183 !724-31 0x4 
+T "tag_dial_mode_t" KE I!1188 T!350 !727-31 0x1 EM0:"DIAL_MODE_NO_AUTO" EM1:"DIAL_MODE_AUTO_ANYTIME" EM2:"DIAL_MODE_AUTO_WITHIN_TIME" EM3:"DIAL_MODE_AUTO_REGULAR" EM4:"DIAL_MODE_AUTO_SMS_PLMN" EM5:"DIAL_MODE_AUTO_SMS_PSTN" EM6:"DIAL_MODE_EMAIL" 
+T "dial_mode_t" KT I!1189 T!1188 !737-31 0x1 
+T "tag_zigbee_stack_profile_t" KE I!1190 T!350 !741-31 0x1 EM1:"ZIGBEE" EM2:"ZIGBEE_PRO" 
+T "zigbee_stack_profile_t" KT I!1191 T!1190 !745-31 0x1 
+T "tag_devices_status_t" KU I!1192 !748-31 0x1 VM!1193 VM!1201 
+V "byte" - I!1193 O!1192 T!608 !750-31 .1 0x1 BO0 BIS8 
+T "" KS I!1194 !752-31 0x1 VM!1195 VM!1196 VM!1197 VM!1198 VM!1199 VM!1200 
+V "reserved" - I!1195 O!1194 T!608 !753-31 .1 0x1 BO0 BIS3 
+V "SEP_transmitting" - I!1196 O!1194 T!608 !754-31 .1 0x1 BO3 BIS1 
+V "authorised_after_swapped_out" - I!1197 O!1194 T!608 !755-31 .1 0x1 BO4 BIS1 
+V "unauthorised_on_PAN_reported" - I!1198 O!1194 T!608 !756-31 .1 0x1 BO5 BIS1 
+V "active_reporting_PAN" - I!1199 O!1194 T!608 !757-31 .1 0x1 BO6 BIS1 
+V "authorised_on_PAN" - I!1200 O!1194 T!608 !758-31 .1 0x1 BO7 BIS1 
+V "bits" - I!1201 O!1192 T!1194 !759-31 .1 0x1 BO0 BIS8 
+T "zigbee_device_status_t" KT I!1202 T!1192 !760-31 0x1 
+T "tag_active_devices_t" KS I!1203 !763-31 0x20 VM!1204 VM!1206 VM!1207 VM!1208 VM!1209 VM!1210 VM!1211 VM!1212 VM!1213 VM!1214 VM!1215 VM!1216 VM!1217 VM!1218 
+V "mac_address" - I!1204 O!1203 T!1205 !765-31 .1 0x8 BO0 BIS64 
+T "" KA8 I!1205 T!608 0x8 
+V "status" - I!1206 O!1203 T!1202 !766-31 .1 0x1 BO64 BIS8 
+V "max_RSSI" - I!1207 O!1203 T!607 !767-31 .1 0x1 BO72 BIS8 
+V "average_RSSI" - I!1208 O!1203 T!607 !768-31 .1 0x1 BO80 BIS8 
+V "min_RSSI" - I!1209 O!1203 T!607 !769-31 .1 0x1 BO88 BIS8 
+V "max_LQI" - I!1210 O!1203 T!608 !770-31 .1 0x1 BO96 BIS8 
+V "average_LQI" - I!1211 O!1203 T!608 !771-31 .1 0x1 BO104 BIS8 
+V "min_LQI" - I!1212 O!1203 T!608 !772-31 .1 0x1 BO112 BIS8 
+V "last_comm_date_time" - I!1213 O!1203 T!938 !773-31 .1 0xc BO120 BIS96 
+V "number_of_hops" - I!1214 O!1203 T!608 !774-31 .1 0x1 BO216 BIS8 
+V "transmission_failures" - I!1215 O!1203 T!608 !775-31 .1 0x1 BO224 BIS8 
+V "transmission_successes" - I!1216 O!1203 T!608 !776-31 .1 0x1 BO232 BIS8 
+V "application_version" - I!1217 O!1203 T!608 !777-31 .1 0x1 BO240 BIS8 
+V "stack_version" - I!1218 O!1203 T!608 !778-31 .1 0x1 BO248 BIS8 
+T "zigbee_active_devices_t" KT I!1219 T!1203 !779-31 0x20 
+T "tag_device_type_t" KE I!1220 T!350 !782-31 0x1 EM0:"ELECTRICITY_METER" EM1:"GAS_METER" EM2:"WATER_METER" EM3:"THERMAL_METER" EM4:"PRESSURE_METER" EM5:"HEAT_METER" EM6:"COOLING_METER" EM7:"ELECTRIC_VEHICLE_CHARGING_METER" EM8:"PV_GENERATION_METER" EM9:"WIND_TURBINE_GENERATION_METER" EM10:"WATER_TURBINE_GENERATION_METER" EM11:"MICRO_GENERATION_METER" EM12:"SOLAR_HOT_WATER_GENERATION_METER" EM13:"ZIGBEE_CONTROLLED_LOAD_SWITCH" EM14:"ZIGBEE_BASED_BOOST_BUTTON" EM128:"IHD" EM129:"RANGE_EXTENDER" EM130:"CONSUMER_ACCESS_DEVICE" EM131:"THERMOSTAT" EM132:"PREPAYMENT_TERMINAL" EM133:"ZIGBEE_CONTROLLED_LOAD_SWITCH_SUB" EM134:"ZIGBEE_BASED_BOOST_BUTTON_SUB" 
+T "zigbee_device_type_t" KT I!1221 T!1220 !806-31 0x1 
+T "tag_key_type_t" KE I!1222 T!350 !809-31 0x1 EM0:"PRECONFIGURED_KEY" EM1:"INSTALL_CODE" 
+T "zigbee_key_type_t" KT I!1223 T!1222 !813-31 0x1 
+T "tag_register_device_t" KS I!1224 !816-31 0x1a VM!1225 VM!1227 VM!1228 VM!1230 
+V "ieee_address" - I!1225 O!1224 T!1226 !818-31 .1 0x8 BO0 BIS64 
+T "" KA8 I!1226 T!608 0x8 
+V "key_type" - I!1227 O!1224 T!1223 !819-31 .1 0x1 BO64 BIS8 
+V "key" - I!1228 O!1224 T!1229 !820-31 .1 0x10 BO72 BIS128 
+T "" KA16 I!1229 T!608 0x10 
+V "device_type" - I!1230 O!1224 T!1221 !821-31 .1 0x1 BO200 BIS8 
+T "zigbee_register_device_t" KT I!1231 T!1224 !822-31 0x1a 
+T "tag_device_to_backup_t" KS I!1232 !825-31 0x18 VM!1233 VM!1235 
+V "mac_address" - I!1233 O!1232 T!1234 !827-31 .1 0x8 BO0 BIS64 
+T "" KA8 I!1234 T!608 0x8 
+V "hashed_TC_link_key" - I!1235 O!1232 T!1236 !828-31 .1 0x10 BO64 BIS128 
+T "" KA16 I!1236 T!608 0x10 
+T "zigbee_device_to_backup_t" KT I!1237 T!1232 !829-31 0x18 
+T "tag_mirror_control_t" KU I!1238 !832-31 0x2 VM!1242 VM!1255 
+T "" KS I!1239 !835-31 0x2 VM!1240 VM!1241 
+V "bytes0" - I!1240 O!1239 T!608 !836-31 .1 0x1 BO0 BIS8 
+V "bytes1" - I!1241 O!1239 T!608 !837-31 .1 0x1 BO8 BIS8 
+V "bytes" - I!1242 O!1238 T!1239 !838-31 .1 0x2 BO0 BIS16 
+T "" KS I!1243 !840-31 0x2 VM!1244 VM!1245 VM!1246 VM!1247 VM!1248 VM!1249 VM!1250 VM!1251 VM!1252 VM!1253 VM!1254 
+V "clear_logs" - I!1244 O!1243 T!608 !841-31 .1 0x1 BO0 BIS1 
+V "clear_billing_info" - I!1245 O!1243 T!608 !842-31 .1 0x1 BO1 BIS1 
+V "clear_MPAN" - I!1246 O!1243 T!608 !843-31 .1 0x1 BO2 BIS1 
+V "clear_zigbee_attributes" - I!1247 O!1243 T!608 !844-31 .1 0x1 BO3 BIS1 
+V "clear_demand_maxdemand_register" - I!1248 O!1243 T!608 !845-31 .1 0x1 BO4 BIS1 
+V "clear_consumption_register_indexes" - I!1249 O!1243 T!608 !846-31 .1 0x1 BO5 BIS1 
+V "clear_all_mirror_data" - I!1250 O!1243 T!608 !847-31 .1 0x1 BO6 BIS1 
+V "force_gas_meter_removal" - I!1251 O!1243 T!608 !848-31 .1 0x1 BO7 BIS1 
+V "action_all" - I!1252 O!1243 T!608 !850-31 .1 0x1 BO8 BIS1 
+V "reserved" - I!1253 O!1243 T!608 !851-31 .1 0x1 BO9 BIS6 
+V "clear_OTA_firmware_waiting" - I!1254 O!1243 T!608 !852-31 .1 0x1 BO15 BIS1 
+V "bits" - I!1255 O!1238 T!1243 !853-31 .1 0x2 BO0 BIS16 
+T "zigbee_mirror_control_t" KT I!1256 T!1238 !854-31 0x2 
+T "tag_req_type_t" KE I!1257 T!350 !857-31 0x1 EM0:"REQ_TYPE_GET" EM1:"REQ_TYPE_SET" EM2:"REQ_TYPE_ACTION" 
+T "req_type_t" KT I!1258 T!1257 !862-31 0x1 
+T "tag_service_type_t" KE I!1259 T!350 !865-31 0x1 EM1:"SERVICE_TYPE_NORMAL" EM2:"SERVICE_TYPE_BLOCK" EM3:"SERVICE_TYPE_LIST" 
+T "service_type_t" KT I!1260 T!1259 !870-31 0x1 
+T "fp_distributor_t" KT I!1261 T!1262 !873-31 0x4 
+T "" KP I!1262 T!1263 0x4 
+T "" KF I!1263 T!608 0x0 P!1264 P!1265 P!1266 P!1267 P!1268 P!1269 P!1270 P!1271 
+V "" N I!1264 O!1263 T!610 .2 0x2 
+V "" N I!1265 O!1263 T!610 .2 0x2 
+V "" N I!1266 O!1263 T!1258 .1 0x1 
+V "" N I!1267 O!1263 T!1260 .1 0x1 
+V "" N I!1268 O!1263 T!787 .2 0x2 
+V "" N I!1269 O!1263 T!624 .2 0x2 
+V "" N I!1270 O!1263 T!624 .2 0x2 
+V "" N I!1271 O!1263 T!862 .2 0x2 
+F "R_OBIS_AsyncRestart" F I!1272 T!2 ?897-31 
+F "R_OBIS_IntervalProcessing" F I!1273 T!2 ?900-31 
+F "R_OBIS_DistributeByMem" F I!1274 T!608 ?907-31 P!1275 P!1276 P!1277 P!1278 P!1279 P!1280 P!1281 P!1282 
+V "" N I!1275 O!1274 T!899 .1 0x1 
+V "" N I!1276 O!1274 T!609 .2 0x2 
+V "" N I!1277 O!1274 T!955 .2 0x2 
+V "" N I!1278 O!1274 T!1258 .1 0x1 
+V "" N I!1279 O!1274 T!624 .2 0x2 
+V "" N I!1280 O!1274 T!624 .2 0x2 
+V "" N I!1281 O!1274 T!624 .2 0x2 
+V "" N I!1282 O!1274 T!862 .2 0x2 
+F "R_OBIS_DistributeByUserFunc" F I!1283 T!608 ?919-31 P!1284 P!1285 P!1286 P!1287 P!1288 P!1289 P!1290 P!1291 
+V "" N I!1284 O!1283 T!610 .2 0x2 
+V "" N I!1285 O!1283 T!1258 .1 0x1 
+V "" N I!1286 O!1283 T!1260 .1 0x1 
+V "" N I!1287 O!1283 T!624 .2 0x2 
+V "" N I!1288 O!1283 T!787 .2 0x2 
+V "" N I!1289 O!1283 T!624 .2 0x2 
+V "" N I!1290 O!1283 T!624 .2 0x2 
+V "" N I!1291 O!1283 T!862 .2 0x2 
+F "R_OBIS_DistributeByE2PR" F I!1292 T!608 ?931-31 P!1293 P!1294 P!1295 P!1296 P!1297 P!1298 P!1299 P!1300 
+V "" N I!1293 O!1292 T!974 .2 0x2 
+V "" N I!1294 O!1292 T!899 .1 0x1 
+V "" N I!1295 O!1292 T!609 .2 0x2 
+V "" N I!1296 O!1292 T!1258 .1 0x1 
+V "" N I!1297 O!1292 T!624 .2 0x2 
+V "" N I!1298 O!1292 T!624 .2 0x2 
+V "" N I!1299 O!1292 T!624 .2 0x2 
+V "" N I!1300 O!1292 T!862 .2 0x2 
+F "R_OBIS_DistributeAttrBuffer" F I!1301 T!608 ?943-31 P!1302 P!1303 P!1304 P!1305 P!1306 P!1307 P!1308 P!1309 P!1310 P!1311 P!1312 
+V "" N I!1302 O!1301 T!974 .2 0x2 
+V "" N I!1303 O!1301 T!899 .1 0x1 
+V "" N I!1304 O!1301 T!609 .2 0x2 
+V "" N I!1305 O!1301 T!955 .2 0x2 
+V "" N I!1306 O!1301 T!610 .2 0x2 
+V "" N I!1307 O!1301 T!1258 .1 0x1 
+V "" N I!1308 O!1301 T!1260 .1 0x1 
+V "" N I!1309 O!1301 T!787 .2 0x2 
+V "" N I!1310 O!1301 T!624 .2 0x2 
+V "" N I!1311 O!1301 T!624 .2 0x2 
+V "" N I!1312 O!1301 T!862 .2 0x2 
+F "R_OBIS_EncodeAttribute" F I!1313 T!610 ?962-31 P!1314 P!1315 P!1316 P!1317 P!1318 
+V "" N I!1314 O!1313 T!624 .2 0x2 
+V "" N I!1315 O!1313 T!610 .2 0x2 
+V "" N I!1316 O!1313 T!899 .1 0x1 
+V "" N I!1317 O!1313 T!624 .2 0x2 
+V "" N I!1318 O!1313 T!610 .2 0x2 
+F "R_OBIS_DecodeAttribute" F I!1319 T!610 ?971-31 P!1320 P!1321 P!1322 P!1323 P!1324 
+V "" N I!1320 O!1319 T!624 .2 0x2 
+V "" N I!1321 O!1319 T!610 .2 0x2 
+V "" N I!1322 O!1319 T!899 .1 0x1 
+V "" N I!1323 O!1319 T!624 .2 0x2 
+V "" N I!1324 O!1319 T!610 .2 0x2 
+F "R_OBIS_EncodeScalerUnit" F I!1325 T!610 ?980-31 P!1326 P!1327 P!1328 
+V "" N I!1326 O!1325 T!624 .2 0x2 
+V "" N I!1327 O!1325 T!610 .2 0x2 
+V "" N I!1328 O!1325 T!1329 .2 0x2 
+T "" KP I!1329 T!968 0x2 
+F "R_OBIS_EncodeGenericBuffer" F I!1330 T!608 ?987-31 P!1331 P!1333 P!1334 P!1335 P!1336 P!1337 P!1338 P!1339 
+V "" N I!1331 O!1330 T!1332 .2 0x2 
+T "" KP I!1332 T!1007 0x2 
+V "" N I!1333 O!1330 T!608 .1 0x1 
+V "" N I!1334 O!1330 T!610 .2 0x2 
+V "" N I!1335 O!1330 T!610 .2 0x2 
+V "" N I!1336 O!1330 T!624 .2 0x2 
+V "" N I!1337 O!1330 T!1260 .1 0x1 
+V "" N I!1338 O!1330 T!624 .2 0x2 
+V "" N I!1339 O!1330 T!862 .2 0x2 
+F "R_OBIS_DistributeDataClass" F I!1340 T!608 ?1003-31 P!1341 P!1342 P!1343 P!1344 P!1345 P!1346 P!1347 P!1348 
+V "" N I!1341 O!1340 T!610 .2 0x2 
+V "" N I!1342 O!1340 T!610 .2 0x2 
+V "" N I!1343 O!1340 T!1258 .1 0x1 
+V "" N I!1344 O!1340 T!1260 .1 0x1 
+V "" N I!1345 O!1340 T!787 .2 0x2 
+V "" N I!1346 O!1340 T!624 .2 0x2 
+V "" N I!1347 O!1340 T!624 .2 0x2 
+V "" N I!1348 O!1340 T!862 .2 0x2 
+F "R_OBIS_DistributeRegisterClass" F I!1349 T!608 ?1015-31 P!1350 P!1351 P!1352 P!1353 P!1354 P!1355 P!1356 P!1357 
+V "" N I!1350 O!1349 T!610 .2 0x2 
+V "" N I!1351 O!1349 T!610 .2 0x2 
+V "" N I!1352 O!1349 T!1258 .1 0x1 
+V "" N I!1353 O!1349 T!1260 .1 0x1 
+V "" N I!1354 O!1349 T!787 .2 0x2 
+V "" N I!1355 O!1349 T!624 .2 0x2 
+V "" N I!1356 O!1349 T!624 .2 0x2 
+V "" N I!1357 O!1349 T!862 .2 0x2 
+F "R_OBIS_DistributeXRegisterClass" F I!1358 T!608 ?1027-31 P!1359 P!1360 P!1361 P!1362 P!1363 P!1364 P!1365 P!1366 
+V "" N I!1359 O!1358 T!610 .2 0x2 
+V "" N I!1360 O!1358 T!610 .2 0x2 
+V "" N I!1361 O!1358 T!1258 .1 0x1 
+V "" N I!1362 O!1358 T!1260 .1 0x1 
+V "" N I!1363 O!1358 T!787 .2 0x2 
+V "" N I!1364 O!1358 T!624 .2 0x2 
+V "" N I!1365 O!1358 T!624 .2 0x2 
+V "" N I!1366 O!1358 T!862 .2 0x2 
+F "R_OBIS_DistributeDRegisterClass" F I!1367 T!608 ?1039-31 P!1368 P!1369 P!1370 P!1371 P!1372 P!1373 P!1374 P!1375 
+V "" N I!1368 O!1367 T!610 .2 0x2 
+V "" N I!1369 O!1367 T!610 .2 0x2 
+V "" N I!1370 O!1367 T!1258 .1 0x1 
+V "" N I!1371 O!1367 T!1260 .1 0x1 
+V "" N I!1372 O!1367 T!787 .2 0x2 
+V "" N I!1373 O!1367 T!624 .2 0x2 
+V "" N I!1374 O!1367 T!624 .2 0x2 
+V "" N I!1375 O!1367 T!862 .2 0x2 
+F "R_OBIS_DistributeRegisterActivationClass" F I!1376 T!608 ?1051-31 P!1377 P!1378 P!1379 P!1380 P!1381 P!1382 P!1383 P!1384 
+V "" N I!1377 O!1376 T!610 .2 0x2 
+V "" N I!1378 O!1376 T!610 .2 0x2 
+V "" N I!1379 O!1376 T!1258 .1 0x1 
+V "" N I!1380 O!1376 T!1260 .1 0x1 
+V "" N I!1381 O!1376 T!787 .2 0x2 
+V "" N I!1382 O!1376 T!624 .2 0x2 
+V "" N I!1383 O!1376 T!624 .2 0x2 
+V "" N I!1384 O!1376 T!862 .2 0x2 
+F "R_OBIS_DistributeProfileGenericClass" F I!1385 T!608 ?1063-31 P!1386 P!1387 P!1388 P!1389 P!1390 P!1391 P!1392 P!1393 
+V "" N I!1386 O!1385 T!610 .2 0x2 
+V "" N I!1387 O!1385 T!610 .2 0x2 
+V "" N I!1388 O!1385 T!1258 .1 0x1 
+V "" N I!1389 O!1385 T!1260 .1 0x1 
+V "" N I!1390 O!1385 T!787 .2 0x2 
+V "" N I!1391 O!1385 T!624 .2 0x2 
+V "" N I!1392 O!1385 T!624 .2 0x2 
+V "" N I!1393 O!1385 T!862 .2 0x2 
+F "R_OBIS_DistributeClockClass" F I!1394 T!608 ?1075-31 P!1395 P!1396 P!1397 P!1398 P!1399 P!1400 P!1401 P!1402 
+V "" N I!1395 O!1394 T!610 .2 0x2 
+V "" N I!1396 O!1394 T!610 .2 0x2 
+V "" N I!1397 O!1394 T!1258 .1 0x1 
+V "" N I!1398 O!1394 T!1260 .1 0x1 
+V "" N I!1399 O!1394 T!787 .2 0x2 
+V "" N I!1400 O!1394 T!624 .2 0x2 
+V "" N I!1401 O!1394 T!624 .2 0x2 
+V "" N I!1402 O!1394 T!862 .2 0x2 
+F "R_OBIS_DistributeScriptTableClass" F I!1403 T!608 ?1087-31 P!1404 P!1405 P!1406 P!1407 P!1408 P!1409 P!1410 P!1411 
+V "" N I!1404 O!1403 T!610 .2 0x2 
+V "" N I!1405 O!1403 T!610 .2 0x2 
+V "" N I!1406 O!1403 T!1258 .1 0x1 
+V "" N I!1407 O!1403 T!1260 .1 0x1 
+V "" N I!1408 O!1403 T!787 .2 0x2 
+V "" N I!1409 O!1403 T!624 .2 0x2 
+V "" N I!1410 O!1403 T!624 .2 0x2 
+V "" N I!1411 O!1403 T!862 .2 0x2 
+F "R_OBIS_DistributeScheduleClass" F I!1412 T!608 ?1099-31 P!1413 P!1414 P!1415 P!1416 P!1417 P!1418 P!1419 P!1420 
+V "" N I!1413 O!1412 T!610 .2 0x2 
+V "" N I!1414 O!1412 T!610 .2 0x2 
+V "" N I!1415 O!1412 T!1258 .1 0x1 
+V "" N I!1416 O!1412 T!1260 .1 0x1 
+V "" N I!1417 O!1412 T!787 .2 0x2 
+V "" N I!1418 O!1412 T!624 .2 0x2 
+V "" N I!1419 O!1412 T!624 .2 0x2 
+V "" N I!1420 O!1412 T!862 .2 0x2 
+F "R_OBIS_DistributeSpecialDaysTableClass" F I!1421 T!608 ?1111-31 P!1422 P!1423 P!1424 P!1425 P!1426 P!1427 P!1428 P!1429 
+V "" N I!1422 O!1421 T!610 .2 0x2 
+V "" N I!1423 O!1421 T!610 .2 0x2 
+V "" N I!1424 O!1421 T!1258 .1 0x1 
+V "" N I!1425 O!1421 T!1260 .1 0x1 
+V "" N I!1426 O!1421 T!787 .2 0x2 
+V "" N I!1427 O!1421 T!624 .2 0x2 
+V "" N I!1428 O!1421 T!624 .2 0x2 
+V "" N I!1429 O!1421 T!862 .2 0x2 
+F "R_OBIS_DistributeAssociationLNClass" F I!1430 T!608 ?1123-31 P!1431 P!1432 P!1433 P!1434 P!1435 P!1436 P!1437 P!1438 
+V "" N I!1431 O!1430 T!610 .2 0x2 
+V "" N I!1432 O!1430 T!610 .2 0x2 
+V "" N I!1433 O!1430 T!1258 .1 0x1 
+V "" N I!1434 O!1430 T!1260 .1 0x1 
+V "" N I!1435 O!1430 T!787 .2 0x2 
+V "" N I!1436 O!1430 T!624 .2 0x2 
+V "" N I!1437 O!1430 T!624 .2 0x2 
+V "" N I!1438 O!1430 T!862 .2 0x2 
+F "R_OBIS_DistributeSAPassignmentClass" F I!1439 T!608 ?1135-31 P!1440 P!1441 P!1442 P!1443 P!1444 P!1445 P!1446 P!1447 
+V "" N I!1440 O!1439 T!610 .2 0x2 
+V "" N I!1441 O!1439 T!610 .2 0x2 
+V "" N I!1442 O!1439 T!1258 .1 0x1 
+V "" N I!1443 O!1439 T!1260 .1 0x1 
+V "" N I!1444 O!1439 T!787 .2 0x2 
+V "" N I!1445 O!1439 T!624 .2 0x2 
+V "" N I!1446 O!1439 T!624 .2 0x2 
+V "" N I!1447 O!1439 T!862 .2 0x2 
+F "R_OBIS_DistributeImageTransferClass" F I!1448 T!608 ?1147-31 P!1449 P!1450 P!1451 P!1452 P!1453 P!1454 P!1455 P!1456 
+V "" N I!1449 O!1448 T!610 .2 0x2 
+V "" N I!1450 O!1448 T!610 .2 0x2 
+V "" N I!1451 O!1448 T!1258 .1 0x1 
+V "" N I!1452 O!1448 T!1260 .1 0x1 
+V "" N I!1453 O!1448 T!787 .2 0x2 
+V "" N I!1454 O!1448 T!624 .2 0x2 
+V "" N I!1455 O!1448 T!624 .2 0x2 
+V "" N I!1456 O!1448 T!862 .2 0x2 
+F "R_OBIS_DistributeIECLocalPortSetupClass" F I!1457 T!608 ?1159-31 P!1458 P!1459 P!1460 P!1461 P!1462 P!1463 P!1464 P!1465 
+V "" N I!1458 O!1457 T!610 .2 0x2 
+V "" N I!1459 O!1457 T!610 .2 0x2 
+V "" N I!1460 O!1457 T!1258 .1 0x1 
+V "" N I!1461 O!1457 T!1260 .1 0x1 
+V "" N I!1462 O!1457 T!787 .2 0x2 
+V "" N I!1463 O!1457 T!624 .2 0x2 
+V "" N I!1464 O!1457 T!624 .2 0x2 
+V "" N I!1465 O!1457 T!862 .2 0x2 
+F "R_OBIS_DistributeActivityCalendarClass" F I!1466 T!608 ?1171-31 P!1467 P!1468 P!1469 P!1470 P!1471 P!1472 P!1473 P!1474 
+V "" N I!1467 O!1466 T!610 .2 0x2 
+V "" N I!1468 O!1466 T!610 .2 0x2 
+V "" N I!1469 O!1466 T!1258 .1 0x1 
+V "" N I!1470 O!1466 T!1260 .1 0x1 
+V "" N I!1471 O!1466 T!787 .2 0x2 
+V "" N I!1472 O!1466 T!624 .2 0x2 
+V "" N I!1473 O!1466 T!624 .2 0x2 
+V "" N I!1474 O!1466 T!862 .2 0x2 
+F "R_OBIS_DistributeRegisterMonitorClass" F I!1475 T!608 ?1183-31 P!1476 P!1477 P!1478 P!1479 P!1480 P!1481 P!1482 P!1483 
+V "" N I!1476 O!1475 T!610 .2 0x2 
+V "" N I!1477 O!1475 T!610 .2 0x2 
+V "" N I!1478 O!1475 T!1258 .1 0x1 
+V "" N I!1479 O!1475 T!1260 .1 0x1 
+V "" N I!1480 O!1475 T!787 .2 0x2 
+V "" N I!1481 O!1475 T!624 .2 0x2 
+V "" N I!1482 O!1475 T!624 .2 0x2 
+V "" N I!1483 O!1475 T!862 .2 0x2 
+F "R_OBIS_DistributeSingleActionScheduleClass" F I!1484 T!608 ?1195-31 P!1485 P!1486 P!1487 P!1488 P!1489 P!1490 P!1491 P!1492 
+V "" N I!1485 O!1484 T!610 .2 0x2 
+V "" N I!1486 O!1484 T!610 .2 0x2 
+V "" N I!1487 O!1484 T!1258 .1 0x1 
+V "" N I!1488 O!1484 T!1260 .1 0x1 
+V "" N I!1489 O!1484 T!787 .2 0x2 
+V "" N I!1490 O!1484 T!624 .2 0x2 
+V "" N I!1491 O!1484 T!624 .2 0x2 
+V "" N I!1492 O!1484 T!862 .2 0x2 
+F "R_OBIS_DistributeIECHDLCSetupClass" F I!1493 T!608 ?1207-31 P!1494 P!1495 P!1496 P!1497 P!1498 P!1499 P!1500 P!1501 
+V "" N I!1494 O!1493 T!610 .2 0x2 
+V "" N I!1495 O!1493 T!610 .2 0x2 
+V "" N I!1496 O!1493 T!1258 .1 0x1 
+V "" N I!1497 O!1493 T!1260 .1 0x1 
+V "" N I!1498 O!1493 T!787 .2 0x2 
+V "" N I!1499 O!1493 T!624 .2 0x2 
+V "" N I!1500 O!1493 T!624 .2 0x2 
+V "" N I!1501 O!1493 T!862 .2 0x2 
+F "R_OBIS_DistributeIECTwistedPairClass" F I!1502 T!608 ?1219-31 P!1503 P!1504 P!1505 P!1506 P!1507 P!1508 P!1509 P!1510 
+V "" N I!1503 O!1502 T!610 .2 0x2 
+V "" N I!1504 O!1502 T!610 .2 0x2 
+V "" N I!1505 O!1502 T!1258 .1 0x1 
+V "" N I!1506 O!1502 T!1260 .1 0x1 
+V "" N I!1507 O!1502 T!787 .2 0x2 
+V "" N I!1508 O!1502 T!624 .2 0x2 
+V "" N I!1509 O!1502 T!624 .2 0x2 
+V "" N I!1510 O!1502 T!862 .2 0x2 
+F "R_OBIS_DistributeUtilityTablesClass" F I!1511 T!608 ?1231-31 P!1512 P!1513 P!1514 P!1515 P!1516 P!1517 P!1518 P!1519 
+V "" N I!1512 O!1511 T!610 .2 0x2 
+V "" N I!1513 O!1511 T!610 .2 0x2 
+V "" N I!1514 O!1511 T!1258 .1 0x1 
+V "" N I!1515 O!1511 T!1260 .1 0x1 
+V "" N I!1516 O!1511 T!787 .2 0x2 
+V "" N I!1517 O!1511 T!624 .2 0x2 
+V "" N I!1518 O!1511 T!624 .2 0x2 
+V "" N I!1519 O!1511 T!862 .2 0x2 
+F "R_OBIS_DistributeModemConfigClass" F I!1520 T!608 ?1243-31 P!1521 P!1522 P!1523 P!1524 P!1525 P!1526 P!1527 P!1528 
+V "" N I!1521 O!1520 T!610 .2 0x2 
+V "" N I!1522 O!1520 T!610 .2 0x2 
+V "" N I!1523 O!1520 T!1258 .1 0x1 
+V "" N I!1524 O!1520 T!1260 .1 0x1 
+V "" N I!1525 O!1520 T!787 .2 0x2 
+V "" N I!1526 O!1520 T!624 .2 0x2 
+V "" N I!1527 O!1520 T!624 .2 0x2 
+V "" N I!1528 O!1520 T!862 .2 0x2 
+F "R_OBIS_DistributeAutoAnswerClass" F I!1529 T!608 ?1255-31 P!1530 P!1531 P!1532 P!1533 P!1534 P!1535 P!1536 P!1537 
+V "" N I!1530 O!1529 T!610 .2 0x2 
+V "" N I!1531 O!1529 T!610 .2 0x2 
+V "" N I!1532 O!1529 T!1258 .1 0x1 
+V "" N I!1533 O!1529 T!1260 .1 0x1 
+V "" N I!1534 O!1529 T!787 .2 0x2 
+V "" N I!1535 O!1529 T!624 .2 0x2 
+V "" N I!1536 O!1529 T!624 .2 0x2 
+V "" N I!1537 O!1529 T!862 .2 0x2 
+F "R_OBIS_DistributeAutoConnectClass" F I!1538 T!608 ?1267-31 P!1539 P!1540 P!1541 P!1542 P!1543 P!1544 P!1545 P!1546 
+V "" N I!1539 O!1538 T!610 .2 0x2 
+V "" N I!1540 O!1538 T!610 .2 0x2 
+V "" N I!1541 O!1538 T!1258 .1 0x1 
+V "" N I!1542 O!1538 T!1260 .1 0x1 
+V "" N I!1543 O!1538 T!787 .2 0x2 
+V "" N I!1544 O!1538 T!624 .2 0x2 
+V "" N I!1545 O!1538 T!624 .2 0x2 
+V "" N I!1546 O!1538 T!862 .2 0x2 
+F "R_OBIS_DistributeTCPUDPSetupClass" F I!1547 T!608 ?1279-31 P!1548 P!1549 P!1550 P!1551 P!1552 P!1553 P!1554 P!1555 
+V "" N I!1548 O!1547 T!610 .2 0x2 
+V "" N I!1549 O!1547 T!610 .2 0x2 
+V "" N I!1550 O!1547 T!1258 .1 0x1 
+V "" N I!1551 O!1547 T!1260 .1 0x1 
+V "" N I!1552 O!1547 T!787 .2 0x2 
+V "" N I!1553 O!1547 T!624 .2 0x2 
+V "" N I!1554 O!1547 T!624 .2 0x2 
+V "" N I!1555 O!1547 T!862 .2 0x2 
+F "R_OBIS_DistributeRegisterTableClass" F I!1556 T!608 ?1291-31 P!1557 P!1558 P!1559 P!1560 P!1561 P!1562 P!1563 P!1564 
+V "" N I!1557 O!1556 T!610 .2 0x2 
+V "" N I!1558 O!1556 T!610 .2 0x2 
+V "" N I!1559 O!1556 T!1258 .1 0x1 
+V "" N I!1560 O!1556 T!1260 .1 0x1 
+V "" N I!1561 O!1556 T!787 .2 0x2 
+V "" N I!1562 O!1556 T!624 .2 0x2 
+V "" N I!1563 O!1556 T!624 .2 0x2 
+V "" N I!1564 O!1556 T!862 .2 0x2 
+F "R_OBIS_DistributeStatusMappingClass" F I!1565 T!608 ?1303-31 P!1566 P!1567 P!1568 P!1569 P!1570 P!1571 P!1572 P!1573 
+V "" N I!1566 O!1565 T!610 .2 0x2 
+V "" N I!1567 O!1565 T!610 .2 0x2 
+V "" N I!1568 O!1565 T!1258 .1 0x1 
+V "" N I!1569 O!1565 T!1260 .1 0x1 
+V "" N I!1570 O!1565 T!787 .2 0x2 
+V "" N I!1571 O!1565 T!624 .2 0x2 
+V "" N I!1572 O!1565 T!624 .2 0x2 
+V "" N I!1573 O!1565 T!862 .2 0x2 
+F "R_OBIS_DistributeSecuritySetupClass" F I!1574 T!608 ?1315-31 P!1575 P!1576 P!1577 P!1578 P!1579 P!1580 P!1581 P!1582 
+V "" N I!1575 O!1574 T!610 .2 0x2 
+V "" N I!1576 O!1574 T!610 .2 0x2 
+V "" N I!1577 O!1574 T!1258 .1 0x1 
+V "" N I!1578 O!1574 T!1260 .1 0x1 
+V "" N I!1579 O!1574 T!787 .2 0x2 
+V "" N I!1580 O!1574 T!624 .2 0x2 
+V "" N I!1581 O!1574 T!624 .2 0x2 
+V "" N I!1582 O!1574 T!862 .2 0x2 
+F "R_OBIS_DistributeDisconnectControlClass" F I!1583 T!608 ?1327-31 P!1584 P!1585 P!1586 P!1587 P!1588 P!1589 P!1590 P!1591 
+V "" N I!1584 O!1583 T!610 .2 0x2 
+V "" N I!1585 O!1583 T!610 .2 0x2 
+V "" N I!1586 O!1583 T!1258 .1 0x1 
+V "" N I!1587 O!1583 T!1260 .1 0x1 
+V "" N I!1588 O!1583 T!787 .2 0x2 
+V "" N I!1589 O!1583 T!624 .2 0x2 
+V "" N I!1590 O!1583 T!624 .2 0x2 
+V "" N I!1591 O!1583 T!862 .2 0x2 
+F "R_OBIS_DistributeLimiterClass" F I!1592 T!608 ?1339-31 P!1593 P!1594 P!1595 P!1596 P!1597 P!1598 P!1599 P!1600 
+V "" N I!1593 O!1592 T!610 .2 0x2 
+V "" N I!1594 O!1592 T!610 .2 0x2 
+V "" N I!1595 O!1592 T!1258 .1 0x1 
+V "" N I!1596 O!1592 T!1260 .1 0x1 
+V "" N I!1597 O!1592 T!787 .2 0x2 
+V "" N I!1598 O!1592 T!624 .2 0x2 
+V "" N I!1599 O!1592 T!624 .2 0x2 
+V "" N I!1600 O!1592 T!862 .2 0x2 
+F "R_OBIS_DistributeZigBeeSASStartupClass" F I!1601 T!608 ?1351-31 P!1602 P!1603 P!1604 P!1605 P!1606 P!1607 P!1608 P!1609 
+V "" N I!1602 O!1601 T!610 .2 0x2 
+V "" N I!1603 O!1601 T!610 .2 0x2 
+V "" N I!1604 O!1601 T!1258 .1 0x1 
+V "" N I!1605 O!1601 T!1260 .1 0x1 
+V "" N I!1606 O!1601 T!787 .2 0x2 
+V "" N I!1607 O!1601 T!624 .2 0x2 
+V "" N I!1608 O!1601 T!624 .2 0x2 
+V "" N I!1609 O!1601 T!862 .2 0x2 
+F "R_OBIS_DistributeZigBeeSASJoinClass" F I!1610 T!608 ?1363-31 P!1611 P!1612 P!1613 P!1614 P!1615 P!1616 P!1617 P!1618 
+V "" N I!1611 O!1610 T!610 .2 0x2 
+V "" N I!1612 O!1610 T!610 .2 0x2 
+V "" N I!1613 O!1610 T!1258 .1 0x1 
+V "" N I!1614 O!1610 T!1260 .1 0x1 
+V "" N I!1615 O!1610 T!787 .2 0x2 
+V "" N I!1616 O!1610 T!624 .2 0x2 
+V "" N I!1617 O!1610 T!624 .2 0x2 
+V "" N I!1618 O!1610 T!862 .2 0x2 
+F "R_OBIS_DistributeZigBeeSASAPSFragmentClass" F I!1619 T!608 ?1375-31 P!1620 P!1621 P!1622 P!1623 P!1624 P!1625 P!1626 P!1627 
+V "" N I!1620 O!1619 T!610 .2 0x2 
+V "" N I!1621 O!1619 T!610 .2 0x2 
+V "" N I!1622 O!1619 T!1258 .1 0x1 
+V "" N I!1623 O!1619 T!1260 .1 0x1 
+V "" N I!1624 O!1619 T!787 .2 0x2 
+V "" N I!1625 O!1619 T!624 .2 0x2 
+V "" N I!1626 O!1619 T!624 .2 0x2 
+V "" N I!1627 O!1619 T!862 .2 0x2 
+F "R_OBIS_DistributeZigBeeNetworkControlClass" F I!1628 T!608 ?1387-31 P!1629 P!1630 P!1631 P!1632 P!1633 P!1634 P!1635 P!1636 
+V "" N I!1629 O!1628 T!610 .2 0x2 
+V "" N I!1630 O!1628 T!610 .2 0x2 
+V "" N I!1631 O!1628 T!1258 .1 0x1 
+V "" N I!1632 O!1628 T!1260 .1 0x1 
+V "" N I!1633 O!1628 T!787 .2 0x2 
+V "" N I!1634 O!1628 T!624 .2 0x2 
+V "" N I!1635 O!1628 T!624 .2 0x2 
+V "" N I!1636 O!1628 T!862 .2 0x2 
+F "R_OBIS_DistributeZigBeeTunnelSetupClass" F I!1637 T!608 ?1399-31 P!1638 P!1639 P!1640 P!1641 P!1642 P!1643 P!1644 P!1645 
+V "" N I!1638 O!1637 T!610 .2 0x2 
+V "" N I!1639 O!1637 T!610 .2 0x2 
+V "" N I!1640 O!1637 T!1258 .1 0x1 
+V "" N I!1641 O!1637 T!1260 .1 0x1 
+V "" N I!1642 O!1637 T!787 .2 0x2 
+V "" N I!1643 O!1637 T!624 .2 0x2 
+V "" N I!1644 O!1637 T!624 .2 0x2 
+V "" N I!1645 O!1637 T!862 .2 0x2 
+F "Set_PP" F I!1646 T!2 ?1409-31 ?253-28 P!1647 P!1648 
+V "" N I!1647 O!1646 T!16 .2 0x2 
+V "" N I!1648 O!1646 T!9 .1 0x1 
+F "Get_Time" F I!1649 T!2 ?114-34 
+T "tag_access_right_t" KS I!1650 !108-30 0x6 VM!1651 VM!1652 
+V "attributes" - I!1651 O!1650 T!612 !110-30 .2 0x4 BO0 BIS32 
+V "methods" - I!1652 O!1650 T!610 !111-30 .2 0x2 BO32 BIS16 
+T "access_right_t" KT I!1653 T!1650 !112-30 0x6 
+T "tag_associated_partners_t" KS I!1654 !115-30 0x4 VM!1655 VM!1656 
+V "client_SAP" - I!1655 O!1654 T!607 !117-30 .1 0x1 BO0 BIS8 
+V "server_SAP" - I!1656 O!1654 T!610 !118-30 .2 0x2 BO16 BIS16 
+T "associated_partners_t" KT I!1657 T!1654 !119-30 0x4 
+T "tag_conformance_t" KU I!1658 !123-30 0x3 VM!1663 VM!1689 
+T "" KS I!1659 !126-30 0x3 VM!1660 VM!1661 VM!1662 
+V "bytes0" - I!1660 O!1659 T!608 !127-30 .1 0x1 BO0 BIS8 
+V "bytes1" - I!1661 O!1659 T!608 !128-30 .1 0x1 BO8 BIS8 
+V "bytes2" - I!1662 O!1659 T!608 !129-30 .1 0x1 BO16 BIS8 
+V "bytes" - I!1663 O!1658 T!1659 !130-30 .1 0x3 BO0 BIS24 
+T "" KS I!1664 !133-30 0x3 VM!1665 VM!1666 VM!1667 VM!1668 VM!1669 VM!1670 VM!1671 VM!1672 VM!1673 VM!1674 VM!1675 VM!1676 VM!1677 VM!1678 VM!1679 VM!1680 VM!1681 VM!1682 VM!1683 VM!1684 VM!1685 VM!1686 VM!1687 VM!1688 
+V "reserved4" - I!1665 O!1664 T!608 !134-30 .1 0x1 BO0 BIS1 
+V "reserved3" - I!1666 O!1664 T!608 !135-30 .1 0x1 BO1 BIS1 
+V "unconfirmed_write" - I!1667 O!1664 T!608 !136-30 .1 0x1 BO2 BIS1 
+V "write" - I!1668 O!1664 T!608 !137-30 .1 0x1 BO3 BIS1 
+V "read" - I!1669 O!1664 T!608 !138-30 .1 0x1 BO4 BIS1 
+V "reserved2" - I!1670 O!1664 T!608 !139-30 .1 0x1 BO5 BIS1 
+V "reserved1" - I!1671 O!1664 T!608 !140-30 .1 0x1 BO6 BIS1 
+V "reserved0" - I!1672 O!1664 T!608 !141-30 .1 0x1 BO7 BIS1 
+V "information_report" - I!1673 O!1664 T!608 !143-30 .1 0x1 BO8 BIS1 
+V "multiple_references" - I!1674 O!1664 T!608 !144-30 .1 0x1 BO9 BIS1 
+V "block_transfer_with_action" - I!1675 O!1664 T!608 !145-30 .1 0x1 BO10 BIS1 
+V "block_transfer_with_set" - I!1676 O!1664 T!608 !146-30 .1 0x1 BO11 BIS1 
+V "block_transfer_with_get" - I!1677 O!1664 T!608 !147-30 .1 0x1 BO12 BIS1 
+V "attribute0_supported_with_get" - I!1678 O!1664 T!608 !148-30 .1 0x1 BO13 BIS1 
+V "priority_mgmt_supported" - I!1679 O!1664 T!608 !149-30 .1 0x1 BO14 BIS1 
+V "attribute0_supported_with_set" - I!1680 O!1664 T!608 !150-30 .1 0x1 BO15 BIS1 
+V "action" - I!1681 O!1664 T!608 !152-30 .1 0x1 BO16 BIS1 
+V "event_notification" - I!1682 O!1664 T!608 !153-30 .1 0x1 BO17 BIS1 
+V "selective_access" - I!1683 O!1664 T!608 !154-30 .1 0x1 BO18 BIS1 
+V "set" - I!1684 O!1664 T!608 !155-30 .1 0x1 BO19 BIS1 
+V "get" - I!1685 O!1664 T!608 !156-30 .1 0x1 BO20 BIS1 
+V "parameterized_access" - I!1686 O!1664 T!608 !157-30 .1 0x1 BO21 BIS1 
+V "reserved6" - I!1687 O!1664 T!608 !158-30 .1 0x1 BO22 BIS1 
+V "reserved5" - I!1688 O!1664 T!608 !159-30 .1 0x1 BO23 BIS1 
+V "bits" - I!1689 O!1658 T!1664 !160-30 .1 0x3 BO0 BIS24 
+T "conformance_t" KT I!1690 T!1658 !161-30 0x3 
+T "tag_association_status_t" KE I!1691 T!350 !163-30 0x1 EM0:"ASSC_STATUS_NON_ASSOCIATED" EM1:"ASSC_STATUS_ASSOCIATION_PENDING" EM2:"ASSC_STATUS_ASSOCIATED" 
+T "association_status_t" KT I!1692 T!1691 !168-30 0x1 
+T "tag_authentication_status_t" KE I!1693 T!350 !170-30 0x1 EM0:"AUTHEN_STATUS_PENDING" EM1:"AUTHEN_STATUS_SUCCESS" EM2:"AUTHEN_STATUS_FAILURE" 
+T "authentication_status_t" KT I!1694 T!1693 !175-30 0x1 
+T "tag_child_record_t" KS I!1695 !178-30 0x8 VM!1696 VM!1698 
+V "logical_name" - I!1696 O!1695 T!1697 !180-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1697 T!608 0x6 
+V "p_access_right" - I!1698 O!1695 T!1699 !181-30 .2 0x2 BO48 BIS16 
+T "" KP I!1699 T!1653 0x2 
+T "child_record_t" KT I!1700 T!1695 !183-30 0x8 
+T "class12_child_record_t" KT I!1701 T!1695 !184-30 0x8 
+T "class25_child_record_t" KT I!1702 T!1695 !185-30 0x8 
+T "class42_child_record_t" KT I!1703 T!1695 !186-30 0x8 
+T "class43_child_record_t" KT I!1704 T!1695 !187-30 0x8 
+T "class44_child_record_t" KT I!1705 T!1695 !188-30 0x8 
+T "class45_child_record_t" KT I!1706 T!1695 !189-30 0x8 
+T "class46_child_record_t" KT I!1707 T!1695 !190-30 0x8 
+T "class48_child_record_t" KT I!1708 T!1695 !191-30 0x8 
+T "class50_child_record_t" KT I!1709 T!1695 !192-30 0x8 
+T "class51_child_record_t" KT I!1710 T!1695 !193-30 0x8 
+T "class52_child_record_t" KT I!1711 T!1695 !194-30 0x8 
+T "class53_child_record_t" KT I!1712 T!1695 !195-30 0x8 
+T "class55_child_record_t" KT I!1713 T!1695 !196-30 0x8 
+T "class56_child_record_t" KT I!1714 T!1695 !197-30 0x8 
+T "class57_child_record_t" KT I!1715 T!1695 !198-30 0x8 
+T "class58_child_record_t" KT I!1716 T!1695 !199-30 0x8 
+T "class59_child_record_t" KT I!1717 T!1695 !200-30 0x8 
+T "class67_child_record_t" KT I!1718 T!1695 !201-30 0x8 
+T "class72_child_record_t" KT I!1719 T!1695 !202-30 0x8 
+T "class73_child_record_t" KT I!1720 T!1695 !203-30 0x8 
+T "class74_child_record_t" KT I!1721 T!1695 !204-30 0x8 
+T "class80_child_record_t" KT I!1722 T!1695 !205-30 0x8 
+T "class81_child_record_t" KT I!1723 T!1695 !206-30 0x8 
+T "class82_child_record_t" KT I!1724 T!1695 !207-30 0x8 
+T "class83_child_record_t" KT I!1725 T!1695 !208-30 0x8 
+T "class84_child_record_t" KT I!1726 T!1695 !209-30 0x8 
+T "class85_child_record_t" KT I!1727 T!1695 !210-30 0x8 
+T "class86_child_record_t" KT I!1728 T!1695 !211-30 0x8 
+T "class90_child_record_t" KT I!1729 T!1695 !212-30 0x8 
+T "class91_child_record_t" KT I!1730 T!1695 !213-30 0x8 
+T "class92_child_record_t" KT I!1731 T!1695 !214-30 0x8 
+T "tag_class01_child_record_t" KS I!1732 !217-30 0x12 VM!1733 VM!1735 VM!1736 
+V "logical_name" - I!1733 O!1732 T!1734 !219-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1734 T!608 0x6 
+V "p_access_right" - I!1735 O!1732 T!1699 !220-30 .2 0x2 BO48 BIS16 
+V "value" - I!1736 O!1732 T!957 !221-30 .2 0xa BO64 BIS80 
+T "class01_child_record_t" KT I!1737 T!1732 !222-30 0x12 
+T "tag_class03_child_record_t" KS I!1738 !225-30 0x14 VM!1739 VM!1741 VM!1742 VM!1743 
+V "logical_name" - I!1739 O!1738 T!1740 !227-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1740 T!608 0x6 
+V "p_access_right" - I!1741 O!1738 T!1699 !228-30 .2 0x2 BO48 BIS16 
+V "value" - I!1742 O!1738 T!957 !229-30 .2 0xa BO64 BIS80 
+V "scaler_unit" - I!1743 O!1738 T!968 !230-30 .1 0x2 BO144 BIS16 
+T "class03_child_record_t" KT I!1744 T!1738 !231-30 0x14 
+T "tag_class04_child_record_t" KS I!1745 !234-30 0x28 VM!1746 VM!1748 VM!1749 VM!1750 VM!1751 VM!1752 
+V "logical_name" - I!1746 O!1745 T!1747 !236-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1747 T!608 0x6 
+V "p_access_right" - I!1748 O!1745 T!1699 !237-30 .2 0x2 BO48 BIS16 
+V "value" - I!1749 O!1745 T!957 !238-30 .2 0xa BO64 BIS80 
+V "scaler_unit" - I!1750 O!1745 T!968 !239-30 .1 0x2 BO144 BIS16 
+V "status" - I!1751 O!1745 T!958 !240-30 .2 0xa BO160 BIS80 
+V "capture_time" - I!1752 O!1745 T!959 !241-30 .2 0xa BO240 BIS80 
+T "class04_child_record_t" KT I!1753 T!1745 !242-30 0x28 
+T "tag_class05_child_record_t" KS I!1754 !245-30 0x40 VM!1755 VM!1757 VM!1758 VM!1759 VM!1760 VM!1761 VM!1762 VM!1763 VM!1764 VM!1766 
+V "logical_name" - I!1755 O!1754 T!1756 !247-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1756 T!608 0x6 
+V "p_access_right" - I!1757 O!1754 T!1699 !248-30 .2 0x2 BO48 BIS16 
+V "current_average_value" - I!1758 O!1754 T!957 !249-30 .2 0xa BO64 BIS80 
+V "last_average_value" - I!1759 O!1754 T!957 !250-30 .2 0xa BO144 BIS80 
+V "scaler_unit" - I!1760 O!1754 T!968 !251-30 .1 0x2 BO224 BIS16 
+V "status" - I!1761 O!1754 T!958 !252-30 .2 0xa BO240 BIS80 
+V "capture_time" - I!1762 O!1754 T!959 !253-30 .2 0xa BO320 BIS80 
+V "start_time_current" - I!1763 O!1754 T!959 !254-30 .2 0xa BO400 BIS80 
+V "p_period" - I!1764 O!1754 T!1765 !255-30 .2 0x2 BO480 BIS16 
+T "" KP I!1765 T!612 0x2 
+V "p_number_of_periods" - I!1766 O!1754 T!862 !256-30 .2 0x2 BO496 BIS16 
+T "class05_child_record_t" KT I!1767 T!1754 !257-30 0x40 
+T "tag_class06_child_record_t" KS I!1768 !260-30 0x1a VM!1769 VM!1771 VM!1772 VM!1774 VM!1775 VM!1777 VM!1778 
+V "logical_name" - I!1769 O!1768 T!1770 !262-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1770 T!608 0x6 
+V "p_access_right" - I!1771 O!1768 T!1699 !263-30 .2 0x2 BO48 BIS16 
+V "p_register_assignment" - I!1772 O!1768 T!1773 !264-30 .2 0x2 BO64 BIS16 
+T "" KP I!1773 T!1117 0x2 
+V "nr_register_assignment" - I!1774 O!1768 T!608 !265-30 .1 0x1 BO80 BIS8 
+V "p_mask_list" - I!1775 O!1768 T!1776 !266-30 .2 0x2 BO96 BIS16 
+T "" KP I!1776 T!1122 0x2 
+V "nr_mask_list" - I!1777 O!1768 T!608 !267-30 .1 0x1 BO112 BIS8 
+V "active_mask" - I!1778 O!1768 T!957 !268-30 .2 0xa BO128 BIS80 
+T "class06_child_record_t" KT I!1779 T!1768 !269-30 0x1a 
+T "tag_class07_capture_object_t" KS I!1780 !272-30 0xc VM!1781 VM!1783 VM!1784 VM!1785 
+V "logical_name" - I!1781 O!1780 T!1782 !274-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1782 T!608 0x6 
+V "class_id" - I!1783 O!1780 T!610 !275-30 .2 0x2 BO48 BIS16 
+V "attr_id" - I!1784 O!1780 T!610 !276-30 .2 0x2 BO64 BIS16 
+V "data_id" - I!1785 O!1780 T!610 !277-30 .2 0x2 BO80 BIS16 
+T "class07_capture_object_t" KT I!1786 T!1780 !278-30 0xc 
+T "tag_class07_child_record_t" KS I!1787 !280-30 0x18 VM!1788 VM!1790 VM!1791 VM!1792 VM!1794 VM!1795 VM!1796 VM!1798 VM!1799 VM!1800 
+V "logical_name" - I!1788 O!1787 T!1789 !282-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1789 T!608 0x6 
+V "p_access_right" - I!1790 O!1787 T!1699 !283-30 .2 0x2 BO48 BIS16 
+V "p_buff" - I!1791 O!1787 T!1332 !284-30 .2 0x2 BO64 BIS16 
+V "p_capture_objects" - I!1792 O!1787 T!1793 !285-30 .2 0x2 BO80 BIS16 
+T "" KP I!1793 T!1786 0x2 
+V "p_capture_obj_length" - I!1794 O!1787 T!862 !286-30 .2 0x2 BO96 BIS16 
+V "p_capture_period" - I!1795 O!1787 T!1765 !287-30 .2 0x2 BO112 BIS16 
+V "p_sort_method" - I!1796 O!1787 T!1797 !288-30 .2 0x2 BO128 BIS16 
+T "" KP I!1797 T!1009 0x2 
+V "p_sort_object" - I!1798 O!1787 T!1793 !289-30 .2 0x2 BO144 BIS16 
+V "p_entries_in_use" - I!1799 O!1787 T!1765 !290-30 .2 0x2 BO160 BIS16 
+V "p_profile_entries" - I!1800 O!1787 T!1765 !291-30 .2 0x2 BO176 BIS16 
+T "class07_child_record_t" KT I!1801 T!1787 !292-30 0x18 
+T "tag_class08_child_record_t" KS I!1802 !295-30 0x28 VM!1803 VM!1805 VM!1806 VM!1807 VM!1809 VM!1810 VM!1811 VM!1812 VM!1814 VM!1815 
+V "logical_name" - I!1803 O!1802 T!1804 !297-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1804 T!608 0x6 
+V "p_access_right" - I!1805 O!1802 T!1699 !298-30 .2 0x2 BO48 BIS16 
+V "time" - I!1806 O!1802 T!959 !299-30 .2 0xa BO64 BIS80 
+V "p_time_zone" - I!1807 O!1802 T!1808 !300-30 .2 0x2 BO144 BIS16 
+T "" KP I!1808 T!609 0x2 
+V "status" - I!1809 O!1802 T!958 !301-30 .2 0xa BO160 BIS80 
+V "p_daylight_savings_begin" - I!1810 O!1802 T!1058 !302-30 .2 0x2 BO240 BIS16 
+V "p_daylight_savings_end" - I!1811 O!1802 T!1058 !303-30 .2 0x2 BO256 BIS16 
+V "p_daylight_savings_deviation" - I!1812 O!1802 T!1813 !304-30 .2 0x2 BO272 BIS16 
+T "" KP I!1813 T!607 0x2 
+V "p_daylight_savings_enabled" - I!1814 O!1802 T!624 !305-30 .2 0x2 BO288 BIS16 
+V "p_clock_base" - I!1815 O!1802 T!1816 !306-30 .2 0x2 BO304 BIS16 
+T "" KP I!1816 T!924 0x2 
+T "class08_child_record_t" KT I!1817 T!1802 !307-30 0x28 
+T "tag_class09_child_record_t" KS I!1818 !310-30 0xc VM!1819 VM!1821 VM!1822 VM!1824 
+V "logical_name" - I!1819 O!1818 T!1820 !312-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1820 T!608 0x6 
+V "p_access_right" - I!1821 O!1818 T!1699 !313-30 .2 0x2 BO48 BIS16 
+V "p_scripts" - I!1822 O!1818 T!1823 !314-30 .2 0x2 BO64 BIS16 
+T "" KP I!1823 T!1033 0x2 
+V "nr_scripts" - I!1824 O!1818 T!608 !315-30 .1 0x1 BO80 BIS8 
+T "class09_child_record_t" KT I!1825 T!1818 !316-30 0xc 
+T "tag_class10_child_record_t" KS I!1826 !319-30 0xc VM!1827 VM!1829 VM!1830 VM!1832 
+V "logical_name" - I!1827 O!1826 T!1828 !321-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1828 T!608 0x6 
+V "p_access_right" - I!1829 O!1826 T!1699 !322-30 .2 0x2 BO48 BIS16 
+V "p_entries" - I!1830 O!1826 T!1831 !323-30 .2 0x2 BO64 BIS16 
+T "" KP I!1831 T!1048 0x2 
+V "p_nr_entries" - I!1832 O!1826 T!624 !324-30 .2 0x2 BO80 BIS16 
+T "class10_child_record_t" KT I!1833 T!1826 !325-30 0xc 
+T "tag_class11_child_record_t" KS I!1834 !328-30 0xc VM!1835 VM!1837 VM!1838 VM!1840 
+V "logical_name" - I!1835 O!1834 T!1836 !330-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1836 T!608 0x6 
+V "p_access_right" - I!1837 O!1834 T!1699 !331-30 .2 0x2 BO48 BIS16 
+V "p_entries" - I!1838 O!1834 T!1839 !332-30 .2 0x2 BO64 BIS16 
+T "" KP I!1839 T!1053 0x2 
+V "p_nr_entries" - I!1840 O!1834 T!624 !333-30 .2 0x2 BO80 BIS16 
+T "class11_child_record_t" KT I!1841 T!1834 !334-30 0xc 
+T "tag_class15_child_record_t" KS I!1842 !337-30 0x1c VM!1843 VM!1845 VM!1846 VM!1847 VM!1848 VM!1849 VM!1850 VM!1851 VM!1852 VM!1853 VM!1855 VM!1857 
+V "logical_name" - I!1843 O!1842 T!1844 !339-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1844 T!608 0x6 
+V "p_access_right" - I!1845 O!1842 T!1699 !340-30 .2 0x2 BO48 BIS16 
+V "partners_id" - I!1846 O!1842 T!1657 !341-30 .2 0x4 BO64 BIS32 
+V "context_id" - I!1847 O!1842 T!608 !342-30 .1 0x1 BO96 BIS8 
+V "mechanism_id" - I!1848 O!1842 T!608 !343-30 .1 0x1 BO104 BIS8 
+V "conformance" - I!1849 O!1842 T!1690 !344-30 .1 0x3 BO112 BIS24 
+V "dlms_version" - I!1850 O!1842 T!608 !345-30 .1 0x1 BO136 BIS8 
+V "p_secret_key" - I!1851 O!1842 T!624 !346-30 .2 0x2 BO144 BIS16 
+V "p_shared_key" - I!1852 O!1842 T!624 !347-30 .2 0x2 BO160 BIS16 
+V "p_status" - I!1853 O!1842 T!1854 !348-30 .2 0x2 BO176 BIS16 
+T "" KP I!1854 T!1692 0x2 
+V "p_authen_status" - I!1855 O!1842 T!1856 !349-30 .2 0x2 BO192 BIS16 
+T "" KP I!1856 T!1694 0x2 
+V "p_security_setup_ref" - I!1857 O!1842 T!624 !350-30 .2 0x2 BO208 BIS16 
+T "class15_child_record_t" KT I!1858 T!1842 !351-30 0x1c 
+T "tag_class17_child_record_t" KS I!1859 !354-30 0xc VM!1860 VM!1862 VM!1863 VM!1865 
+V "logical_name" - I!1860 O!1859 T!1861 !356-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1861 T!608 0x6 
+V "p_access_right" - I!1862 O!1859 T!1699 !357-30 .2 0x2 BO48 BIS16 
+V "p_sap_assignment" - I!1863 O!1859 T!1864 !358-30 .2 0x2 BO64 BIS16 
+T "" KP I!1864 T!1013 0x2 
+V "nr_sap_assignment" - I!1865 O!1859 T!608 !359-30 .1 0x1 BO80 BIS8 
+T "class17_child_record_t" KT I!1866 T!1859 !360-30 0xc 
+T "tag_class18_child_record_t" KS I!1867 !363-30 0x2e VM!1868 VM!1870 VM!1871 VM!1872 VM!1873 VM!1874 VM!1875 VM!1876 VM!1878 
+V "logical_name" - I!1868 O!1867 T!1869 !365-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1869 T!608 0x6 
+V "p_access_right" - I!1870 O!1867 T!1699 !366-30 .2 0x2 BO48 BIS16 
+V "p_img_block_size" - I!1871 O!1867 T!1765 !367-30 .2 0x2 BO64 BIS16 
+V "img_trans_blocks_status" - I!1872 O!1867 T!957 !368-30 .2 0xa BO80 BIS80 
+V "img_first_not_trans_block_nr" - I!1873 O!1867 T!957 !369-30 .2 0xa BO160 BIS80 
+V "p_img_trans_enabled" - I!1874 O!1867 T!624 !370-30 .2 0x2 BO240 BIS16 
+V "img_trans_status" - I!1875 O!1867 T!957 !371-30 .2 0xa BO256 BIS80 
+V "p_img_to_activate_info" - I!1876 O!1867 T!1877 !372-30 .2 0x2 BO336 BIS16 
+T "" KP I!1877 T!1140 0x2 
+V "p_img_to_activate_info_nr" - I!1878 O!1867 T!624 !373-30 .2 0x2 BO352 BIS16 
+T "class18_child_record_t" KT I!1879 T!1867 !374-30 0x2e 
+T "tag_class19_child_record_t" KS I!1880 !377-30 0x20 VM!1881 VM!1883 VM!1884 VM!1886 VM!1888 VM!1889 VM!1891 VM!1892 VM!1893 VM!1894 VM!1895 VM!1896 VM!1897 VM!1898 
+V "logical_name" - I!1881 O!1880 T!1882 !379-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1882 T!608 0x6 
+V "p_access_right" - I!1883 O!1880 T!1699 !380-30 .2 0x2 BO48 BIS16 
+V "p_default_mode" - I!1884 O!1880 T!1885 !381-30 .2 0x2 BO64 BIS16 
+T "" KP I!1885 T!1108 0x2 
+V "p_default_baud" - I!1886 O!1880 T!1887 !382-30 .2 0x2 BO80 BIS16 
+T "" KP I!1887 T!1110 0x2 
+V "p_prop_baud" - I!1888 O!1880 T!1887 !383-30 .2 0x2 BO96 BIS16 
+V "p_response_time" - I!1889 O!1880 T!1890 !384-30 .2 0x2 BO112 BIS16 
+T "" KP I!1890 T!1112 0x2 
+V "p_device_addr" - I!1891 O!1880 T!624 !385-30 .2 0x2 BO128 BIS16 
+V "p_device_addr_len" - I!1892 O!1880 T!624 !386-30 .2 0x2 BO144 BIS16 
+V "p_pass_p1" - I!1893 O!1880 T!624 !387-30 .2 0x2 BO160 BIS16 
+V "p_pass_p1_len" - I!1894 O!1880 T!624 !388-30 .2 0x2 BO176 BIS16 
+V "p_pass_p2" - I!1895 O!1880 T!624 !389-30 .2 0x2 BO192 BIS16 
+V "p_pass_p2_len" - I!1896 O!1880 T!624 !390-30 .2 0x2 BO208 BIS16 
+V "p_pass_w5" - I!1897 O!1880 T!624 !391-30 .2 0x2 BO224 BIS16 
+V "p_pass_w5_len" - I!1898 O!1880 T!624 !392-30 .2 0x2 BO240 BIS16 
+T "class19_child_record_t" KT I!1899 T!1880 !393-30 0x20 
+T "tag_class20_child_record_t" KS I!1900 !396-30 0x2a VM!1901 VM!1903 VM!1904 VM!1905 VM!1906 VM!1908 VM!1909 VM!1911 VM!1912 VM!1914 VM!1915 VM!1916 VM!1917 VM!1918 VM!1919 VM!1920 VM!1921 VM!1922 VM!1923 
+V "logical_name" - I!1901 O!1900 T!1902 !398-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1902 T!608 0x6 
+V "p_access_right" - I!1903 O!1900 T!1699 !399-30 .2 0x2 BO48 BIS16 
+V "p_calendar_name_active" - I!1904 O!1900 T!624 !400-30 .2 0x2 BO64 BIS16 
+V "p_calendar_name_active_len" - I!1905 O!1900 T!624 !401-30 .2 0x2 BO80 BIS16 
+V "p_season_profile_active" - I!1906 O!1900 T!1907 !402-30 .2 0x2 BO96 BIS16 
+T "" KP I!1907 T!1061 0x2 
+V "nr_season_profile_active" - I!1908 O!1900 T!608 !403-30 .1 0x1 BO112 BIS8 
+V "p_week_profile_active" - I!1909 O!1900 T!1910 !404-30 .2 0x2 BO128 BIS16 
+T "" KP I!1910 T!1072 0x2 
+V "nr_week_profile_active" - I!1911 O!1900 T!608 !405-30 .1 0x1 BO144 BIS8 
+V "p_day_profile_active" - I!1912 O!1900 T!1913 !406-30 .2 0x2 BO160 BIS16 
+T "" KP I!1913 T!1084 0x2 
+V "nr_day_profile_active" - I!1914 O!1900 T!608 !407-30 .1 0x1 BO176 BIS8 
+V "p_calendar_name_passive" - I!1915 O!1900 T!624 !408-30 .2 0x2 BO192 BIS16 
+V "p_calendar_name_passive_len" - I!1916 O!1900 T!624 !409-30 .2 0x2 BO208 BIS16 
+V "p_season_profile_passive" - I!1917 O!1900 T!1907 !410-30 .2 0x2 BO224 BIS16 
+V "nr_season_profile_passive" - I!1918 O!1900 T!608 !411-30 .1 0x1 BO240 BIS8 
+V "p_week_profile_passive" - I!1919 O!1900 T!1910 !412-30 .2 0x2 BO256 BIS16 
+V "nr_week_profile_passive" - I!1920 O!1900 T!608 !413-30 .1 0x1 BO272 BIS8 
+V "p_day_profile_passive" - I!1921 O!1900 T!1913 !414-30 .2 0x2 BO288 BIS16 
+V "nr_day_profile_passive" - I!1922 O!1900 T!608 !415-30 .1 0x1 BO304 BIS8 
+V "p_activate_calendar_passive" - I!1923 O!1900 T!1058 !416-30 .2 0x2 BO320 BIS16 
+T "class20_child_record_t" KT I!1924 T!1900 !417-30 0x2a 
+T "tag_class21_child_record_t" KS I!1925 !420-30 0x12 VM!1926 VM!1928 VM!1929 VM!1931 VM!1932 VM!1934 VM!1936 
+V "logical_name" - I!1926 O!1925 T!1927 !422-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1927 T!608 0x6 
+V "p_access_right" - I!1928 O!1925 T!1699 !423-30 .2 0x2 BO48 BIS16 
+V "p_thresholds" - I!1929 O!1925 T!1930 !424-30 .2 0x2 BO64 BIS16 
+T "" KP I!1930 T!963 0x2 
+V "nr_thresholds" - I!1931 O!1925 T!608 !425-30 .1 0x1 BO80 BIS8 
+V "monitor_value" - I!1932 O!1925 T!1933 !426-30 .2 0x2 BO96 BIS16 
+T "" KP I!1933 T!1090 0x2 
+V "p_actions" - I!1934 O!1925 T!1935 !427-30 .2 0x2 BO112 BIS16 
+T "" KP I!1935 T!1100 0x2 
+V "nr_actions" - I!1936 O!1925 T!608 !428-30 .1 0x1 BO128 BIS8 
+T "class21_child_record_t" KT I!1937 T!1925 !429-30 0x12 
+T "tag_class22_child_record_t" KS I!1938 !432-30 0x10 VM!1939 VM!1941 VM!1942 VM!1943 VM!1945 VM!1947 
+V "logical_name" - I!1939 O!1938 T!1940 !434-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1940 T!608 0x6 
+V "p_access_right" - I!1941 O!1938 T!1699 !435-30 .2 0x2 BO48 BIS16 
+V "p_executed_script" - I!1942 O!1938 T!1098 !436-30 .2 0x2 BO64 BIS16 
+V "p_type" - I!1943 O!1938 T!1944 !437-30 .2 0x2 BO80 BIS16 
+T "" KP I!1944 T!1102 0x2 
+V "p_execution_time" - I!1945 O!1938 T!1946 !438-30 .2 0x2 BO96 BIS16 
+T "" KP I!1946 T!1106 0x2 
+V "nr_execution_time" - I!1947 O!1938 T!608 !439-30 .1 0x1 BO112 BIS8 
+T "class22_child_record_t" KT I!1948 T!1938 !440-30 0x10 
+T "tag_class23_child_record_t" KS I!1949 !443-30 0x18 VM!1950 VM!1952 VM!1953 VM!1954 VM!1955 VM!1956 VM!1957 VM!1958 VM!1959 VM!1960 
+V "logical_name" - I!1950 O!1949 T!1951 !445-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1951 T!608 0x6 
+V "p_access_right" - I!1952 O!1949 T!1699 !446-30 .2 0x2 BO48 BIS16 
+V "p_comm_speed" - I!1953 O!1949 T!1887 !447-30 .2 0x2 BO64 BIS16 
+V "p_window_size_transmit" - I!1954 O!1949 T!624 !448-30 .2 0x2 BO80 BIS16 
+V "p_window_size_receive" - I!1955 O!1949 T!624 !449-30 .2 0x2 BO96 BIS16 
+V "p_max_info_field_length_transmit" - I!1956 O!1949 T!862 !450-30 .2 0x2 BO112 BIS16 
+V "p_max_info_field_length_receive" - I!1957 O!1949 T!862 !451-30 .2 0x2 BO128 BIS16 
+V "p_inter_octet_time_out" - I!1958 O!1949 T!862 !452-30 .2 0x2 BO144 BIS16 
+V "p_inactivity_time_out" - I!1959 O!1949 T!862 !453-30 .2 0x2 BO160 BIS16 
+V "p_device_address" - I!1960 O!1949 T!862 !454-30 .2 0x2 BO176 BIS16 
+T "class23_child_record_t" KT I!1961 T!1949 !455-30 0x18 
+T "tag_class24_child_record_t" KS I!1962 !458-30 0x24 VM!1963 VM!1965 VM!1966 VM!1968 VM!1969 VM!1971 VM!1972 VM!1973 VM!1974 VM!1975 
+V "logical_name" - I!1963 O!1962 T!1964 !460-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1964 T!608 0x6 
+V "p_access_right" - I!1965 O!1962 T!1699 !461-30 .2 0x2 BO48 BIS16 
+V "secondary_address" - I!1966 O!1962 T!1967 !463-30 .1 0x6 BO64 BIS48 
+T "" KA6 I!1967 T!608 0x6 
+V "fatal_error" - I!1968 O!1962 T!957 !464-30 .2 0xa BO112 BIS80 
+V "p_mode" - I!1969 O!1962 T!1970 !466-30 .2 0x2 BO192 BIS16 
+T "" KP I!1970 T!1159 0x2 
+V "p_comm_speed" - I!1971 O!1962 T!1887 !467-30 .2 0x2 BO208 BIS16 
+V "p_primary_address_list" - I!1972 O!1962 T!624 !469-30 .2 0x2 BO224 BIS16 
+V "p_primary_address_list_len" - I!1973 O!1962 T!624 !470-30 .2 0x2 BO240 BIS16 
+V "p_tabi_list" - I!1974 O!1962 T!1813 !471-30 .2 0x2 BO256 BIS16 
+V "p_nr_tabi_list" - I!1975 O!1962 T!624 !472-30 .2 0x2 BO272 BIS16 
+T "class24_child_record_t" KT I!1976 T!1962 !473-30 0x24 
+T "tag_class26_child_record_t" KS I!1977 !476-30 0xe VM!1978 VM!1980 VM!1981 VM!1982 VM!1983 
+V "logical_name" - I!1978 O!1977 T!1979 !478-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1979 T!608 0x6 
+V "p_access_right" - I!1980 O!1977 T!1699 !479-30 .2 0x2 BO48 BIS16 
+V "table_id" - I!1981 O!1977 T!610 !480-30 .2 0x2 BO64 BIS16 
+V "p_len" - I!1982 O!1977 T!1765 !481-30 .2 0x2 BO80 BIS16 
+V "p_buff" - I!1983 O!1977 T!1332 !482-30 .2 0x2 BO96 BIS16 
+T "class26_child_record_t" KT I!1984 T!1977 !483-30 0xe 
+T "tag_class27_child_record_t" KS I!1985 !486-30 0x12 VM!1986 VM!1988 VM!1989 VM!1990 VM!1992 VM!1993 VM!1994 
+V "logical_name" - I!1986 O!1985 T!1987 !488-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1987 T!608 0x6 
+V "p_access_right" - I!1988 O!1985 T!1699 !489-30 .2 0x2 BO48 BIS16 
+V "p_comm_speed" - I!1989 O!1985 T!1887 !490-30 .2 0x2 BO64 BIS16 
+V "p_init_string" - I!1990 O!1985 T!1991 !491-30 .2 0x2 BO80 BIS16 
+T "" KP I!1991 T!1168 0x2 
+V "p_nr_init_string" - I!1992 O!1985 T!624 !492-30 .2 0x2 BO96 BIS16 
+V "p_modem_profile" - I!1993 O!1985 T!1930 !493-30 .2 0x2 BO112 BIS16 
+V "p_nr_modem_profile" - I!1994 O!1985 T!624 !494-30 .2 0x2 BO128 BIS16 
+T "class27_child_record_t" KT I!1995 T!1985 !495-30 0x12 
+T "tag_class28_child_record_t" KS I!1996 !498-30 0x20 VM!1997 VM!1999 VM!2000 VM!2002 VM!2004 VM!2005 VM!2006 VM!2007 VM!2009 VM!2011 
+V "logical_name" - I!1997 O!1996 T!1998 !500-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!1998 T!608 0x6 
+V "p_access_right" - I!1999 O!1996 T!1699 !501-30 .2 0x2 BO48 BIS16 
+V "p_mode" - I!2000 O!1996 T!2001 !502-30 .2 0x2 BO64 BIS16 
+T "" KP I!2001 T!1170 0x2 
+V "p_listen_window" - I!2002 O!1996 T!2003 !503-30 .2 0x2 BO80 BIS16 
+T "" KP I!2003 T!1174 0x2 
+V "p_nr_listen_window" - I!2004 O!1996 T!624 !504-30 .2 0x2 BO96 BIS16 
+V "status" - I!2005 O!1996 T!957 !505-30 .2 0xa BO112 BIS80 
+V "p_nr_calls" - I!2006 O!1996 T!624 !506-30 .2 0x2 BO192 BIS16 
+V "p_nr_rings" - I!2007 O!1996 T!2008 !507-30 .2 0x2 BO208 BIS16 
+T "" KP I!2008 T!1180 0x2 
+V "p_allowed_caller" - I!2009 O!1996 T!2010 !508-30 .2 0x2 BO224 BIS16 
+T "" KP I!2010 T!1187 0x2 
+V "p_nr_allowed_caller" - I!2011 O!1996 T!624 !509-30 .2 0x2 BO240 BIS16 
+T "class28_child_record_t" KT I!2012 T!1996 !510-30 0x20 
+T "tag_class29_child_record_t" KS I!2013 !513-30 0x16 VM!2014 VM!2016 VM!2017 VM!2019 VM!2020 VM!2021 VM!2022 VM!2023 VM!2024 
+V "logical_name" - I!2014 O!2013 T!2015 !515-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2015 T!608 0x6 
+V "p_access_right" - I!2016 O!2013 T!1699 !516-30 .2 0x2 BO48 BIS16 
+V "p_mode" - I!2017 O!2013 T!2018 !517-30 .2 0x2 BO64 BIS16 
+T "" KP I!2018 T!1189 0x2 
+V "p_repetitions" - I!2019 O!2013 T!624 !518-30 .2 0x2 BO80 BIS16 
+V "p_repetition_delay" - I!2020 O!2013 T!862 !519-30 .2 0x2 BO96 BIS16 
+V "p_calling_window" - I!2021 O!2013 T!2003 !520-30 .2 0x2 BO112 BIS16 
+V "p_nr_calling_window" - I!2022 O!2013 T!624 !521-30 .2 0x2 BO128 BIS16 
+V "p_destination_list" - I!2023 O!2013 T!1930 !522-30 .2 0x2 BO144 BIS16 
+V "p_nr_destination_list" - I!2024 O!2013 T!624 !523-30 .2 0x2 BO160 BIS16 
+T "class29_child_record_t" KT I!2025 T!2013 !524-30 0x16 
+T "tag_class41_child_record_t" KS I!2026 !527-30 0x16 VM!2027 VM!2029 VM!2030 VM!2031 VM!2033 VM!2034 VM!2035 
+V "logical_name" - I!2027 O!2026 T!2028 !529-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2028 T!608 0x6 
+V "p_access_right" - I!2029 O!2026 T!1699 !530-30 .2 0x2 BO48 BIS16 
+V "p_tcp_udp_port" - I!2030 O!2026 T!862 !531-30 .2 0x2 BO64 BIS16 
+V "ip_reference" - I!2031 O!2026 T!2032 !532-30 .1 0x6 BO80 BIS48 
+T "" KA6 I!2032 T!608 0x6 
+V "p_mss" - I!2033 O!2026 T!862 !533-30 .2 0x2 BO128 BIS16 
+V "p_nb_of_sim_conn" - I!2034 O!2026 T!624 !534-30 .2 0x2 BO144 BIS16 
+V "p_inactivity_time_out" - I!2035 O!2026 T!862 !535-30 .2 0x2 BO160 BIS16 
+T "class41_child_record_t" KT I!2036 T!2026 !536-30 0x16 
+T "tag_class61_child_record_t" KS I!2037 !539-30 0x10 VM!2038 VM!2040 VM!2041 VM!2043 VM!2044 VM!2046 
+V "logical_name" - I!2038 O!2037 T!2039 !541-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2039 T!608 0x6 
+V "p_access_right" - I!2040 O!2037 T!1699 !542-30 .2 0x2 BO48 BIS16 
+V "p_table_cell_values" - I!2041 O!2037 T!2042 !543-30 .2 0x2 BO64 BIS16 
+T "" KP I!2042 T!957 0x2 
+V "p_table_cell_values_nr" - I!2043 O!2037 T!624 !544-30 .2 0x2 BO80 BIS16 
+V "p_table_cell_definition" - I!2044 O!2037 T!2045 !545-30 .2 0x2 BO96 BIS16 
+T "" KP I!2045 T!1130 0x2 
+V "scaler_unit" - I!2046 O!2037 T!968 !546-30 .1 0x2 BO112 BIS16 
+T "class61_child_record_t" KT I!2047 T!2037 !547-30 0x10 
+T "tag_class63_child_record_t" KS I!2048 !550-30 0x14 VM!2049 VM!2051 VM!2052 VM!2053 
+V "logical_name" - I!2049 O!2048 T!2050 !552-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2050 T!608 0x6 
+V "p_access_right" - I!2051 O!2048 T!1699 !553-30 .2 0x2 BO48 BIS16 
+V "status_word" - I!2052 O!2048 T!957 !554-30 .2 0xa BO64 BIS80 
+V "p_mapping_table" - I!2053 O!2048 T!2054 !555-30 .2 0x2 BO144 BIS16 
+T "" KP I!2054 T!1135 0x2 
+T "class63_child_record_t" KT I!2055 T!2048 !556-30 0x14 
+T "tag_class64_child_record_t" KS I!2056 !559-30 0x1c VM!2057 VM!2059 VM!2060 VM!2062 VM!2064 VM!2065 VM!2066 VM!2067 VM!2068 VM!2069 VM!2070 VM!2071 
+V "logical_name" - I!2057 O!2056 T!2058 !561-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2058 T!608 0x6 
+V "p_access_right" - I!2059 O!2056 T!1699 !562-30 .2 0x2 BO48 BIS16 
+V "p_security_policy" - I!2060 O!2056 T!2061 !563-30 .2 0x2 BO64 BIS16 
+T "" KP I!2061 T!1015 0x2 
+V "p_security_suit" - I!2062 O!2056 T!2063 !564-30 .2 0x2 BO80 BIS16 
+T "" KP I!2063 T!1017 0x2 
+V "p_client_title" - I!2064 O!2056 T!624 !565-30 .2 0x2 BO96 BIS16 
+V "p_server_title" - I!2065 O!2056 T!624 !566-30 .2 0x2 BO112 BIS16 
+V "p_master_key" - I!2066 O!2056 T!624 !568-30 .2 0x2 BO128 BIS16 
+V "p_global_unicast_key" - I!2067 O!2056 T!624 !569-30 .2 0x2 BO144 BIS16 
+V "p_global_broadcast_key" - I!2068 O!2056 T!624 !570-30 .2 0x2 BO160 BIS16 
+V "p_dedicated_unicast_key" - I!2069 O!2056 T!624 !571-30 .2 0x2 BO176 BIS16 
+V "p_authentication_key" - I!2070 O!2056 T!624 !572-30 .2 0x2 BO192 BIS16 
+V "p_frame_counter" - I!2071 O!2056 T!1765 !573-30 .2 0x2 BO208 BIS16 
+T "class64_child_record_t" KT I!2072 T!2056 !574-30 0x1c 
+T "tag_class70_child_record_t" KS I!2073 !577-30 0x1e VM!2074 VM!2076 VM!2077 VM!2078 VM!2079 
+V "logical_name" - I!2074 O!2073 T!2075 !579-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2075 T!608 0x6 
+V "p_access_right" - I!2076 O!2073 T!1699 !580-30 .2 0x2 BO48 BIS16 
+V "output_state" - I!2077 O!2073 T!957 !581-30 .2 0xa BO64 BIS80 
+V "control_state" - I!2078 O!2073 T!957 !582-30 .2 0xa BO144 BIS80 
+V "p_control_mode" - I!2079 O!2073 T!2080 !583-30 .2 0x2 BO224 BIS16 
+T "" KP I!2080 T!1146 0x2 
+T "class70_child_record_t" KT I!2081 T!2073 !584-30 0x1e 
+T "tag_class71_child_record_t" KS I!2082 !587-30 0x32 VM!2083 VM!2085 VM!2086 VM!2088 VM!2089 VM!2090 VM!2091 VM!2092 VM!2093 VM!2095 VM!2096 VM!2097 VM!2098 
+V "logical_name" - I!2083 O!2082 T!2084 !589-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2084 T!608 0x6 
+V "p_access_right" - I!2085 O!2082 T!1699 !590-30 .2 0x2 BO48 BIS16 
+V "p_monitored_value" - I!2086 O!2082 T!2087 !591-30 .2 0x2 BO64 BIS16 
+T "" KP I!2087 T!1152 0x2 
+V "threshold_active" - I!2088 O!2082 T!957 !592-30 .2 0xa BO80 BIS80 
+V "threshold_normal" - I!2089 O!2082 T!963 !593-30 .2 0x4 BO160 BIS32 
+V "threshold_emergency" - I!2090 O!2082 T!963 !594-30 .2 0x4 BO192 BIS32 
+V "p_min_over_threshold_duration" - I!2091 O!2082 T!1765 !595-30 .2 0x2 BO224 BIS16 
+V "p_min_under_threshold_duration" - I!2092 O!2082 T!1765 !596-30 .2 0x2 BO240 BIS16 
+V "p_eme_profile" - I!2093 O!2082 T!2094 !597-30 .2 0x2 BO256 BIS16 
+T "" KP I!2094 T!1157 0x2 
+V "p_eme_profile_group_id_list" - I!2095 O!2082 T!862 !598-30 .2 0x2 BO272 BIS16 
+V "p_nr_eme_profile_group_id_list" - I!2096 O!2082 T!624 !599-30 .2 0x2 BO288 BIS16 
+V "eme_profile_active" - I!2097 O!2082 T!957 !600-30 .2 0xa BO304 BIS80 
+V "p_action" - I!2098 O!2082 T!1935 !601-30 .2 0x2 BO384 BIS16 
+T "class71_child_record_t" KT I!2099 T!2082 !602-30 0x32 
+T "tag_class101_child_record_t" KS I!2100 !605-30 0x1e VM!2101 VM!2103 VM!2104 VM!2105 VM!2106 VM!2107 VM!2108 VM!2109 VM!2111 VM!2112 VM!2113 VM!2114 VM!2115 
+V "logical_name" - I!2101 O!2100 T!2102 !607-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2102 T!608 0x6 
+V "p_access_right" - I!2103 O!2100 T!1699 !608-30 .2 0x2 BO48 BIS16 
+V "p_short_address" - I!2104 O!2100 T!862 !609-30 .2 0x2 BO64 BIS16 
+V "p_extended_pan_id" - I!2105 O!2100 T!624 !610-30 .2 0x2 BO80 BIS16 
+V "p_pan_id" - I!2106 O!2100 T!862 !611-30 .2 0x2 BO96 BIS16 
+V "p_channel_mask" - I!2107 O!2100 T!1765 !612-30 .2 0x2 BO112 BIS16 
+V "p_protocol_version" - I!2108 O!2100 T!624 !613-30 .2 0x2 BO128 BIS16 
+V "p_stack_profile" - I!2109 O!2100 T!2110 !614-30 .2 0x2 BO144 BIS16 
+T "" KP I!2110 T!1191 0x2 
+V "p_start_up_control" - I!2111 O!2100 T!624 !615-30 .2 0x2 BO160 BIS16 
+V "p_trust_centre_address" - I!2112 O!2100 T!624 !616-30 .2 0x2 BO176 BIS16 
+V "p_link_key" - I!2113 O!2100 T!624 !617-30 .2 0x2 BO192 BIS16 
+V "p_network_key" - I!2114 O!2100 T!624 !618-30 .2 0x2 BO208 BIS16 
+V "p_use_insecure_join" - I!2115 O!2100 T!624 !619-30 .2 0x2 BO224 BIS16 
+T "class101_child_record_t" KT I!2116 T!2100 !620-30 0x1e 
+T "tag_class102_child_record_t" KS I!2117 !623-30 0x10 VM!2118 VM!2120 VM!2121 VM!2122 VM!2123 VM!2124 
+V "logical_name" - I!2118 O!2117 T!2119 !625-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2119 T!608 0x6 
+V "p_access_right" - I!2120 O!2117 T!1699 !626-30 .2 0x2 BO48 BIS16 
+V "p_scan_attempts" - I!2121 O!2117 T!624 !627-30 .2 0x2 BO64 BIS16 
+V "p_time_between_scans" - I!2122 O!2117 T!862 !628-30 .2 0x2 BO80 BIS16 
+V "p_rejoin_interval" - I!2123 O!2117 T!862 !629-30 .2 0x2 BO96 BIS16 
+V "p_rejoin_retry_interval" - I!2124 O!2117 T!862 !630-30 .2 0x2 BO112 BIS16 
+T "class102_child_record_t" KT I!2125 T!2117 !631-30 0x10 
+T "tag_class103_child_record_t" KS I!2126 !634-30 0xc VM!2127 VM!2129 VM!2130 VM!2131 
+V "logical_name" - I!2127 O!2126 T!2128 !636-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2128 T!608 0x6 
+V "p_access_right" - I!2129 O!2126 T!1699 !637-30 .2 0x2 BO48 BIS16 
+V "p_aps_interframe_delay" - I!2130 O!2126 T!862 !638-30 .2 0x2 BO64 BIS16 
+V "p_aps_max_window_size" - I!2131 O!2126 T!862 !639-30 .2 0x2 BO80 BIS16 
+T "class103_child_record_t" KT I!2132 T!2126 !640-30 0xc 
+T "tag_class104_child_record_t" KS I!2133 !643-30 0x10 VM!2134 VM!2136 VM!2137 VM!2138 VM!2139 VM!2141 
+V "logical_name" - I!2134 O!2133 T!2135 !645-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2135 T!608 0x6 
+V "p_access_right" - I!2136 O!2133 T!1699 !646-30 .2 0x2 BO48 BIS16 
+V "p_enable_disable_joining" - I!2137 O!2133 T!624 !647-30 .2 0x2 BO64 BIS16 
+V "p_join_timeout" - I!2138 O!2133 T!862 !648-30 .2 0x2 BO80 BIS16 
+V "p_active_devices" - I!2139 O!2133 T!2140 !649-30 .2 0x2 BO96 BIS16 
+T "" KP I!2140 T!1219 0x2 
+V "p_nr_active_devices" - I!2141 O!2133 T!862 !650-30 .2 0x2 BO112 BIS16 
+T "class104_child_record_t" KT I!2142 T!2133 !651-30 0x10 
+T "tag_class105_child_record_t" KS I!2143 !654-30 0x10 VM!2144 VM!2146 VM!2147 VM!2148 VM!2149 VM!2150 
+V "logical_name" - I!2144 O!2143 T!2145 !656-30 .1 0x6 BO0 BIS48 
+T "" KA6 I!2145 T!608 0x6 
+V "p_access_right" - I!2146 O!2143 T!1699 !657-30 .2 0x2 BO48 BIS16 
+V "p_max_incoming_transfer_size" - I!2147 O!2143 T!862 !658-30 .2 0x2 BO64 BIS16 
+V "p_max_outcoming_transfer_size" - I!2148 O!2143 T!862 !659-30 .2 0x2 BO80 BIS16 
+V "p_protocol_address" - I!2149 O!2143 T!624 !660-30 .2 0x2 BO96 BIS16 
+V "p_close_tunnel_timeout" - I!2150 O!2143 T!862 !661-30 .2 0x2 BO112 BIS16 
+T "class105_child_record_t" KT I!2151 T!2143 !662-30 0x10 
+T "tag_master_record_t" KS I!2152 !665-30 0xe VM!2153 VM!2154 VM!2155 VM!2156 VM!2157 VM!2158 VM!2160 
+V "class_version" - I!2153 O!2152 T!608 !667-30 .1 0x1 BO0 BIS8 
+V "number_attrs" - I!2154 O!2152 T!608 !668-30 .1 0x1 BO8 BIS8 
+V "number_methods" - I!2155 O!2152 T!608 !669-30 .1 0x1 BO16 BIS8 
+V "fp_distributor" - I!2156 O!2152 T!1261 !670-30 .2 0x4 BO32 BIS32 
+V "child_list_size" - I!2157 O!2152 T!862 !671-30 .2 0x2 BO64 BIS16 
+V "child_list_pointer" - I!2158 O!2152 T!2159 !672-30 .2 0x2 BO80 BIS16 
+T "" KP I!2159 T!1700 0x2 
+V "child_item_size" - I!2160 O!2152 T!610 !673-30 .2 0x2 BO96 BIS16 
+T "master_record_t" KT I!2161 T!2152 !674-30 0xe 
+V "g_ServiceBuffer" GN I!2162 T!2163 ?680-30 .1 0x70 
+T "" KA112 I!2163 T!608 0x70 
+V "g_MasterTable" GN I!2164 T!2165 ?683-30 .2 0x0 
+T "" MOD"C" KA0 I!2165 T!2161 0x0 
+V "g_TotalMasterTableElements" GON I!2166 T!610 ?684-30 .2 0x2 
+V "g_TotalNumberObjects" GN I!2167 T!610 ?691-30 .2 0x2 
+V "g_TotalNumberObjectsOfAssociation" GN I!2168 T!2169 ?692-30 .2 0x6 
+T "" KA3 I!2169 T!610 0x6 
+F "R_OBIS_ObjectLayerInit" F I!2170 T!2 ?699-30 
+F "R_OBIS_CompareObisCode" F I!2171 T!608 ?702-30 P!2172 P!2173 
+V "" N I!2172 O!2171 T!624 .2 0x2 
+V "" N I!2173 O!2171 T!624 .2 0x2 
+F "R_OBIS_FindChildRecordByIndex" F I!2174 T!2159 ?705-30 P!2175 P!2176 
+V "" N I!2175 O!2174 T!610 .2 0x2 
+V "" N I!2176 O!2174 T!610 .2 0x2 
+F "R_OBIS_CheckObjectVisibility" F I!2177 T!608 ?711-30 P!2178 P!2179 P!2180 
+V "" N I!2178 O!2177 T!610 .2 0x2 
+V "" N I!2179 O!2177 T!610 .2 0x2 
+V "" N I!2180 O!2177 T!610 .2 0x2 
+F "R_OBIS_GetAccessRightValue" F I!2181 T!608 ?718-30 P!2182 P!2183 P!2184 
+V "" N I!2182 O!2181 T!1258 .1 0x1 
+V "" N I!2183 O!2181 T!608 .1 0x1 
+V "" N I!2184 O!2181 T!1699 .2 0x2 
+F "R_OBIS_GetConnectedAssociation" F I!2185 T!608 ?725-30 
+F "R_OBIS_ResetAttr0AsyncService" F I!2186 T!2 ?728-30 
+F "R_OBIS_DecodeObject" F I!2187 T!608 ?731-30 P!2188 P!2189 P!2190 
+V "" N I!2188 O!2187 T!787 .2 0x2 
+V "" N I!2189 O!2187 T!624 .2 0x2 
+V "" N I!2190 O!2187 T!610 .2 0x2 
+T "tagDLMS_RTCDateTime" KS I!2191 !64-35 0x8 VM!2192 VM!2193 VM!2194 VM!2195 VM!2196 VM!2197 VM!2198 VM!2199 
+V "Sec" - I!2192 O!2191 T!608 !67-35 .1 0x1 BO0 BIS8 
+V "Min" - I!2193 O!2191 T!608 !68-35 .1 0x1 BO8 BIS8 
+V "Hour" - I!2194 O!2191 T!608 !69-35 .1 0x1 BO16 BIS8 
+V "Day" - I!2195 O!2191 T!608 !70-35 .1 0x1 BO24 BIS8 
+V "Week" - I!2196 O!2191 T!608 !71-35 .1 0x1 BO32 BIS8 
+V "Month" - I!2197 O!2191 T!608 !72-35 .1 0x1 BO40 BIS8 
+V "Year" - I!2198 O!2191 T!608 !73-35 .1 0x1 BO48 BIS8 
+V "reserved" - I!2199 O!2191 T!608 !75-35 .1 0x1 BO56 BIS8 
+T "DLMS_RTC_DATE_TIME" KT I!2200 T!2191 !77-35 0x8 
+F "R_USER_GetSpecificTime" F I!2201 T!608 ?87-35 P!2202 P!2203 
+V "" N I!2202 O!2201 T!610 .2 0x2 
+V "" N I!2203 O!2201 T!1058 .2 0x2 
+F "R_USER_SetSpecificTime" F I!2204 T!608 ?88-35 P!2205 P!2206 
+V "" N I!2205 O!2204 T!610 .2 0x2 
+V "" N I!2206 O!2204 T!938 .1 0xc 
+F "R_USER_WDT_Restart" F I!2207 T!2 ?91-35 
+F "R_USER_GetNamePlate" F I!2208 T!609 ?94-35 P!2209 P!2210 
+V "" N I!2209 O!2208 T!610 .2 0x2 
+V "" N I!2210 O!2208 T!624 .2 0x2 
+F "R_USER_GetEMData" F I!2211 T!611 ?97-35 P!2212 
+V "" N I!2212 O!2211 T!610 .2 0x2 
+F "R_USER_SetEMData" F I!2213 T!607 ?98-35 P!2214 P!2215 
+V "" N I!2214 O!2213 T!610 .2 0x2 
+V "" N I!2215 O!2213 T!624 .2 0x2 
+F "R_USER_Event_Report" F I!2216 T!2 ?101-35 ?240-28 P!2217 P!2218 
+V "" N I!2217 O!2216 T!608 .1 0x1 
+V "" N I!2218 O!2216 T!610 .2 0x2 
+F "R_OBIS_Update_Secret" F I!2219 T!2 ?103-35 
+F "R_OBIS_Class04_GetActiveMD" F I!2220 T!608 ?107-35 P!2221 P!2223 
+V "" N I!2221 O!2220 T!2222 .2 0x2 
+T "" KP I!2222 T!611 0x2 
+V "" N I!2223 O!2220 T!1058 .2 0x2 
+F "R_OBIS_Class04_GetApparentMD" F I!2224 T!608 ?112-35 P!2225 P!2226 
+V "" N I!2225 O!2224 T!2222 .2 0x2 
+V "" N I!2226 O!2224 T!1058 .2 0x2 
+F "R_USER_Class15_Secret_Backup" F I!2227 T!608 ?128-35 P!2228 P!2229 P!2230 
+V "" N I!2228 O!2227 T!624 .2 0x2 
+V "" N I!2229 O!2227 T!610 .2 0x2 
+V "" N I!2230 O!2227 T!608 .1 0x1 
+F "R_USER_Class15_Secret_Restore" F I!2231 T!608 ?134-35 P!2232 P!2233 P!2234 
+V "" N I!2232 O!2231 T!624 .2 0x2 
+V "" N I!2233 O!2231 T!610 .2 0x2 
+V "" N I!2234 O!2231 T!608 .1 0x1 
+F "R_USER_Class20_SETACTION_Time" F I!2235 T!608 ?144-35 P!2236 P!2237 
+V "" N I!2236 O!2235 T!612 .2 0x4 
+V "" N I!2237 O!2235 T!608 .1 0x1 
+F "R_USER_Class20_GetTariffSeasonTable" F I!2238 T!608 ?145-35 P!2239 P!2240 P!2241 
+V "" N I!2239 O!2238 T!1907 .2 0x2 
+V "" N I!2240 O!2238 T!610 .2 0x2 
+V "" N I!2241 O!2238 T!610 .2 0x2 
+F "R_USER_Class20_GetTariffWeekTable" F I!2242 T!608 ?150-35 P!2243 P!2244 P!2245 
+V "" N I!2243 O!2242 T!1910 .2 0x2 
+V "" N I!2244 O!2242 T!610 .2 0x2 
+V "" N I!2245 O!2242 T!610 .2 0x2 
+F "R_USER_Class20_GetTariffDayTable" F I!2246 T!608 ?155-35 P!2247 P!2248 P!2249 
+V "" N I!2247 O!2246 T!1913 .2 0x2 
+V "" N I!2248 O!2246 T!610 .2 0x2 
+V "" N I!2249 O!2246 T!610 .2 0x2 
+F "R_USER_Class20_SetTariffDayTablePassive" F I!2250 T!608 ?160-35 P!2251 
+V "" N I!2251 O!2250 T!2252 .2 0x2 
+T "" MOD"C" KP I!2252 T!1084 0x2 
+F "R_USER_Class20_Activate_PassiveCalendar" F I!2253 T!608 ?161-35 P!2254 
+V "" N I!2254 O!2253 T!2255 .2 0x2 
+T "" KP I!2255 T!1924 0x2 
+F "R_USER_Class20_ChangSeason" F I!2256 T!2 ?164-35 P!2257 
+V "" N I!2257 O!2256 T!2258 .2 0x2 
+T "" MOD"C" KP I!2258 T!1061 0x2 
+F "R_USER_Class20_ChangeWeekDay" F I!2259 T!2 ?168-35 P!2260 
+V "" N I!2260 O!2259 T!938 .1 0xc 
+F "R_USER_Set_RTC_timezone" F I!2261 T!2 ?173-35 
+F "R_USER_ConvertrDLMStoAppRTC" F I!2262 T!111 ?174-35 P!2263 P!2265 
+V "" N I!2263 O!2262 T!2264 .2 0x2 
+T "" MOD"C" KP I!2264 T!938 0x2 
+V "" N I!2265 O!2262 T!461 .2 0x2 
+F "R_OBIS_Class20_Activate_PassiveCalendar" F I!2266 T!608 ?218-28 
+F "R_OBIS_Class22_ScheduleCheck" F I!2267 T!608 ?223-28 P!2268 P!2270 
+V "" N I!2268 O!2267 T!2269 .2 0x2 
+T "" KP I!2269 T!1948 0x2 
+V "" N I!2270 O!2267 T!1058 .2 0x2 
+F "R_OBIS_Class07_BlockloadUpdate" F I!2271 T!2 ?226-28 
+F "R_OBIS_Class07_EventUpdate" F I!2272 T!2 ?227-28 
+F "R_OBIS_Class07_DailyloadUpdate" F I!2273 T!2 ?228-28 
+F "R_OBIS_Class07_BillingUpdate" F I!2274 T!2 ?230-28 
+F "R_OBIS_IsValidDateTime" F I!2275 T!608 ?233-28 P!2276 
+V "" N I!2276 O!2275 T!624 .2 0x2 
+F "R_OBIS_IsValidDate" F I!2277 T!608 ?234-28 P!2278 
+V "" N I!2278 O!2277 T!624 .2 0x2 
+F "R_OBIS_IsValidTime" F I!2279 T!608 ?235-28 P!2280 
+V "" N I!2280 O!2279 T!624 .2 0x2 
+F "R_OBIS_CompareDateTime" F I!2281 T!607 ?237-28 P!2282 P!2283 
+V "" N I!2282 O!2281 T!624 .2 0x2 
+V "" N I!2283 O!2281 T!624 .2 0x2 
+F "R_OBIS_Timer_ConstInterruptCallback" F I!2284 T!2 ?243-28 
+F "R_OBIS_MeterDataProcessing" F I!2285 T!2 ?246-28 
+F "get_bill_data" F I!2286 T!2 ?248-28 P!2287 
+V "" N I!2287 O!2286 T!16 .2 0x2 
+F "get_tamper_data" F I!2288 T!2 ?249-28 P!2289 P!2290 
+V "" N I!2289 O!2288 T!16 .2 0x2 
+V "" N I!2290 O!2288 T!16 .2 0x2 
+F "get_lp_data" F I!2291 T!2 ?250-28 P!2292 
+V "" N I!2292 O!2291 T!16 .2 0x2 
+F "get_dlp_data" F I!2293 T!2 ?251-28 P!2294 
+V "" N I!2294 O!2293 T!16 .2 0x2 
+F "get_time_data" F I!2295 T!2 ?252-28 P!2296 P!2297 
+V "" N I!2296 O!2295 T!26 .2 0x4 
+V "" N I!2297 O!2295 T!26 .2 0x4 
+F "addHeaderFooterAndSend" SF I!2298 T!2 #507-1 !508,531-1-1 ?53-1 495-1 499-1 
+F "ClearEEpromMemory" SF I!2299 T!2 #533-1 !534,607-1-1 ?54-1 123-1 125-1 P!2316 
+F "getPower2Cal" SF I!2301 T!111 #659-1 !660,670-1-1 ?55-1 201-1 233-1 
+V "eeprom_default_set" GN I!2302 T!2304 !60-1 #60-1 591-1 .2 0x22 
+T "" MOD"C" KA0 I!2303 T!108 0x0 
+T "" MOD"C" KA17 I!2304 T!108 0x22 
+V "isCodeType" N I!2306 O!381 T!105 !81-1 89-1 .1 0x1 
+V "isCodeType" N I!2308 O!383 T!105 !109-1 122-1 184-1 198-1 230-1 261-1 329-1 364-1 .1 0x1 
+V "pwatt" N I!2309 O!383 T!111 !112-1 #112-1 #201-1 #233-1 #267-1 #332-1 #351-1 #430-1 #473-1 #474-1 #475-1 209-1 218-1 241-1 250-1 268-1 269-1 333-1 334-1 352-1 439-1 440-1 474-1 475-1 479-1 .2 0x4 
+V "send_response" N I!2310 O!383 T!105 !113-1 #113-1 #126-1 #135-1 #140-1 #145-1 #153-1 #154-1 #157-1 #158-1 #161-1 #162-1 #166-1 #172-1 #173-1 #176-1 #177-1 #180-1 #181-1 #194-1 #211-1 #220-1 #243-1 #252-1 #290-1 #296-1 #297-1 #300-1 #304-1 #305-1 #308-1 #323-1 #338-1 #346-1 #353-1 #366-1 #378-1 #401-1 #408-1 #418-1 #426-1 #441-1 #447-1 #452-1 #464-1 #469-1 #480-1 154-1 155-1 158-1 159-1 162-1 163-1 173-1 174-1 177-1 178-1 181-1 182-1 297-1 299-1 302-1 305-1 306-1 488-1 497-1 .1 0x1 
+V "isdoReset" N I!2311 O!383 T!105 !113-1 #113-1 #127-1 501-1 .1 0x1 
+V "rtc" N I!2312 O!383 T!309 !151-1 #155-1 #159-1 #163-1 165-1 .1 0x8 
+V "rtc" N I!2313 O!383 T!309 !171-1 #174-1 #178-1 #182-1 188-1 193-1 .1 0x8 
+V "rtc" N I!2314 O!383 T!309 !295-1 298-1 300-1 .1 0x8 
+V "startloc" N I!2316 O!2299 T!108 !533-1 551-1 .2 0x2 
+V "i" N I!2317 O!2299 T!108 !535-1 #551-1 #572-1 #581-1 #593-1 551-1 554-1 555-1 572-1 573-1 586-1 589-1 593-1 .2 0x2 
+V "indexno" N I!2318 O!2299 T!105 !536-1 #536-1 #556-1 #556-1 #583-1 #583-1 #600-1 #600-1 556-1 556-1 558-1 583-1 583-1 591-1 600-1 600-1 601-1 .1 0x1 
+V "no_of_category" N I!2319 O!2299 T!105 !537-1 #586-1 588-1 591-1 593-1 .1 0x1 
+V "category_para_index" N I!2320 O!2299 T!105 !538-1 #588-1 #588-1 588-1 588-1 589-1 589-1 .1 0x1 
+V "crc" N I!2321 O!385 T!108 !612-1 616-1 617-1 .2 0x2 
+V "status" N I!2322 O!385 T!105 !613-1 #613-1 #618-1 619-1 .1 0x1 
+V "bytes" N I!2323 O!386 T!105 !624-1 #628-1 #630-1 #631-1 #633-1 #636-1 #638-1 #641-1 #643-1 #647-1 #650-1 #652-1 #655-1 629-1 630-1 631-1 631-1 632-1 633-1 635-1 636-1 637-1 638-1 640-1 641-1 642-1 643-1 647-1 647-1 649-1 650-1 651-1 652-1 654-1 655-1 656-1 .1 0x1 
+V "bptr" N I!2324 O!386 T!129 !625-1 #625-1 628-1 629-1 631-1 632-1 635-1 637-1 640-1 642-1 647-1 649-1 651-1 654-1 .2 0x2 
+V "buff" N I!2325 O!386 T!2326 !626-1 645-1 647-1 649-1 654-1 .1 0x28 
+T "" KA40 I!2326 T!105 0x28 
+V "pwatt" N I!2327 O!2301 T!111 !661-1 #662-1 #663-1 #664-1 #665-1 #666-1 663-1 664-1 665-1 666-1 668-1 .2 0x4 
+V "month" N I!2330 O!387 T!105 !672-1 #677-1 #679-1 676-1 678-1 681-1 .1 0x1 
+V "year" N I!2331 O!387 T!105 !672-1 #683-1 682-1 685-1 .1 0x1 
+V "rtc" N I!2332 O!387 T!309 !674-1 675-1 677-1 679-1 683-1 .1 0x8 
+****%CxSystemPath%\inc\builtin.h
+v2 
+:1763837879
+#2
+****rlDevice\Include\dUser_includes.h
+v2 
+:1763837879
+#3
+****rlDevice\Include\dIOdefine.h
+v2 
+:1763837879
+#4
+****rlDevice\Include\dI2c.h
+v2 
+:1763837879
+#5
+****rlDevice\include\dTypedef.h
+v2 
+:1763837879
+#6
+****rlDevice\Include\dUart.h
+v2 
+:1763837879
+#7
+****rlDevice\Include\dSerial.h
+v2 
+:1763837879
+#8
+****rlDevice\Include\dRtc.h
+v2 
+:1763837879
+#9
+****rlApplication\Include\AppVariables.h
+v2 
+:1763837879
+#10
+****rlApplication\Include\AppMacros.h
+v2 
+:1763837879
+#11
+****rlApplication\Include\AppConfig.h
+v2 
+:1763837879
+#12
+****rlDevice\Include\dWatchDog.h
+v2 
+:1763837879
+#13
+****rlDevice\Include\dIOCtrl.h
+v2 
+:1763837879
+#14
+****rlDevice\Include\d12BitTimer.h
+v2 
+:1763837879
+#15
+****rlApplication\Include\AppCommunication.h
+v2 
+:1763837879
+#16
+****rlApplication\Include\AppCalibration.h
+v2 
+:1763837879
+#17
+****rlApplication\Include\AppLcd.h
+v2 
+:1763837879
+#18
+****rlApplication\Include\AppEeprom.h
+v2 
+:1763837879
+#19
+****rlApplication\Include\AppBlockDailyLS.h
+v2 
+:1763837879
+#20
+****rlApplication\Include\AppMisc.h
+v2 
+:1763837879
+#21
+****rlApplication\include\AppParaLimits.h
+v2 
+:1763837879
+#22
+****rlApplication\include\AppIntervalkWh.h
+v2 
+:1763837879
+#23
+****rlApplication\include\AppTampers.h
+v2 
+:1763837879
+#24
+****rlApplication\Include\AppCustomerProtocol.h
+v2 
+:1763837879
+#25
+****rlApplication\Include\AppBilling.h
+v2 
+:1763837879
+#26
+****rlApplication\Include\AppAccessProd.h
+v2 
+:1763837879
+#27
+****rlDlms\meter_app\r_dlms_data_meter.h
+v2 
+:1763837879
+#28
+****rlDlms\r_dlms_typedef.h
+v2 
+:1763837879
+#29
+****rlDlms\Objects\r_dlms_obis.h
+v2 
+:1763837879
+#30
+****rlDlms\Objects\r_dlms_obis_ic.h
+v2 
+:1763837879
+#31
+****rlDlms\DLMS_User.h
+v2 
+:1763837879
+#32
+****rlDlms\Physical\serial.h
+v2 
+:1763837879
+#33
+****rlDlms\meter_app\r_dlms_data_ic.h
+v2 
+:1763837879
+#34
+****rlDlms\meter_app\r_dlms_user_interface.h
+v2 
+:1763837879
+#35

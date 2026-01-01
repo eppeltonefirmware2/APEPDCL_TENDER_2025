@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "dioctrl.h": "c",
+        "diodefine.h": "c",
+        "duser_includes.h": "c",
+        "r_dlms_user_interface.h": "c",
+        "dtypedef.h": "c",
+        "appvariables.h": "c"
+    }
+}
